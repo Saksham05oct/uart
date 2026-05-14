@@ -6,7 +6,7 @@ A complete UART (Universal Asynchronous Receiver-Transmitter) design and class-b
 
 ## What the Code Does
 
-### Design (`eda_design.sv`)
+### Design (`uart_design.sv`)
 
 The design implements a full UART communication module with three components:
 
@@ -20,7 +20,7 @@ The design implements a full UART communication module with three components:
 
 Both TX and RX use parameterized `CLOCK_FREQUENCY_HZ` and `BAUD_RATE` values. For simulation, these are set to 19200 Hz and 9600 baud respectively (clocks-per-baud = 2) to keep simulation time manageable.
 
-### Testbench (`eda_testbench.sv`)
+### Testbench (`uart_testbench.sv`)
 
 The testbench uses a **class-based layered verification architecture** inspired by UVM methodology:
 
