@@ -1,0 +1,3009 @@
+========================================
+ UART Verification - Simulation Log
+ Simulator: Synopsys VCS
+ Clock: 19200 Hz, Baud: 9600
+ Transactions: 500
+========================================
+
+[590000] [DRV] Reset complete
+----------------------------------------
+[590000] [GEN] Operation: UART_READ, TX payload: 113 (0x71)
+[1310000] [DRV] RX payload driven: 234 (0xea)
+[1390000] [MON] Observed UART RX payload: 234 (0xea)
+[1470000] [SCO] Expected: 234 (0xea), Observed: 234 (0xea)
+[1470000] >>> DATA MATCHED <<<
+----------------------------------------
+[1470000] [GEN] Operation: UART_WRITE, TX payload: 59 (0x3b)
+[1630000] [DRV] TX payload driven: 59 (0x3b)
+[2350000] [MON] Observed UART TX payload: 59 (0x3b)
+[2430000] [SCO] Expected: 59 (0x3b), Observed: 59 (0x3b)
+[2430000] >>> DATA MATCHED <<<
+----------------------------------------
+[2430000] [GEN] Operation: UART_READ, TX payload: 59 (0x3b)
+[3230000] [DRV] RX payload driven: 86 (0x56)
+[3310000] [MON] Observed UART RX payload: 86 (0x56)
+[3390000] [SCO] Expected: 86 (0x56), Observed: 86 (0x56)
+[3390000] >>> DATA MATCHED <<<
+----------------------------------------
+[3390000] [GEN] Operation: UART_WRITE, TX payload: 173 (0xad)
+[3550000] [DRV] TX payload driven: 173 (0xad)
+[4270000] [MON] Observed UART TX payload: 173 (0xad)
+[4350000] [SCO] Expected: 173 (0xad), Observed: 173 (0xad)
+[4350000] >>> DATA MATCHED <<<
+----------------------------------------
+[4350000] [GEN] Operation: UART_WRITE, TX payload: 157 (0x9d)
+[4510000] [DRV] TX payload driven: 157 (0x9d)
+[5230000] [MON] Observed UART TX payload: 157 (0x9d)
+[5310000] [SCO] Expected: 157 (0x9d), Observed: 157 (0x9d)
+[5310000] >>> DATA MATCHED <<<
+----------------------------------------
+[5310000] [GEN] Operation: UART_READ, TX payload: 184 (0xb8)
+[6110000] [DRV] RX payload driven: 92 (0x5c)
+[6190000] [MON] Observed UART RX payload: 92 (0x5c)
+[6270000] [SCO] Expected: 92 (0x5c), Observed: 92 (0x5c)
+[6270000] >>> DATA MATCHED <<<
+----------------------------------------
+[6270000] [GEN] Operation: UART_WRITE, TX payload: 135 (0x87)
+[6430000] [DRV] TX payload driven: 135 (0x87)
+[7150000] [MON] Observed UART TX payload: 135 (0x87)
+[7230000] [SCO] Expected: 135 (0x87), Observed: 135 (0x87)
+[7230000] >>> DATA MATCHED <<<
+----------------------------------------
+[7230000] [GEN] Operation: UART_READ, TX payload: 241 (0xf1)
+[8030000] [DRV] RX payload driven: 184 (0xb8)
+[8110000] [MON] Observed UART RX payload: 184 (0xb8)
+[8190000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[8190000] >>> DATA MATCHED <<<
+----------------------------------------
+[8190000] [GEN] Operation: UART_WRITE, TX payload: 125 (0x7d)
+[8350000] [DRV] TX payload driven: 125 (0x7d)
+[9070000] [MON] Observed UART TX payload: 125 (0x7d)
+[9150000] [SCO] Expected: 125 (0x7d), Observed: 125 (0x7d)
+[9150000] >>> DATA MATCHED <<<
+----------------------------------------
+[9150000] [GEN] Operation: UART_READ, TX payload: 34 (0x22)
+[9950000] [DRV] RX payload driven: 26 (0x1a)
+[10030000] [MON] Observed UART RX payload: 26 (0x1a)
+[10110000] [SCO] Expected: 26 (0x1a), Observed: 26 (0x1a)
+[10110000] >>> DATA MATCHED <<<
+----------------------------------------
+[10110000] [GEN] Operation: UART_WRITE, TX payload: 122 (0x7a)
+[10270000] [DRV] TX payload driven: 122 (0x7a)
+[10990000] [MON] Observed UART TX payload: 122 (0x7a)
+[11070000] [SCO] Expected: 122 (0x7a), Observed: 122 (0x7a)
+[11070000] >>> DATA MATCHED <<<
+----------------------------------------
+[11070000] [GEN] Operation: UART_READ, TX payload: 225 (0xe1)
+[11870000] [DRV] RX payload driven: 216 (0xd8)
+[11950000] [MON] Observed UART RX payload: 216 (0xd8)
+[12030000] [SCO] Expected: 216 (0xd8), Observed: 216 (0xd8)
+[12030000] >>> DATA MATCHED <<<
+----------------------------------------
+[12030000] [GEN] Operation: UART_READ, TX payload: 98 (0x62)
+[12830000] [DRV] RX payload driven: 76 (0x4c)
+[12910000] [MON] Observed UART RX payload: 76 (0x4c)
+[12990000] [SCO] Expected: 76 (0x4c), Observed: 76 (0x4c)
+[12990000] >>> DATA MATCHED <<<
+----------------------------------------
+[12990000] [GEN] Operation: UART_WRITE, TX payload: 59 (0x3b)
+[13150000] [DRV] TX payload driven: 59 (0x3b)
+[13870000] [MON] Observed UART TX payload: 59 (0x3b)
+[13950000] [SCO] Expected: 59 (0x3b), Observed: 59 (0x3b)
+[13950000] >>> DATA MATCHED <<<
+----------------------------------------
+[13950000] [GEN] Operation: UART_READ, TX payload: 42 (0x2a)
+[14750000] [DRV] RX payload driven: 240 (0xf0)
+[14830000] [MON] Observed UART RX payload: 240 (0xf0)
+[14910000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[14910000] >>> DATA MATCHED <<<
+----------------------------------------
+[14910000] [GEN] Operation: UART_WRITE, TX payload: 229 (0xe5)
+[15070000] [DRV] TX payload driven: 229 (0xe5)
+[15790000] [MON] Observed UART TX payload: 229 (0xe5)
+[15870000] [SCO] Expected: 229 (0xe5), Observed: 229 (0xe5)
+[15870000] >>> DATA MATCHED <<<
+----------------------------------------
+[15870000] [GEN] Operation: UART_WRITE, TX payload: 44 (0x2c)
+[16030000] [DRV] TX payload driven: 44 (0x2c)
+[16750000] [MON] Observed UART TX payload: 44 (0x2c)
+[16830000] [SCO] Expected: 44 (0x2c), Observed: 44 (0x2c)
+[16830000] >>> DATA MATCHED <<<
+----------------------------------------
+[16830000] [GEN] Operation: UART_READ, TX payload: 44 (0x2c)
+[17630000] [DRV] RX payload driven: 240 (0xf0)
+[17710000] [MON] Observed UART RX payload: 240 (0xf0)
+[17790000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[17790000] >>> DATA MATCHED <<<
+----------------------------------------
+[17790000] [GEN] Operation: UART_WRITE, TX payload: 161 (0xa1)
+[17950000] [DRV] TX payload driven: 161 (0xa1)
+[18670000] [MON] Observed UART TX payload: 161 (0xa1)
+[18750000] [SCO] Expected: 161 (0xa1), Observed: 161 (0xa1)
+[18750000] >>> DATA MATCHED <<<
+----------------------------------------
+[18750000] [GEN] Operation: UART_READ, TX payload: 163 (0xa3)
+[19550000] [DRV] RX payload driven: 110 (0x6e)
+[19630000] [MON] Observed UART RX payload: 110 (0x6e)
+[19710000] [SCO] Expected: 110 (0x6e), Observed: 110 (0x6e)
+[19710000] >>> DATA MATCHED <<<
+----------------------------------------
+[19710000] [GEN] Operation: UART_WRITE, TX payload: 180 (0xb4)
+[19870000] [DRV] TX payload driven: 180 (0xb4)
+[20590000] [MON] Observed UART TX payload: 180 (0xb4)
+[20670000] [SCO] Expected: 180 (0xb4), Observed: 180 (0xb4)
+[20670000] >>> DATA MATCHED <<<
+----------------------------------------
+[20670000] [GEN] Operation: UART_READ, TX payload: 92 (0x5c)
+[21470000] [DRV] RX payload driven: 118 (0x76)
+[21550000] [MON] Observed UART RX payload: 118 (0x76)
+[21630000] [SCO] Expected: 118 (0x76), Observed: 118 (0x76)
+[21630000] >>> DATA MATCHED <<<
+----------------------------------------
+[21630000] [GEN] Operation: UART_WRITE, TX payload: 48 (0x30)
+[21790000] [DRV] TX payload driven: 48 (0x30)
+[22510000] [MON] Observed UART TX payload: 48 (0x30)
+[22590000] [SCO] Expected: 48 (0x30), Observed: 48 (0x30)
+[22590000] >>> DATA MATCHED <<<
+----------------------------------------
+[22590000] [GEN] Operation: UART_READ, TX payload: 184 (0xb8)
+[23390000] [DRV] RX payload driven: 54 (0x36)
+[23470000] [MON] Observed UART RX payload: 54 (0x36)
+[23550000] [SCO] Expected: 54 (0x36), Observed: 54 (0x36)
+[23550000] >>> DATA MATCHED <<<
+----------------------------------------
+[23550000] [GEN] Operation: UART_READ, TX payload: 225 (0xe1)
+[24350000] [DRV] RX payload driven: 108 (0x6c)
+[24430000] [MON] Observed UART RX payload: 108 (0x6c)
+[24510000] [SCO] Expected: 108 (0x6c), Observed: 108 (0x6c)
+[24510000] >>> DATA MATCHED <<<
+----------------------------------------
+[24510000] [GEN] Operation: UART_WRITE, TX payload: 10 (0xa)
+[24670000] [DRV] TX payload driven: 10 (0xa)
+[25390000] [MON] Observed UART TX payload: 10 (0xa)
+[25470000] [SCO] Expected: 10 (0xa), Observed: 10 (0xa)
+[25470000] >>> DATA MATCHED <<<
+----------------------------------------
+[25470000] [GEN] Operation: UART_READ, TX payload: 214 (0xd6)
+[26270000] [DRV] RX payload driven: 184 (0xb8)
+[26350000] [MON] Observed UART RX payload: 184 (0xb8)
+[26430000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[26430000] >>> DATA MATCHED <<<
+----------------------------------------
+[26430000] [GEN] Operation: UART_WRITE, TX payload: 236 (0xec)
+[26590000] [DRV] TX payload driven: 236 (0xec)
+[27310000] [MON] Observed UART TX payload: 236 (0xec)
+[27390000] [SCO] Expected: 236 (0xec), Observed: 236 (0xec)
+[27390000] >>> DATA MATCHED <<<
+----------------------------------------
+[27390000] [GEN] Operation: UART_WRITE, TX payload: 128 (0x80)
+[27550000] [DRV] TX payload driven: 128 (0x80)
+[28270000] [MON] Observed UART TX payload: 128 (0x80)
+[28350000] [SCO] Expected: 128 (0x80), Observed: 128 (0x80)
+[28350000] >>> DATA MATCHED <<<
+----------------------------------------
+[28350000] [GEN] Operation: UART_READ, TX payload: 182 (0xb6)
+[29150000] [DRV] RX payload driven: 180 (0xb4)
+[29230000] [MON] Observed UART RX payload: 180 (0xb4)
+[29310000] [SCO] Expected: 180 (0xb4), Observed: 180 (0xb4)
+[29310000] >>> DATA MATCHED <<<
+----------------------------------------
+[29310000] [GEN] Operation: UART_READ, TX payload: 19 (0x13)
+[30110000] [DRV] RX payload driven: 180 (0xb4)
+[30190000] [MON] Observed UART RX payload: 180 (0xb4)
+[30270000] [SCO] Expected: 180 (0xb4), Observed: 180 (0xb4)
+[30270000] >>> DATA MATCHED <<<
+----------------------------------------
+[30270000] [GEN] Operation: UART_WRITE, TX payload: 195 (0xc3)
+[30430000] [DRV] TX payload driven: 195 (0xc3)
+[31150000] [MON] Observed UART TX payload: 195 (0xc3)
+[31230000] [SCO] Expected: 195 (0xc3), Observed: 195 (0xc3)
+[31230000] >>> DATA MATCHED <<<
+----------------------------------------
+[31230000] [GEN] Operation: UART_READ, TX payload: 21 (0x15)
+[32030000] [DRV] RX payload driven: 154 (0x9a)
+[32110000] [MON] Observed UART RX payload: 154 (0x9a)
+[32190000] [SCO] Expected: 154 (0x9a), Observed: 154 (0x9a)
+[32190000] >>> DATA MATCHED <<<
+----------------------------------------
+[32190000] [GEN] Operation: UART_WRITE, TX payload: 75 (0x4b)
+[32350000] [DRV] TX payload driven: 75 (0x4b)
+[33070000] [MON] Observed UART TX payload: 75 (0x4b)
+[33150000] [SCO] Expected: 75 (0x4b), Observed: 75 (0x4b)
+[33150000] >>> DATA MATCHED <<<
+----------------------------------------
+[33150000] [GEN] Operation: UART_READ, TX payload: 114 (0x72)
+[33950000] [DRV] RX payload driven: 206 (0xce)
+[34030000] [MON] Observed UART RX payload: 206 (0xce)
+[34110000] [SCO] Expected: 206 (0xce), Observed: 206 (0xce)
+[34110000] >>> DATA MATCHED <<<
+----------------------------------------
+[34110000] [GEN] Operation: UART_WRITE, TX payload: 177 (0xb1)
+[34270000] [DRV] TX payload driven: 177 (0xb1)
+[34990000] [MON] Observed UART TX payload: 177 (0xb1)
+[35070000] [SCO] Expected: 177 (0xb1), Observed: 177 (0xb1)
+[35070000] >>> DATA MATCHED <<<
+----------------------------------------
+[35070000] [GEN] Operation: UART_WRITE, TX payload: 98 (0x62)
+[35230000] [DRV] TX payload driven: 98 (0x62)
+[35950000] [MON] Observed UART TX payload: 98 (0x62)
+[36030000] [SCO] Expected: 98 (0x62), Observed: 98 (0x62)
+[36030000] >>> DATA MATCHED <<<
+----------------------------------------
+[36030000] [GEN] Operation: UART_READ, TX payload: 225 (0xe1)
+[36830000] [DRV] RX payload driven: 18 (0x12)
+[36910000] [MON] Observed UART RX payload: 18 (0x12)
+[36990000] [SCO] Expected: 18 (0x12), Observed: 18 (0x12)
+[36990000] >>> DATA MATCHED <<<
+----------------------------------------
+[36990000] [GEN] Operation: UART_WRITE, TX payload: 28 (0x1c)
+[37150000] [DRV] TX payload driven: 28 (0x1c)
+[37870000] [MON] Observed UART TX payload: 28 (0x1c)
+[37950000] [SCO] Expected: 28 (0x1c), Observed: 28 (0x1c)
+[37950000] >>> DATA MATCHED <<<
+----------------------------------------
+[37950000] [GEN] Operation: UART_READ, TX payload: 108 (0x6c)
+[38750000] [DRV] RX payload driven: 132 (0x84)
+[38830000] [MON] Observed UART RX payload: 132 (0x84)
+[38910000] [SCO] Expected: 132 (0x84), Observed: 132 (0x84)
+[38910000] >>> DATA MATCHED <<<
+----------------------------------------
+[38910000] [GEN] Operation: UART_WRITE, TX payload: 197 (0xc5)
+[39070000] [DRV] TX payload driven: 197 (0xc5)
+[39790000] [MON] Observed UART TX payload: 197 (0xc5)
+[39870000] [SCO] Expected: 197 (0xc5), Observed: 197 (0xc5)
+[39870000] >>> DATA MATCHED <<<
+----------------------------------------
+[39870000] [GEN] Operation: UART_READ, TX payload: 121 (0x79)
+[40670000] [DRV] RX payload driven: 158 (0x9e)
+[40750000] [MON] Observed UART RX payload: 158 (0x9e)
+[40830000] [SCO] Expected: 158 (0x9e), Observed: 158 (0x9e)
+[40830000] >>> DATA MATCHED <<<
+----------------------------------------
+[40830000] [GEN] Operation: UART_READ, TX payload: 235 (0xeb)
+[41630000] [DRV] RX payload driven: 106 (0x6a)
+[41710000] [MON] Observed UART RX payload: 106 (0x6a)
+[41790000] [SCO] Expected: 106 (0x6a), Observed: 106 (0x6a)
+[41790000] >>> DATA MATCHED <<<
+----------------------------------------
+[41790000] [GEN] Operation: UART_WRITE, TX payload: 61 (0x3d)
+[41950000] [DRV] TX payload driven: 61 (0x3d)
+[42670000] [MON] Observed UART TX payload: 61 (0x3d)
+[42750000] [SCO] Expected: 61 (0x3d), Observed: 61 (0x3d)
+[42750000] >>> DATA MATCHED <<<
+----------------------------------------
+[42750000] [GEN] Operation: UART_READ, TX payload: 173 (0xad)
+[43550000] [DRV] RX payload driven: 222 (0xde)
+[43630000] [MON] Observed UART RX payload: 222 (0xde)
+[43710000] [SCO] Expected: 222 (0xde), Observed: 222 (0xde)
+[43710000] >>> DATA MATCHED <<<
+----------------------------------------
+[43710000] [GEN] Operation: UART_WRITE, TX payload: 218 (0xda)
+[43870000] [DRV] TX payload driven: 218 (0xda)
+[44590000] [MON] Observed UART TX payload: 218 (0xda)
+[44670000] [SCO] Expected: 218 (0xda), Observed: 218 (0xda)
+[44670000] >>> DATA MATCHED <<<
+----------------------------------------
+[44670000] [GEN] Operation: UART_READ, TX payload: 96 (0x60)
+[45470000] [DRV] RX payload driven: 122 (0x7a)
+[45550000] [MON] Observed UART RX payload: 122 (0x7a)
+[45630000] [SCO] Expected: 122 (0x7a), Observed: 122 (0x7a)
+[45630000] >>> DATA MATCHED <<<
+----------------------------------------
+[45630000] [GEN] Operation: UART_WRITE, TX payload: 36 (0x24)
+[45790000] [DRV] TX payload driven: 36 (0x24)
+[46510000] [MON] Observed UART TX payload: 36 (0x24)
+[46590000] [SCO] Expected: 36 (0x24), Observed: 36 (0x24)
+[46590000] >>> DATA MATCHED <<<
+----------------------------------------
+[46590000] [GEN] Operation: UART_READ, TX payload: 172 (0xac)
+[47390000] [DRV] RX payload driven: 156 (0x9c)
+[47470000] [MON] Observed UART RX payload: 156 (0x9c)
+[47550000] [SCO] Expected: 156 (0x9c), Observed: 156 (0x9c)
+[47550000] >>> DATA MATCHED <<<
+----------------------------------------
+[47550000] [GEN] Operation: UART_WRITE, TX payload: 134 (0x86)
+[47710000] [DRV] TX payload driven: 134 (0x86)
+[48430000] [MON] Observed UART TX payload: 134 (0x86)
+[48510000] [SCO] Expected: 134 (0x86), Observed: 134 (0x86)
+[48510000] >>> DATA MATCHED <<<
+----------------------------------------
+[48510000] [GEN] Operation: UART_WRITE, TX payload: 129 (0x81)
+[48670000] [DRV] TX payload driven: 129 (0x81)
+[49390000] [MON] Observed UART TX payload: 129 (0x81)
+[49470000] [SCO] Expected: 129 (0x81), Observed: 129 (0x81)
+[49470000] >>> DATA MATCHED <<<
+----------------------------------------
+[49470000] [GEN] Operation: UART_READ, TX payload: 164 (0xa4)
+[50270000] [DRV] RX payload driven: 184 (0xb8)
+[50350000] [MON] Observed UART RX payload: 184 (0xb8)
+[50430000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[50430000] >>> DATA MATCHED <<<
+----------------------------------------
+[50430000] [GEN] Operation: UART_WRITE, TX payload: 169 (0xa9)
+[50590000] [DRV] TX payload driven: 169 (0xa9)
+[51310000] [MON] Observed UART TX payload: 169 (0xa9)
+[51390000] [SCO] Expected: 169 (0xa9), Observed: 169 (0xa9)
+[51390000] >>> DATA MATCHED <<<
+----------------------------------------
+[51390000] [GEN] Operation: UART_READ, TX payload: 165 (0xa5)
+[52190000] [DRV] RX payload driven: 248 (0xf8)
+[52270000] [MON] Observed UART RX payload: 248 (0xf8)
+[52350000] [SCO] Expected: 248 (0xf8), Observed: 248 (0xf8)
+[52350000] >>> DATA MATCHED <<<
+----------------------------------------
+[52350000] [GEN] Operation: UART_WRITE, TX payload: 241 (0xf1)
+[52510000] [DRV] TX payload driven: 241 (0xf1)
+[53230000] [MON] Observed UART TX payload: 241 (0xf1)
+[53310000] [SCO] Expected: 241 (0xf1), Observed: 241 (0xf1)
+[53310000] >>> DATA MATCHED <<<
+----------------------------------------
+[53310000] [GEN] Operation: UART_READ, TX payload: 21 (0x15)
+[54110000] [DRV] RX payload driven: 36 (0x24)
+[54190000] [MON] Observed UART RX payload: 36 (0x24)
+[54270000] [SCO] Expected: 36 (0x24), Observed: 36 (0x24)
+[54270000] >>> DATA MATCHED <<<
+----------------------------------------
+[54270000] [GEN] Operation: UART_WRITE, TX payload: 29 (0x1d)
+[54430000] [DRV] TX payload driven: 29 (0x1d)
+[55150000] [MON] Observed UART TX payload: 29 (0x1d)
+[55230000] [SCO] Expected: 29 (0x1d), Observed: 29 (0x1d)
+[55230000] >>> DATA MATCHED <<<
+----------------------------------------
+[55230000] [GEN] Operation: UART_READ, TX payload: 196 (0xc4)
+[56030000] [DRV] RX payload driven: 170 (0xaa)
+[56110000] [MON] Observed UART RX payload: 170 (0xaa)
+[56190000] [SCO] Expected: 170 (0xaa), Observed: 170 (0xaa)
+[56190000] >>> DATA MATCHED <<<
+----------------------------------------
+[56190000] [GEN] Operation: UART_READ, TX payload: 23 (0x17)
+[56990000] [DRV] RX payload driven: 10 (0xa)
+[57070000] [MON] Observed UART RX payload: 10 (0xa)
+[57150000] [SCO] Expected: 10 (0xa), Observed: 10 (0xa)
+[57150000] >>> DATA MATCHED <<<
+----------------------------------------
+[57150000] [GEN] Operation: UART_WRITE, TX payload: 60 (0x3c)
+[57310000] [DRV] TX payload driven: 60 (0x3c)
+[58030000] [MON] Observed UART TX payload: 60 (0x3c)
+[58110000] [SCO] Expected: 60 (0x3c), Observed: 60 (0x3c)
+[58110000] >>> DATA MATCHED <<<
+----------------------------------------
+[58110000] [GEN] Operation: UART_READ, TX payload: 38 (0x26)
+[58910000] [DRV] RX payload driven: 40 (0x28)
+[58990000] [MON] Observed UART RX payload: 40 (0x28)
+[59070000] [SCO] Expected: 40 (0x28), Observed: 40 (0x28)
+[59070000] >>> DATA MATCHED <<<
+----------------------------------------
+[59070000] [GEN] Operation: UART_WRITE, TX payload: 124 (0x7c)
+[59230000] [DRV] TX payload driven: 124 (0x7c)
+[59950000] [MON] Observed UART TX payload: 124 (0x7c)
+[60030000] [SCO] Expected: 124 (0x7c), Observed: 124 (0x7c)
+[60030000] >>> DATA MATCHED <<<
+----------------------------------------
+[60030000] [GEN] Operation: UART_WRITE, TX payload: 182 (0xb6)
+[60190000] [DRV] TX payload driven: 182 (0xb6)
+[60910000] [MON] Observed UART TX payload: 182 (0xb6)
+[60990000] [SCO] Expected: 182 (0xb6), Observed: 182 (0xb6)
+[60990000] >>> DATA MATCHED <<<
+----------------------------------------
+[60990000] [GEN] Operation: UART_READ, TX payload: 124 (0x7c)
+[61790000] [DRV] RX payload driven: 0 (0x0)
+[61870000] [MON] Observed UART RX payload: 0 (0x0)
+[61950000] [SCO] Expected: 0 (0x0), Observed: 0 (0x0)
+[61950000] >>> DATA MATCHED <<<
+----------------------------------------
+[61950000] [GEN] Operation: UART_READ, TX payload: 137 (0x89)
+[62750000] [DRV] RX payload driven: 56 (0x38)
+[62830000] [MON] Observed UART RX payload: 56 (0x38)
+[62910000] [SCO] Expected: 56 (0x38), Observed: 56 (0x38)
+[62910000] >>> DATA MATCHED <<<
+----------------------------------------
+[62910000] [GEN] Operation: UART_WRITE, TX payload: 96 (0x60)
+[63070000] [DRV] TX payload driven: 96 (0x60)
+[63790000] [MON] Observed UART TX payload: 96 (0x60)
+[63870000] [SCO] Expected: 96 (0x60), Observed: 96 (0x60)
+[63870000] >>> DATA MATCHED <<<
+----------------------------------------
+[63870000] [GEN] Operation: UART_READ, TX payload: 83 (0x53)
+[64670000] [DRV] RX payload driven: 184 (0xb8)
+[64750000] [MON] Observed UART RX payload: 184 (0xb8)
+[64830000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[64830000] >>> DATA MATCHED <<<
+----------------------------------------
+[64830000] [GEN] Operation: UART_WRITE, TX payload: 209 (0xd1)
+[64990000] [DRV] TX payload driven: 209 (0xd1)
+[65710000] [MON] Observed UART TX payload: 209 (0xd1)
+[65790000] [SCO] Expected: 209 (0xd1), Observed: 209 (0xd1)
+[65790000] >>> DATA MATCHED <<<
+----------------------------------------
+[65790000] [GEN] Operation: UART_WRITE, TX payload: 78 (0x4e)
+[65950000] [DRV] TX payload driven: 78 (0x4e)
+[66670000] [MON] Observed UART TX payload: 78 (0x4e)
+[66750000] [SCO] Expected: 78 (0x4e), Observed: 78 (0x4e)
+[66750000] >>> DATA MATCHED <<<
+----------------------------------------
+[66750000] [GEN] Operation: UART_READ, TX payload: 181 (0xb5)
+[67550000] [DRV] RX payload driven: 110 (0x6e)
+[67630000] [MON] Observed UART RX payload: 110 (0x6e)
+[67710000] [SCO] Expected: 110 (0x6e), Observed: 110 (0x6e)
+[67710000] >>> DATA MATCHED <<<
+----------------------------------------
+[67710000] [GEN] Operation: UART_WRITE, TX payload: 177 (0xb1)
+[67870000] [DRV] TX payload driven: 177 (0xb1)
+[68590000] [MON] Observed UART TX payload: 177 (0xb1)
+[68670000] [SCO] Expected: 177 (0xb1), Observed: 177 (0xb1)
+[68670000] >>> DATA MATCHED <<<
+----------------------------------------
+[68670000] [GEN] Operation: UART_READ, TX payload: 104 (0x68)
+[69470000] [DRV] RX payload driven: 224 (0xe0)
+[69550000] [MON] Observed UART RX payload: 224 (0xe0)
+[69630000] [SCO] Expected: 224 (0xe0), Observed: 224 (0xe0)
+[69630000] >>> DATA MATCHED <<<
+----------------------------------------
+[69630000] [GEN] Operation: UART_WRITE, TX payload: 31 (0x1f)
+[69790000] [DRV] TX payload driven: 31 (0x1f)
+[70510000] [MON] Observed UART TX payload: 31 (0x1f)
+[70590000] [SCO] Expected: 31 (0x1f), Observed: 31 (0x1f)
+[70590000] >>> DATA MATCHED <<<
+----------------------------------------
+[70590000] [GEN] Operation: UART_READ, TX payload: 78 (0x4e)
+[71390000] [DRV] RX payload driven: 22 (0x16)
+[71470000] [MON] Observed UART RX payload: 22 (0x16)
+[71550000] [SCO] Expected: 22 (0x16), Observed: 22 (0x16)
+[71550000] >>> DATA MATCHED <<<
+----------------------------------------
+[71550000] [GEN] Operation: UART_READ, TX payload: 217 (0xd9)
+[72350000] [DRV] RX payload driven: 240 (0xf0)
+[72430000] [MON] Observed UART RX payload: 240 (0xf0)
+[72510000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[72510000] >>> DATA MATCHED <<<
+----------------------------------------
+[72510000] [GEN] Operation: UART_WRITE, TX payload: 54 (0x36)
+[72670000] [DRV] TX payload driven: 54 (0x36)
+[73390000] [MON] Observed UART TX payload: 54 (0x36)
+[73470000] [SCO] Expected: 54 (0x36), Observed: 54 (0x36)
+[73470000] >>> DATA MATCHED <<<
+----------------------------------------
+[73470000] [GEN] Operation: UART_READ, TX payload: 187 (0xbb)
+[74270000] [DRV] RX payload driven: 134 (0x86)
+[74350000] [MON] Observed UART RX payload: 134 (0x86)
+[74430000] [SCO] Expected: 134 (0x86), Observed: 134 (0x86)
+[74430000] >>> DATA MATCHED <<<
+----------------------------------------
+[74430000] [GEN] Operation: UART_WRITE, TX payload: 209 (0xd1)
+[74590000] [DRV] TX payload driven: 209 (0xd1)
+[75310000] [MON] Observed UART TX payload: 209 (0xd1)
+[75390000] [SCO] Expected: 209 (0xd1), Observed: 209 (0xd1)
+[75390000] >>> DATA MATCHED <<<
+----------------------------------------
+[75390000] [GEN] Operation: UART_READ, TX payload: 136 (0x88)
+[76190000] [DRV] RX payload driven: 20 (0x14)
+[76270000] [MON] Observed UART RX payload: 20 (0x14)
+[76350000] [SCO] Expected: 20 (0x14), Observed: 20 (0x14)
+[76350000] >>> DATA MATCHED <<<
+----------------------------------------
+[76350000] [GEN] Operation: UART_WRITE, TX payload: 178 (0xb2)
+[76510000] [DRV] TX payload driven: 178 (0xb2)
+[77230000] [MON] Observed UART TX payload: 178 (0xb2)
+[77310000] [SCO] Expected: 178 (0xb2), Observed: 178 (0xb2)
+[77310000] >>> DATA MATCHED <<<
+----------------------------------------
+[77310000] [GEN] Operation: UART_READ, TX payload: 229 (0xe5)
+[78110000] [DRV] RX payload driven: 30 (0x1e)
+[78190000] [MON] Observed UART RX payload: 30 (0x1e)
+[78270000] [SCO] Expected: 30 (0x1e), Observed: 30 (0x1e)
+[78270000] >>> DATA MATCHED <<<
+----------------------------------------
+[78270000] [GEN] Operation: UART_WRITE, TX payload: 252 (0xfc)
+[78430000] [DRV] TX payload driven: 252 (0xfc)
+[79150000] [MON] Observed UART TX payload: 252 (0xfc)
+[79230000] [SCO] Expected: 252 (0xfc), Observed: 252 (0xfc)
+[79230000] >>> DATA MATCHED <<<
+----------------------------------------
+[79230000] [GEN] Operation: UART_WRITE, TX payload: 196 (0xc4)
+[79390000] [DRV] TX payload driven: 196 (0xc4)
+[80110000] [MON] Observed UART TX payload: 196 (0xc4)
+[80190000] [SCO] Expected: 196 (0xc4), Observed: 196 (0xc4)
+[80190000] >>> DATA MATCHED <<<
+----------------------------------------
+[80190000] [GEN] Operation: UART_READ, TX payload: 240 (0xf0)
+[80990000] [DRV] RX payload driven: 6 (0x6)
+[81070000] [MON] Observed UART RX payload: 6 (0x6)
+[81150000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[81150000] >>> DATA MATCHED <<<
+----------------------------------------
+[81150000] [GEN] Operation: UART_WRITE, TX payload: 88 (0x58)
+[81310000] [DRV] TX payload driven: 88 (0x58)
+[82030000] [MON] Observed UART TX payload: 88 (0x58)
+[82110000] [SCO] Expected: 88 (0x58), Observed: 88 (0x58)
+[82110000] >>> DATA MATCHED <<<
+----------------------------------------
+[82110000] [GEN] Operation: UART_READ, TX payload: 85 (0x55)
+[82910000] [DRV] RX payload driven: 106 (0x6a)
+[82990000] [MON] Observed UART RX payload: 106 (0x6a)
+[83070000] [SCO] Expected: 106 (0x6a), Observed: 106 (0x6a)
+[83070000] >>> DATA MATCHED <<<
+----------------------------------------
+[83070000] [GEN] Operation: UART_READ, TX payload: 191 (0xbf)
+[83870000] [DRV] RX payload driven: 176 (0xb0)
+[83950000] [MON] Observed UART RX payload: 176 (0xb0)
+[84030000] [SCO] Expected: 176 (0xb0), Observed: 176 (0xb0)
+[84030000] >>> DATA MATCHED <<<
+----------------------------------------
+[84030000] [GEN] Operation: UART_WRITE, TX payload: 134 (0x86)
+[84190000] [DRV] TX payload driven: 134 (0x86)
+[84910000] [MON] Observed UART TX payload: 134 (0x86)
+[84990000] [SCO] Expected: 134 (0x86), Observed: 134 (0x86)
+[84990000] >>> DATA MATCHED <<<
+----------------------------------------
+[84990000] [GEN] Operation: UART_WRITE, TX payload: 225 (0xe1)
+[85150000] [DRV] TX payload driven: 225 (0xe1)
+[85870000] [MON] Observed UART TX payload: 225 (0xe1)
+[85950000] [SCO] Expected: 225 (0xe1), Observed: 225 (0xe1)
+[85950000] >>> DATA MATCHED <<<
+----------------------------------------
+[85950000] [GEN] Operation: UART_READ, TX payload: 184 (0xb8)
+[86750000] [DRV] RX payload driven: 44 (0x2c)
+[86830000] [MON] Observed UART RX payload: 44 (0x2c)
+[86910000] [SCO] Expected: 44 (0x2c), Observed: 44 (0x2c)
+[86910000] >>> DATA MATCHED <<<
+----------------------------------------
+[86910000] [GEN] Operation: UART_READ, TX payload: 47 (0x2f)
+[87710000] [DRV] RX payload driven: 72 (0x48)
+[87790000] [MON] Observed UART RX payload: 72 (0x48)
+[87870000] [SCO] Expected: 72 (0x48), Observed: 72 (0x48)
+[87870000] >>> DATA MATCHED <<<
+----------------------------------------
+[87870000] [GEN] Operation: UART_WRITE, TX payload: 221 (0xdd)
+[88030000] [DRV] TX payload driven: 221 (0xdd)
+[88750000] [MON] Observed UART TX payload: 221 (0xdd)
+[88830000] [SCO] Expected: 221 (0xdd), Observed: 221 (0xdd)
+[88830000] >>> DATA MATCHED <<<
+----------------------------------------
+[88830000] [GEN] Operation: UART_READ, TX payload: 87 (0x57)
+[89630000] [DRV] RX payload driven: 126 (0x7e)
+[89710000] [MON] Observed UART RX payload: 126 (0x7e)
+[89790000] [SCO] Expected: 126 (0x7e), Observed: 126 (0x7e)
+[89790000] >>> DATA MATCHED <<<
+----------------------------------------
+[89790000] [GEN] Operation: UART_WRITE, TX payload: 15 (0xf)
+[89950000] [DRV] TX payload driven: 15 (0xf)
+[90670000] [MON] Observed UART TX payload: 15 (0xf)
+[90750000] [SCO] Expected: 15 (0xf), Observed: 15 (0xf)
+[90750000] >>> DATA MATCHED <<<
+----------------------------------------
+[90750000] [GEN] Operation: UART_WRITE, TX payload: 5 (0x5)
+[90910000] [DRV] TX payload driven: 5 (0x5)
+[91630000] [MON] Observed UART TX payload: 5 (0x5)
+[91710000] [SCO] Expected: 5 (0x5), Observed: 5 (0x5)
+[91710000] >>> DATA MATCHED <<<
+----------------------------------------
+[91710000] [GEN] Operation: UART_READ, TX payload: 222 (0xde)
+[92510000] [DRV] RX payload driven: 214 (0xd6)
+[92590000] [MON] Observed UART RX payload: 214 (0xd6)
+[92670000] [SCO] Expected: 214 (0xd6), Observed: 214 (0xd6)
+[92670000] >>> DATA MATCHED <<<
+----------------------------------------
+[92670000] [GEN] Operation: UART_WRITE, TX payload: 110 (0x6e)
+[92830000] [DRV] TX payload driven: 110 (0x6e)
+[93550000] [MON] Observed UART TX payload: 110 (0x6e)
+[93630000] [SCO] Expected: 110 (0x6e), Observed: 110 (0x6e)
+[93630000] >>> DATA MATCHED <<<
+----------------------------------------
+[93630000] [GEN] Operation: UART_READ, TX payload: 25 (0x19)
+[94430000] [DRV] RX payload driven: 40 (0x28)
+[94510000] [MON] Observed UART RX payload: 40 (0x28)
+[94590000] [SCO] Expected: 40 (0x28), Observed: 40 (0x28)
+[94590000] >>> DATA MATCHED <<<
+----------------------------------------
+[94590000] [GEN] Operation: UART_WRITE, TX payload: 84 (0x54)
+[94750000] [DRV] TX payload driven: 84 (0x54)
+[95470000] [MON] Observed UART TX payload: 84 (0x54)
+[95550000] [SCO] Expected: 84 (0x54), Observed: 84 (0x54)
+[95550000] >>> DATA MATCHED <<<
+----------------------------------------
+[95550000] [GEN] Operation: UART_READ, TX payload: 212 (0xd4)
+[96350000] [DRV] RX payload driven: 12 (0xc)
+[96430000] [MON] Observed UART RX payload: 12 (0xc)
+[96510000] [SCO] Expected: 12 (0xc), Observed: 12 (0xc)
+[96510000] >>> DATA MATCHED <<<
+----------------------------------------
+[96510000] [GEN] Operation: UART_WRITE, TX payload: 61 (0x3d)
+[96670000] [DRV] TX payload driven: 61 (0x3d)
+[97390000] [MON] Observed UART TX payload: 61 (0x3d)
+[97470000] [SCO] Expected: 61 (0x3d), Observed: 61 (0x3d)
+[97470000] >>> DATA MATCHED <<<
+----------------------------------------
+[97470000] [GEN] Operation: UART_READ, TX payload: 52 (0x34)
+[98270000] [DRV] RX payload driven: 156 (0x9c)
+[98350000] [MON] Observed UART RX payload: 156 (0x9c)
+[98430000] [SCO] Expected: 156 (0x9c), Observed: 156 (0x9c)
+[98430000] >>> DATA MATCHED <<<
+----------------------------------------
+[98430000] [GEN] Operation: UART_WRITE, TX payload: 113 (0x71)
+[98590000] [DRV] TX payload driven: 113 (0x71)
+[99310000] [MON] Observed UART TX payload: 113 (0x71)
+[99390000] [SCO] Expected: 113 (0x71), Observed: 113 (0x71)
+[99390000] >>> DATA MATCHED <<<
+----------------------------------------
+[99390000] [GEN] Operation: UART_READ, TX payload: 119 (0x77)
+[100190000] [DRV] RX payload driven: 2 (0x2)
+[100270000] [MON] Observed UART RX payload: 2 (0x2)
+[100350000] [SCO] Expected: 2 (0x2), Observed: 2 (0x2)
+[100350000] >>> DATA MATCHED <<<
+----------------------------------------
+[100350000] [GEN] Operation: UART_READ, TX payload: 194 (0xc2)
+[101150000] [DRV] RX payload driven: 100 (0x64)
+[101230000] [MON] Observed UART RX payload: 100 (0x64)
+[101310000] [SCO] Expected: 100 (0x64), Observed: 100 (0x64)
+[101310000] >>> DATA MATCHED <<<
+----------------------------------------
+[101310000] [GEN] Operation: UART_WRITE, TX payload: 95 (0x5f)
+[101470000] [DRV] TX payload driven: 95 (0x5f)
+[102190000] [MON] Observed UART TX payload: 95 (0x5f)
+[102270000] [SCO] Expected: 95 (0x5f), Observed: 95 (0x5f)
+[102270000] >>> DATA MATCHED <<<
+----------------------------------------
+[102270000] [GEN] Operation: UART_READ, TX payload: 4 (0x4)
+[103070000] [DRV] RX payload driven: 108 (0x6c)
+[103150000] [MON] Observed UART RX payload: 108 (0x6c)
+[103230000] [SCO] Expected: 108 (0x6c), Observed: 108 (0x6c)
+[103230000] >>> DATA MATCHED <<<
+----------------------------------------
+[103230000] [GEN] Operation: UART_WRITE, TX payload: 122 (0x7a)
+[103390000] [DRV] TX payload driven: 122 (0x7a)
+[104110000] [MON] Observed UART TX payload: 122 (0x7a)
+[104190000] [SCO] Expected: 122 (0x7a), Observed: 122 (0x7a)
+[104190000] >>> DATA MATCHED <<<
+----------------------------------------
+[104190000] [GEN] Operation: UART_READ, TX payload: 32 (0x20)
+[104990000] [DRV] RX payload driven: 8 (0x8)
+[105070000] [MON] Observed UART RX payload: 8 (0x8)
+[105150000] [SCO] Expected: 8 (0x8), Observed: 8 (0x8)
+[105150000] >>> DATA MATCHED <<<
+----------------------------------------
+[105150000] [GEN] Operation: UART_WRITE, TX payload: 67 (0x43)
+[105310000] [DRV] TX payload driven: 67 (0x43)
+[106030000] [MON] Observed UART TX payload: 67 (0x43)
+[106110000] [SCO] Expected: 67 (0x43), Observed: 67 (0x43)
+[106110000] >>> DATA MATCHED <<<
+----------------------------------------
+[106110000] [GEN] Operation: UART_WRITE, TX payload: 215 (0xd7)
+[106270000] [DRV] TX payload driven: 215 (0xd7)
+[106990000] [MON] Observed UART TX payload: 215 (0xd7)
+[107070000] [SCO] Expected: 215 (0xd7), Observed: 215 (0xd7)
+[107070000] >>> DATA MATCHED <<<
+----------------------------------------
+[107070000] [GEN] Operation: UART_READ, TX payload: 189 (0xbd)
+[107870000] [DRV] RX payload driven: 208 (0xd0)
+[107950000] [MON] Observed UART RX payload: 208 (0xd0)
+[108030000] [SCO] Expected: 208 (0xd0), Observed: 208 (0xd0)
+[108030000] >>> DATA MATCHED <<<
+----------------------------------------
+[108030000] [GEN] Operation: UART_WRITE, TX payload: 242 (0xf2)
+[108190000] [DRV] TX payload driven: 242 (0xf2)
+[108910000] [MON] Observed UART TX payload: 242 (0xf2)
+[108990000] [SCO] Expected: 242 (0xf2), Observed: 242 (0xf2)
+[108990000] >>> DATA MATCHED <<<
+----------------------------------------
+[108990000] [GEN] Operation: UART_READ, TX payload: 19 (0x13)
+[109790000] [DRV] RX payload driven: 148 (0x94)
+[109870000] [MON] Observed UART RX payload: 148 (0x94)
+[109950000] [SCO] Expected: 148 (0x94), Observed: 148 (0x94)
+[109950000] >>> DATA MATCHED <<<
+----------------------------------------
+[109950000] [GEN] Operation: UART_WRITE, TX payload: 203 (0xcb)
+[110110000] [DRV] TX payload driven: 203 (0xcb)
+[110830000] [MON] Observed UART TX payload: 203 (0xcb)
+[110910000] [SCO] Expected: 203 (0xcb), Observed: 203 (0xcb)
+[110910000] >>> DATA MATCHED <<<
+----------------------------------------
+[110910000] [GEN] Operation: UART_READ, TX payload: 149 (0x95)
+[111710000] [DRV] RX payload driven: 82 (0x52)
+[111790000] [MON] Observed UART RX payload: 82 (0x52)
+[111870000] [SCO] Expected: 82 (0x52), Observed: 82 (0x52)
+[111870000] >>> DATA MATCHED <<<
+----------------------------------------
+[111870000] [GEN] Operation: UART_WRITE, TX payload: 31 (0x1f)
+[112030000] [DRV] TX payload driven: 31 (0x1f)
+[112750000] [MON] Observed UART TX payload: 31 (0x1f)
+[112830000] [SCO] Expected: 31 (0x1f), Observed: 31 (0x1f)
+[112830000] >>> DATA MATCHED <<<
+----------------------------------------
+[112830000] [GEN] Operation: UART_READ, TX payload: 157 (0x9d)
+[113630000] [DRV] RX payload driven: 14 (0xe)
+[113710000] [MON] Observed UART RX payload: 14 (0xe)
+[113790000] [SCO] Expected: 14 (0xe), Observed: 14 (0xe)
+[113790000] >>> DATA MATCHED <<<
+----------------------------------------
+[113790000] [GEN] Operation: UART_READ, TX payload: 236 (0xec)
+[114590000] [DRV] RX payload driven: 120 (0x78)
+[114670000] [MON] Observed UART RX payload: 120 (0x78)
+[114750000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[114750000] >>> DATA MATCHED <<<
+----------------------------------------
+[114750000] [GEN] Operation: UART_WRITE, TX payload: 38 (0x26)
+[114910000] [DRV] TX payload driven: 38 (0x26)
+[115630000] [MON] Observed UART TX payload: 38 (0x26)
+[115710000] [SCO] Expected: 38 (0x26), Observed: 38 (0x26)
+[115710000] >>> DATA MATCHED <<<
+----------------------------------------
+[115710000] [GEN] Operation: UART_READ, TX payload: 242 (0xf2)
+[116510000] [DRV] RX payload driven: 244 (0xf4)
+[116590000] [MON] Observed UART RX payload: 244 (0xf4)
+[116670000] [SCO] Expected: 244 (0xf4), Observed: 244 (0xf4)
+[116670000] >>> DATA MATCHED <<<
+----------------------------------------
+[116670000] [GEN] Operation: UART_WRITE, TX payload: 13 (0xd)
+[116830000] [DRV] TX payload driven: 13 (0xd)
+[117550000] [MON] Observed UART TX payload: 13 (0xd)
+[117630000] [SCO] Expected: 13 (0xd), Observed: 13 (0xd)
+[117630000] >>> DATA MATCHED <<<
+----------------------------------------
+[117630000] [GEN] Operation: UART_WRITE, TX payload: 26 (0x1a)
+[117790000] [DRV] TX payload driven: 26 (0x1a)
+[118510000] [MON] Observed UART TX payload: 26 (0x1a)
+[118590000] [SCO] Expected: 26 (0x1a), Observed: 26 (0x1a)
+[118590000] >>> DATA MATCHED <<<
+----------------------------------------
+[118590000] [GEN] Operation: UART_READ, TX payload: 239 (0xef)
+[119390000] [DRV] RX payload driven: 252 (0xfc)
+[119470000] [MON] Observed UART RX payload: 252 (0xfc)
+[119550000] [SCO] Expected: 252 (0xfc), Observed: 252 (0xfc)
+[119550000] >>> DATA MATCHED <<<
+----------------------------------------
+[119550000] [GEN] Operation: UART_READ, TX payload: 23 (0x17)
+[120350000] [DRV] RX payload driven: 94 (0x5e)
+[120430000] [MON] Observed UART RX payload: 94 (0x5e)
+[120510000] [SCO] Expected: 94 (0x5e), Observed: 94 (0x5e)
+[120510000] >>> DATA MATCHED <<<
+----------------------------------------
+[120510000] [GEN] Operation: UART_WRITE, TX payload: 136 (0x88)
+[120670000] [DRV] TX payload driven: 136 (0x88)
+[121390000] [MON] Observed UART TX payload: 136 (0x88)
+[121470000] [SCO] Expected: 136 (0x88), Observed: 136 (0x88)
+[121470000] >>> DATA MATCHED <<<
+----------------------------------------
+[121470000] [GEN] Operation: UART_READ, TX payload: 254 (0xfe)
+[122270000] [DRV] RX payload driven: 114 (0x72)
+[122350000] [MON] Observed UART RX payload: 114 (0x72)
+[122430000] [SCO] Expected: 114 (0x72), Observed: 114 (0x72)
+[122430000] >>> DATA MATCHED <<<
+----------------------------------------
+[122430000] [GEN] Operation: UART_WRITE, TX payload: 183 (0xb7)
+[122590000] [DRV] TX payload driven: 183 (0xb7)
+[123310000] [MON] Observed UART TX payload: 183 (0xb7)
+[123390000] [SCO] Expected: 183 (0xb7), Observed: 183 (0xb7)
+[123390000] >>> DATA MATCHED <<<
+----------------------------------------
+[123390000] [GEN] Operation: UART_READ, TX payload: 251 (0xfb)
+[124190000] [DRV] RX payload driven: 230 (0xe6)
+[124270000] [MON] Observed UART RX payload: 230 (0xe6)
+[124350000] [SCO] Expected: 230 (0xe6), Observed: 230 (0xe6)
+[124350000] >>> DATA MATCHED <<<
+----------------------------------------
+[124350000] [GEN] Operation: UART_WRITE, TX payload: 210 (0xd2)
+[124510000] [DRV] TX payload driven: 210 (0xd2)
+[125230000] [MON] Observed UART TX payload: 210 (0xd2)
+[125310000] [SCO] Expected: 210 (0xd2), Observed: 210 (0xd2)
+[125310000] >>> DATA MATCHED <<<
+----------------------------------------
+[125310000] [GEN] Operation: UART_WRITE, TX payload: 159 (0x9f)
+[125470000] [DRV] TX payload driven: 159 (0x9f)
+[126190000] [MON] Observed UART TX payload: 159 (0x9f)
+[126270000] [SCO] Expected: 159 (0x9f), Observed: 159 (0x9f)
+[126270000] >>> DATA MATCHED <<<
+----------------------------------------
+[126270000] [GEN] Operation: UART_READ, TX payload: 82 (0x52)
+[127070000] [DRV] RX payload driven: 2 (0x2)
+[127150000] [MON] Observed UART RX payload: 2 (0x2)
+[127230000] [SCO] Expected: 2 (0x2), Observed: 2 (0x2)
+[127230000] >>> DATA MATCHED <<<
+----------------------------------------
+[127230000] [GEN] Operation: UART_WRITE, TX payload: 36 (0x24)
+[127390000] [DRV] TX payload driven: 36 (0x24)
+[128110000] [MON] Observed UART TX payload: 36 (0x24)
+[128190000] [SCO] Expected: 36 (0x24), Observed: 36 (0x24)
+[128190000] >>> DATA MATCHED <<<
+----------------------------------------
+[128190000] [GEN] Operation: UART_READ, TX payload: 66 (0x42)
+[128990000] [DRV] RX payload driven: 98 (0x62)
+[129070000] [MON] Observed UART RX payload: 98 (0x62)
+[129150000] [SCO] Expected: 98 (0x62), Observed: 98 (0x62)
+[129150000] >>> DATA MATCHED <<<
+----------------------------------------
+[129150000] [GEN] Operation: UART_WRITE, TX payload: 197 (0xc5)
+[129310000] [DRV] TX payload driven: 197 (0xc5)
+[130030000] [MON] Observed UART TX payload: 197 (0xc5)
+[130110000] [SCO] Expected: 197 (0xc5), Observed: 197 (0xc5)
+[130110000] >>> DATA MATCHED <<<
+----------------------------------------
+[130110000] [GEN] Operation: UART_READ, TX payload: 158 (0x9e)
+[130910000] [DRV] RX payload driven: 222 (0xde)
+[130990000] [MON] Observed UART RX payload: 222 (0xde)
+[131070000] [SCO] Expected: 222 (0xde), Observed: 222 (0xde)
+[131070000] >>> DATA MATCHED <<<
+----------------------------------------
+[131070000] [GEN] Operation: UART_READ, TX payload: 255 (0xff)
+[131870000] [DRV] RX payload driven: 190 (0xbe)
+[131950000] [MON] Observed UART RX payload: 190 (0xbe)
+[132030000] [SCO] Expected: 190 (0xbe), Observed: 190 (0xbe)
+[132030000] >>> DATA MATCHED <<<
+----------------------------------------
+[132030000] [GEN] Operation: UART_WRITE, TX payload: 93 (0x5d)
+[132190000] [DRV] TX payload driven: 93 (0x5d)
+[132910000] [MON] Observed UART TX payload: 93 (0x5d)
+[132990000] [SCO] Expected: 93 (0x5d), Observed: 93 (0x5d)
+[132990000] >>> DATA MATCHED <<<
+----------------------------------------
+[132990000] [GEN] Operation: UART_READ, TX payload: 46 (0x2e)
+[133790000] [DRV] RX payload driven: 42 (0x2a)
+[133870000] [MON] Observed UART RX payload: 42 (0x2a)
+[133950000] [SCO] Expected: 42 (0x2a), Observed: 42 (0x2a)
+[133950000] >>> DATA MATCHED <<<
+----------------------------------------
+[133950000] [GEN] Operation: UART_WRITE, TX payload: 238 (0xee)
+[134110000] [DRV] TX payload driven: 238 (0xee)
+[134830000] [MON] Observed UART TX payload: 238 (0xee)
+[134910000] [SCO] Expected: 238 (0xee), Observed: 238 (0xee)
+[134910000] >>> DATA MATCHED <<<
+----------------------------------------
+[134910000] [GEN] Operation: UART_WRITE, TX payload: 105 (0x69)
+[135070000] [DRV] TX payload driven: 105 (0x69)
+[135790000] [MON] Observed UART TX payload: 105 (0x69)
+[135870000] [SCO] Expected: 105 (0x69), Observed: 105 (0x69)
+[135870000] >>> DATA MATCHED <<<
+----------------------------------------
+[135870000] [GEN] Operation: UART_READ, TX payload: 195 (0xc3)
+[136670000] [DRV] RX payload driven: 42 (0x2a)
+[136750000] [MON] Observed UART RX payload: 42 (0x2a)
+[136830000] [SCO] Expected: 42 (0x2a), Observed: 42 (0x2a)
+[136830000] >>> DATA MATCHED <<<
+----------------------------------------
+[136830000] [GEN] Operation: UART_WRITE, TX payload: 49 (0x31)
+[136990000] [DRV] TX payload driven: 49 (0x31)
+[137710000] [MON] Observed UART TX payload: 49 (0x31)
+[137790000] [SCO] Expected: 49 (0x31), Observed: 49 (0x31)
+[137790000] >>> DATA MATCHED <<<
+----------------------------------------
+[137790000] [GEN] Operation: UART_READ, TX payload: 149 (0x95)
+[138590000] [DRV] RX payload driven: 48 (0x30)
+[138670000] [MON] Observed UART RX payload: 48 (0x30)
+[138750000] [SCO] Expected: 48 (0x30), Observed: 48 (0x30)
+[138750000] >>> DATA MATCHED <<<
+----------------------------------------
+[138750000] [GEN] Operation: UART_READ, TX payload: 153 (0x99)
+[139550000] [DRV] RX payload driven: 120 (0x78)
+[139630000] [MON] Observed UART RX payload: 120 (0x78)
+[139710000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[139710000] >>> DATA MATCHED <<<
+----------------------------------------
+[139710000] [GEN] Operation: UART_WRITE, TX payload: 22 (0x16)
+[139870000] [DRV] TX payload driven: 22 (0x16)
+[140590000] [MON] Observed UART TX payload: 22 (0x16)
+[140670000] [SCO] Expected: 22 (0x16), Observed: 22 (0x16)
+[140670000] >>> DATA MATCHED <<<
+----------------------------------------
+[140670000] [GEN] Operation: UART_READ, TX payload: 225 (0xe1)
+[141470000] [DRV] RX payload driven: 182 (0xb6)
+[141550000] [MON] Observed UART RX payload: 182 (0xb6)
+[141630000] [SCO] Expected: 182 (0xb6), Observed: 182 (0xb6)
+[141630000] >>> DATA MATCHED <<<
+----------------------------------------
+[141630000] [GEN] Operation: UART_WRITE, TX payload: 118 (0x76)
+[141790000] [DRV] TX payload driven: 118 (0x76)
+[142510000] [MON] Observed UART TX payload: 118 (0x76)
+[142590000] [SCO] Expected: 118 (0x76), Observed: 118 (0x76)
+[142590000] >>> DATA MATCHED <<<
+----------------------------------------
+[142590000] [GEN] Operation: UART_WRITE, TX payload: 113 (0x71)
+[142750000] [DRV] TX payload driven: 113 (0x71)
+[143470000] [MON] Observed UART TX payload: 113 (0x71)
+[143550000] [SCO] Expected: 113 (0x71), Observed: 113 (0x71)
+[143550000] >>> DATA MATCHED <<<
+----------------------------------------
+[143550000] [GEN] Operation: UART_READ, TX payload: 92 (0x5c)
+[144350000] [DRV] RX payload driven: 98 (0x62)
+[144430000] [MON] Observed UART RX payload: 98 (0x62)
+[144510000] [SCO] Expected: 98 (0x62), Observed: 98 (0x62)
+[144510000] >>> DATA MATCHED <<<
+----------------------------------------
+[144510000] [GEN] Operation: UART_WRITE, TX payload: 243 (0xf3)
+[144670000] [DRV] TX payload driven: 243 (0xf3)
+[145390000] [MON] Observed UART TX payload: 243 (0xf3)
+[145470000] [SCO] Expected: 243 (0xf3), Observed: 243 (0xf3)
+[145470000] >>> DATA MATCHED <<<
+----------------------------------------
+[145470000] [GEN] Operation: UART_READ, TX payload: 114 (0x72)
+[146270000] [DRV] RX payload driven: 98 (0x62)
+[146350000] [MON] Observed UART RX payload: 98 (0x62)
+[146430000] [SCO] Expected: 98 (0x62), Observed: 98 (0x62)
+[146430000] >>> DATA MATCHED <<<
+----------------------------------------
+[146430000] [GEN] Operation: UART_READ, TX payload: 217 (0xd9)
+[147230000] [DRV] RX payload driven: 206 (0xce)
+[147310000] [MON] Observed UART RX payload: 206 (0xce)
+[147390000] [SCO] Expected: 206 (0xce), Observed: 206 (0xce)
+[147390000] >>> DATA MATCHED <<<
+----------------------------------------
+[147390000] [GEN] Operation: UART_WRITE, TX payload: 27 (0x1b)
+[147550000] [DRV] TX payload driven: 27 (0x1b)
+[148270000] [MON] Observed UART TX payload: 27 (0x1b)
+[148350000] [SCO] Expected: 27 (0x1b), Observed: 27 (0x1b)
+[148350000] >>> DATA MATCHED <<<
+----------------------------------------
+[148350000] [GEN] Operation: UART_READ, TX payload: 227 (0xe3)
+[149150000] [DRV] RX payload driven: 202 (0xca)
+[149230000] [MON] Observed UART RX payload: 202 (0xca)
+[149310000] [SCO] Expected: 202 (0xca), Observed: 202 (0xca)
+[149310000] >>> DATA MATCHED <<<
+----------------------------------------
+[149310000] [GEN] Operation: UART_WRITE, TX payload: 182 (0xb6)
+[149470000] [DRV] TX payload driven: 182 (0xb6)
+[150190000] [MON] Observed UART TX payload: 182 (0xb6)
+[150270000] [SCO] Expected: 182 (0xb6), Observed: 182 (0xb6)
+[150270000] >>> DATA MATCHED <<<
+----------------------------------------
+[150270000] [GEN] Operation: UART_READ, TX payload: 24 (0x18)
+[151070000] [DRV] RX payload driven: 126 (0x7e)
+[151150000] [MON] Observed UART RX payload: 126 (0x7e)
+[151230000] [SCO] Expected: 126 (0x7e), Observed: 126 (0x7e)
+[151230000] >>> DATA MATCHED <<<
+----------------------------------------
+[151230000] [GEN] Operation: UART_WRITE, TX payload: 94 (0x5e)
+[151390000] [DRV] TX payload driven: 94 (0x5e)
+[152110000] [MON] Observed UART TX payload: 94 (0x5e)
+[152190000] [SCO] Expected: 94 (0x5e), Observed: 94 (0x5e)
+[152190000] >>> DATA MATCHED <<<
+----------------------------------------
+[152190000] [GEN] Operation: UART_WRITE, TX payload: 190 (0xbe)
+[152350000] [DRV] TX payload driven: 190 (0xbe)
+[153070000] [MON] Observed UART TX payload: 190 (0xbe)
+[153150000] [SCO] Expected: 190 (0xbe), Observed: 190 (0xbe)
+[153150000] >>> DATA MATCHED <<<
+----------------------------------------
+[153150000] [GEN] Operation: UART_READ, TX payload: 40 (0x28)
+[153950000] [DRV] RX payload driven: 20 (0x14)
+[154030000] [MON] Observed UART RX payload: 20 (0x14)
+[154110000] [SCO] Expected: 20 (0x14), Observed: 20 (0x14)
+[154110000] >>> DATA MATCHED <<<
+----------------------------------------
+[154110000] [GEN] Operation: UART_WRITE, TX payload: 159 (0x9f)
+[154270000] [DRV] TX payload driven: 159 (0x9f)
+[154990000] [MON] Observed UART TX payload: 159 (0x9f)
+[155070000] [SCO] Expected: 159 (0x9f), Observed: 159 (0x9f)
+[155070000] >>> DATA MATCHED <<<
+----------------------------------------
+[155070000] [GEN] Operation: UART_READ, TX payload: 103 (0x67)
+[155870000] [DRV] RX payload driven: 88 (0x58)
+[155950000] [MON] Observed UART RX payload: 88 (0x58)
+[156030000] [SCO] Expected: 88 (0x58), Observed: 88 (0x58)
+[156030000] >>> DATA MATCHED <<<
+----------------------------------------
+[156030000] [GEN] Operation: UART_WRITE, TX payload: 211 (0xd3)
+[156190000] [DRV] TX payload driven: 211 (0xd3)
+[156910000] [MON] Observed UART TX payload: 211 (0xd3)
+[156990000] [SCO] Expected: 211 (0xd3), Observed: 211 (0xd3)
+[156990000] >>> DATA MATCHED <<<
+----------------------------------------
+[156990000] [GEN] Operation: UART_READ, TX payload: 68 (0x44)
+[157790000] [DRV] RX payload driven: 26 (0x1a)
+[157870000] [MON] Observed UART RX payload: 26 (0x1a)
+[157950000] [SCO] Expected: 26 (0x1a), Observed: 26 (0x1a)
+[157950000] >>> DATA MATCHED <<<
+----------------------------------------
+[157950000] [GEN] Operation: UART_READ, TX payload: 158 (0x9e)
+[158750000] [DRV] RX payload driven: 34 (0x22)
+[158830000] [MON] Observed UART RX payload: 34 (0x22)
+[158910000] [SCO] Expected: 34 (0x22), Observed: 34 (0x22)
+[158910000] >>> DATA MATCHED <<<
+----------------------------------------
+[158910000] [GEN] Operation: UART_WRITE, TX payload: 155 (0x9b)
+[159070000] [DRV] TX payload driven: 155 (0x9b)
+[159790000] [MON] Observed UART TX payload: 155 (0x9b)
+[159870000] [SCO] Expected: 155 (0x9b), Observed: 155 (0x9b)
+[159870000] >>> DATA MATCHED <<<
+----------------------------------------
+[159870000] [GEN] Operation: UART_WRITE, TX payload: 188 (0xbc)
+[160030000] [DRV] TX payload driven: 188 (0xbc)
+[160750000] [MON] Observed UART TX payload: 188 (0xbc)
+[160830000] [SCO] Expected: 188 (0xbc), Observed: 188 (0xbc)
+[160830000] >>> DATA MATCHED <<<
+----------------------------------------
+[160830000] [GEN] Operation: UART_READ, TX payload: 73 (0x49)
+[161630000] [DRV] RX payload driven: 2 (0x2)
+[161710000] [MON] Observed UART RX payload: 2 (0x2)
+[161790000] [SCO] Expected: 2 (0x2), Observed: 2 (0x2)
+[161790000] >>> DATA MATCHED <<<
+----------------------------------------
+[161790000] [GEN] Operation: UART_WRITE, TX payload: 116 (0x74)
+[161950000] [DRV] TX payload driven: 116 (0x74)
+[162670000] [MON] Observed UART TX payload: 116 (0x74)
+[162750000] [SCO] Expected: 116 (0x74), Observed: 116 (0x74)
+[162750000] >>> DATA MATCHED <<<
+----------------------------------------
+[162750000] [GEN] Operation: UART_READ, TX payload: 33 (0x21)
+[163550000] [DRV] RX payload driven: 204 (0xcc)
+[163630000] [MON] Observed UART RX payload: 204 (0xcc)
+[163710000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[163710000] >>> DATA MATCHED <<<
+----------------------------------------
+[163710000] [GEN] Operation: UART_READ, TX payload: 37 (0x25)
+[164510000] [DRV] RX payload driven: 10 (0xa)
+[164590000] [MON] Observed UART RX payload: 10 (0xa)
+[164670000] [SCO] Expected: 10 (0xa), Observed: 10 (0xa)
+[164670000] >>> DATA MATCHED <<<
+----------------------------------------
+[164670000] [GEN] Operation: UART_WRITE, TX payload: 34 (0x22)
+[164830000] [DRV] TX payload driven: 34 (0x22)
+[165550000] [MON] Observed UART TX payload: 34 (0x22)
+[165630000] [SCO] Expected: 34 (0x22), Observed: 34 (0x22)
+[165630000] >>> DATA MATCHED <<<
+----------------------------------------
+[165630000] [GEN] Operation: UART_WRITE, TX payload: 56 (0x38)
+[165790000] [DRV] TX payload driven: 56 (0x38)
+[166510000] [MON] Observed UART TX payload: 56 (0x38)
+[166590000] [SCO] Expected: 56 (0x38), Observed: 56 (0x38)
+[166590000] >>> DATA MATCHED <<<
+----------------------------------------
+[166590000] [GEN] Operation: UART_READ, TX payload: 218 (0xda)
+[167390000] [DRV] RX payload driven: 84 (0x54)
+[167470000] [MON] Observed UART RX payload: 84 (0x54)
+[167550000] [SCO] Expected: 84 (0x54), Observed: 84 (0x54)
+[167550000] >>> DATA MATCHED <<<
+----------------------------------------
+[167550000] [GEN] Operation: UART_WRITE, TX payload: 102 (0x66)
+[167710000] [DRV] TX payload driven: 102 (0x66)
+[168430000] [MON] Observed UART TX payload: 102 (0x66)
+[168510000] [SCO] Expected: 102 (0x66), Observed: 102 (0x66)
+[168510000] >>> DATA MATCHED <<<
+----------------------------------------
+[168510000] [GEN] Operation: UART_READ, TX payload: 228 (0xe4)
+[169310000] [DRV] RX payload driven: 254 (0xfe)
+[169390000] [MON] Observed UART RX payload: 254 (0xfe)
+[169470000] [SCO] Expected: 254 (0xfe), Observed: 254 (0xfe)
+[169470000] >>> DATA MATCHED <<<
+----------------------------------------
+[169470000] [GEN] Operation: UART_READ, TX payload: 183 (0xb7)
+[170270000] [DRV] RX payload driven: 164 (0xa4)
+[170350000] [MON] Observed UART RX payload: 164 (0xa4)
+[170430000] [SCO] Expected: 164 (0xa4), Observed: 164 (0xa4)
+[170430000] >>> DATA MATCHED <<<
+----------------------------------------
+[170430000] [GEN] Operation: UART_WRITE, TX payload: 189 (0xbd)
+[170590000] [DRV] TX payload driven: 189 (0xbd)
+[171310000] [MON] Observed UART TX payload: 189 (0xbd)
+[171390000] [SCO] Expected: 189 (0xbd), Observed: 189 (0xbd)
+[171390000] >>> DATA MATCHED <<<
+----------------------------------------
+[171390000] [GEN] Operation: UART_WRITE, TX payload: 170 (0xaa)
+[171550000] [DRV] TX payload driven: 170 (0xaa)
+[172270000] [MON] Observed UART TX payload: 170 (0xaa)
+[172350000] [SCO] Expected: 170 (0xaa), Observed: 170 (0xaa)
+[172350000] >>> DATA MATCHED <<<
+----------------------------------------
+[172350000] [GEN] Operation: UART_READ, TX payload: 18 (0x12)
+[173150000] [DRV] RX payload driven: 192 (0xc0)
+[173230000] [MON] Observed UART RX payload: 192 (0xc0)
+[173310000] [SCO] Expected: 192 (0xc0), Observed: 192 (0xc0)
+[173310000] >>> DATA MATCHED <<<
+----------------------------------------
+[173310000] [GEN] Operation: UART_READ, TX payload: 109 (0x6d)
+[174110000] [DRV] RX payload driven: 140 (0x8c)
+[174190000] [MON] Observed UART RX payload: 140 (0x8c)
+[174270000] [SCO] Expected: 140 (0x8c), Observed: 140 (0x8c)
+[174270000] >>> DATA MATCHED <<<
+----------------------------------------
+[174270000] [GEN] Operation: UART_WRITE, TX payload: 232 (0xe8)
+[174430000] [DRV] TX payload driven: 232 (0xe8)
+[175150000] [MON] Observed UART TX payload: 232 (0xe8)
+[175230000] [SCO] Expected: 232 (0xe8), Observed: 232 (0xe8)
+[175230000] >>> DATA MATCHED <<<
+----------------------------------------
+[175230000] [GEN] Operation: UART_READ, TX payload: 49 (0x31)
+[176030000] [DRV] RX payload driven: 94 (0x5e)
+[176110000] [MON] Observed UART RX payload: 94 (0x5e)
+[176190000] [SCO] Expected: 94 (0x5e), Observed: 94 (0x5e)
+[176190000] >>> DATA MATCHED <<<
+----------------------------------------
+[176190000] [GEN] Operation: UART_WRITE, TX payload: 44 (0x2c)
+[176350000] [DRV] TX payload driven: 44 (0x2c)
+[177070000] [MON] Observed UART TX payload: 44 (0x2c)
+[177150000] [SCO] Expected: 44 (0x2c), Observed: 44 (0x2c)
+[177150000] >>> DATA MATCHED <<<
+----------------------------------------
+[177150000] [GEN] Operation: UART_READ, TX payload: 238 (0xee)
+[177950000] [DRV] RX payload driven: 32 (0x20)
+[178030000] [MON] Observed UART RX payload: 32 (0x20)
+[178110000] [SCO] Expected: 32 (0x20), Observed: 32 (0x20)
+[178110000] >>> DATA MATCHED <<<
+----------------------------------------
+[178110000] [GEN] Operation: UART_WRITE, TX payload: 230 (0xe6)
+[178270000] [DRV] TX payload driven: 230 (0xe6)
+[178990000] [MON] Observed UART TX payload: 230 (0xe6)
+[179070000] [SCO] Expected: 230 (0xe6), Observed: 230 (0xe6)
+[179070000] >>> DATA MATCHED <<<
+----------------------------------------
+[179070000] [GEN] Operation: UART_WRITE, TX payload: 242 (0xf2)
+[179230000] [DRV] TX payload driven: 242 (0xf2)
+[179950000] [MON] Observed UART TX payload: 242 (0xf2)
+[180030000] [SCO] Expected: 242 (0xf2), Observed: 242 (0xf2)
+[180030000] >>> DATA MATCHED <<<
+----------------------------------------
+[180030000] [GEN] Operation: UART_READ, TX payload: 135 (0x87)
+[180830000] [DRV] RX payload driven: 36 (0x24)
+[180910000] [MON] Observed UART RX payload: 36 (0x24)
+[180990000] [SCO] Expected: 36 (0x24), Observed: 36 (0x24)
+[180990000] >>> DATA MATCHED <<<
+----------------------------------------
+[180990000] [GEN] Operation: UART_WRITE, TX payload: 218 (0xda)
+[181150000] [DRV] TX payload driven: 218 (0xda)
+[181870000] [MON] Observed UART TX payload: 218 (0xda)
+[181950000] [SCO] Expected: 218 (0xda), Observed: 218 (0xda)
+[181950000] >>> DATA MATCHED <<<
+----------------------------------------
+[181950000] [GEN] Operation: UART_READ, TX payload: 190 (0xbe)
+[182750000] [DRV] RX payload driven: 128 (0x80)
+[182830000] [MON] Observed UART RX payload: 128 (0x80)
+[182910000] [SCO] Expected: 128 (0x80), Observed: 128 (0x80)
+[182910000] >>> DATA MATCHED <<<
+----------------------------------------
+[182910000] [GEN] Operation: UART_WRITE, TX payload: 28 (0x1c)
+[183070000] [DRV] TX payload driven: 28 (0x1c)
+[183790000] [MON] Observed UART TX payload: 28 (0x1c)
+[183870000] [SCO] Expected: 28 (0x1c), Observed: 28 (0x1c)
+[183870000] >>> DATA MATCHED <<<
+----------------------------------------
+[183870000] [GEN] Operation: UART_READ, TX payload: 15 (0xf)
+[184670000] [DRV] RX payload driven: 246 (0xf6)
+[184750000] [MON] Observed UART RX payload: 246 (0xf6)
+[184830000] [SCO] Expected: 246 (0xf6), Observed: 246 (0xf6)
+[184830000] >>> DATA MATCHED <<<
+----------------------------------------
+[184830000] [GEN] Operation: UART_WRITE, TX payload: 88 (0x58)
+[184990000] [DRV] TX payload driven: 88 (0x58)
+[185710000] [MON] Observed UART TX payload: 88 (0x58)
+[185790000] [SCO] Expected: 88 (0x58), Observed: 88 (0x58)
+[185790000] >>> DATA MATCHED <<<
+----------------------------------------
+[185790000] [GEN] Operation: UART_READ, TX payload: 83 (0x53)
+[186590000] [DRV] RX payload driven: 58 (0x3a)
+[186670000] [MON] Observed UART RX payload: 58 (0x3a)
+[186750000] [SCO] Expected: 58 (0x3a), Observed: 58 (0x3a)
+[186750000] >>> DATA MATCHED <<<
+----------------------------------------
+[186750000] [GEN] Operation: UART_WRITE, TX payload: 120 (0x78)
+[186910000] [DRV] TX payload driven: 120 (0x78)
+[187630000] [MON] Observed UART TX payload: 120 (0x78)
+[187710000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[187710000] >>> DATA MATCHED <<<
+----------------------------------------
+[187710000] [GEN] Operation: UART_READ, TX payload: 17 (0x11)
+[188510000] [DRV] RX payload driven: 14 (0xe)
+[188590000] [MON] Observed UART RX payload: 14 (0xe)
+[188670000] [SCO] Expected: 14 (0xe), Observed: 14 (0xe)
+[188670000] >>> DATA MATCHED <<<
+----------------------------------------
+[188670000] [GEN] Operation: UART_READ, TX payload: 207 (0xcf)
+[189470000] [DRV] RX payload driven: 232 (0xe8)
+[189550000] [MON] Observed UART RX payload: 232 (0xe8)
+[189630000] [SCO] Expected: 232 (0xe8), Observed: 232 (0xe8)
+[189630000] >>> DATA MATCHED <<<
+----------------------------------------
+[189630000] [GEN] Operation: UART_WRITE, TX payload: 233 (0xe9)
+[189790000] [DRV] TX payload driven: 233 (0xe9)
+[190510000] [MON] Observed UART TX payload: 233 (0xe9)
+[190590000] [SCO] Expected: 233 (0xe9), Observed: 233 (0xe9)
+[190590000] >>> DATA MATCHED <<<
+----------------------------------------
+[190590000] [GEN] Operation: UART_READ, TX payload: 90 (0x5a)
+[191390000] [DRV] RX payload driven: 82 (0x52)
+[191470000] [MON] Observed UART RX payload: 82 (0x52)
+[191550000] [SCO] Expected: 82 (0x52), Observed: 82 (0x52)
+[191550000] >>> DATA MATCHED <<<
+----------------------------------------
+[191550000] [GEN] Operation: UART_WRITE, TX payload: 92 (0x5c)
+[191710000] [DRV] TX payload driven: 92 (0x5c)
+[192430000] [MON] Observed UART TX payload: 92 (0x5c)
+[192510000] [SCO] Expected: 92 (0x5c), Observed: 92 (0x5c)
+[192510000] >>> DATA MATCHED <<<
+----------------------------------------
+[192510000] [GEN] Operation: UART_READ, TX payload: 116 (0x74)
+[193310000] [DRV] RX payload driven: 6 (0x6)
+[193390000] [MON] Observed UART RX payload: 6 (0x6)
+[193470000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[193470000] >>> DATA MATCHED <<<
+----------------------------------------
+[193470000] [GEN] Operation: UART_WRITE, TX payload: 92 (0x5c)
+[193630000] [DRV] TX payload driven: 92 (0x5c)
+[194350000] [MON] Observed UART TX payload: 92 (0x5c)
+[194430000] [SCO] Expected: 92 (0x5c), Observed: 92 (0x5c)
+[194430000] >>> DATA MATCHED <<<
+----------------------------------------
+[194430000] [GEN] Operation: UART_READ, TX payload: 213 (0xd5)
+[195230000] [DRV] RX payload driven: 20 (0x14)
+[195310000] [MON] Observed UART RX payload: 20 (0x14)
+[195390000] [SCO] Expected: 20 (0x14), Observed: 20 (0x14)
+[195390000] >>> DATA MATCHED <<<
+----------------------------------------
+[195390000] [GEN] Operation: UART_WRITE, TX payload: 138 (0x8a)
+[195550000] [DRV] TX payload driven: 138 (0x8a)
+[196270000] [MON] Observed UART TX payload: 138 (0x8a)
+[196350000] [SCO] Expected: 138 (0x8a), Observed: 138 (0x8a)
+[196350000] >>> DATA MATCHED <<<
+----------------------------------------
+[196350000] [GEN] Operation: UART_READ, TX payload: 175 (0xaf)
+[197150000] [DRV] RX payload driven: 24 (0x18)
+[197230000] [MON] Observed UART RX payload: 24 (0x18)
+[197310000] [SCO] Expected: 24 (0x18), Observed: 24 (0x18)
+[197310000] >>> DATA MATCHED <<<
+----------------------------------------
+[197310000] [GEN] Operation: UART_WRITE, TX payload: 160 (0xa0)
+[197470000] [DRV] TX payload driven: 160 (0xa0)
+[198190000] [MON] Observed UART TX payload: 160 (0xa0)
+[198270000] [SCO] Expected: 160 (0xa0), Observed: 160 (0xa0)
+[198270000] >>> DATA MATCHED <<<
+----------------------------------------
+[198270000] [GEN] Operation: UART_READ, TX payload: 132 (0x84)
+[199070000] [DRV] RX payload driven: 54 (0x36)
+[199150000] [MON] Observed UART RX payload: 54 (0x36)
+[199230000] [SCO] Expected: 54 (0x36), Observed: 54 (0x36)
+[199230000] >>> DATA MATCHED <<<
+----------------------------------------
+[199230000] [GEN] Operation: UART_WRITE, TX payload: 9 (0x9)
+[199390000] [DRV] TX payload driven: 9 (0x9)
+[200110000] [MON] Observed UART TX payload: 9 (0x9)
+[200190000] [SCO] Expected: 9 (0x9), Observed: 9 (0x9)
+[200190000] >>> DATA MATCHED <<<
+----------------------------------------
+[200190000] [GEN] Operation: UART_READ, TX payload: 170 (0xaa)
+[200990000] [DRV] RX payload driven: 214 (0xd6)
+[201070000] [MON] Observed UART RX payload: 214 (0xd6)
+[201150000] [SCO] Expected: 214 (0xd6), Observed: 214 (0xd6)
+[201150000] >>> DATA MATCHED <<<
+----------------------------------------
+[201150000] [GEN] Operation: UART_WRITE, TX payload: 228 (0xe4)
+[201310000] [DRV] TX payload driven: 228 (0xe4)
+[202030000] [MON] Observed UART TX payload: 228 (0xe4)
+[202110000] [SCO] Expected: 228 (0xe4), Observed: 228 (0xe4)
+[202110000] >>> DATA MATCHED <<<
+----------------------------------------
+[202110000] [GEN] Operation: UART_WRITE, TX payload: 78 (0x4e)
+[202270000] [DRV] TX payload driven: 78 (0x4e)
+[202990000] [MON] Observed UART TX payload: 78 (0x4e)
+[203070000] [SCO] Expected: 78 (0x4e), Observed: 78 (0x4e)
+[203070000] >>> DATA MATCHED <<<
+----------------------------------------
+[203070000] [GEN] Operation: UART_READ, TX payload: 60 (0x3c)
+[203870000] [DRV] RX payload driven: 242 (0xf2)
+[203950000] [MON] Observed UART RX payload: 242 (0xf2)
+[204030000] [SCO] Expected: 242 (0xf2), Observed: 242 (0xf2)
+[204030000] >>> DATA MATCHED <<<
+----------------------------------------
+[204030000] [GEN] Operation: UART_READ, TX payload: 156 (0x9c)
+[204830000] [DRV] RX payload driven: 38 (0x26)
+[204910000] [MON] Observed UART RX payload: 38 (0x26)
+[204990000] [SCO] Expected: 38 (0x26), Observed: 38 (0x26)
+[204990000] >>> DATA MATCHED <<<
+----------------------------------------
+[204990000] [GEN] Operation: UART_WRITE, TX payload: 56 (0x38)
+[205150000] [DRV] TX payload driven: 56 (0x38)
+[205870000] [MON] Observed UART TX payload: 56 (0x38)
+[205950000] [SCO] Expected: 56 (0x38), Observed: 56 (0x38)
+[205950000] >>> DATA MATCHED <<<
+----------------------------------------
+[205950000] [GEN] Operation: UART_WRITE, TX payload: 20 (0x14)
+[206110000] [DRV] TX payload driven: 20 (0x14)
+[206830000] [MON] Observed UART TX payload: 20 (0x14)
+[206910000] [SCO] Expected: 20 (0x14), Observed: 20 (0x14)
+[206910000] >>> DATA MATCHED <<<
+----------------------------------------
+[206910000] [GEN] Operation: UART_READ, TX payload: 195 (0xc3)
+[207710000] [DRV] RX payload driven: 230 (0xe6)
+[207790000] [MON] Observed UART RX payload: 230 (0xe6)
+[207870000] [SCO] Expected: 230 (0xe6), Observed: 230 (0xe6)
+[207870000] >>> DATA MATCHED <<<
+----------------------------------------
+[207870000] [GEN] Operation: UART_WRITE, TX payload: 240 (0xf0)
+[208030000] [DRV] TX payload driven: 240 (0xf0)
+[208750000] [MON] Observed UART TX payload: 240 (0xf0)
+[208830000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[208830000] >>> DATA MATCHED <<<
+----------------------------------------
+[208830000] [GEN] Operation: UART_READ, TX payload: 246 (0xf6)
+[209630000] [DRV] RX payload driven: 190 (0xbe)
+[209710000] [MON] Observed UART RX payload: 190 (0xbe)
+[209790000] [SCO] Expected: 190 (0xbe), Observed: 190 (0xbe)
+[209790000] >>> DATA MATCHED <<<
+----------------------------------------
+[209790000] [GEN] Operation: UART_WRITE, TX payload: 210 (0xd2)
+[209950000] [DRV] TX payload driven: 210 (0xd2)
+[210670000] [MON] Observed UART TX payload: 210 (0xd2)
+[210750000] [SCO] Expected: 210 (0xd2), Observed: 210 (0xd2)
+[210750000] >>> DATA MATCHED <<<
+----------------------------------------
+[210750000] [GEN] Operation: UART_READ, TX payload: 49 (0x31)
+[211550000] [DRV] RX payload driven: 132 (0x84)
+[211630000] [MON] Observed UART RX payload: 132 (0x84)
+[211710000] [SCO] Expected: 132 (0x84), Observed: 132 (0x84)
+[211710000] >>> DATA MATCHED <<<
+----------------------------------------
+[211710000] [GEN] Operation: UART_READ, TX payload: 134 (0x86)
+[212510000] [DRV] RX payload driven: 238 (0xee)
+[212590000] [MON] Observed UART RX payload: 238 (0xee)
+[212670000] [SCO] Expected: 238 (0xee), Observed: 238 (0xee)
+[212670000] >>> DATA MATCHED <<<
+----------------------------------------
+[212670000] [GEN] Operation: UART_WRITE, TX payload: 199 (0xc7)
+[212830000] [DRV] TX payload driven: 199 (0xc7)
+[213550000] [MON] Observed UART TX payload: 199 (0xc7)
+[213630000] [SCO] Expected: 199 (0xc7), Observed: 199 (0xc7)
+[213630000] >>> DATA MATCHED <<<
+----------------------------------------
+[213630000] [GEN] Operation: UART_READ, TX payload: 203 (0xcb)
+[214430000] [DRV] RX payload driven: 248 (0xf8)
+[214510000] [MON] Observed UART RX payload: 248 (0xf8)
+[214590000] [SCO] Expected: 248 (0xf8), Observed: 248 (0xf8)
+[214590000] >>> DATA MATCHED <<<
+----------------------------------------
+[214590000] [GEN] Operation: UART_WRITE, TX payload: 141 (0x8d)
+[214750000] [DRV] TX payload driven: 141 (0x8d)
+[215470000] [MON] Observed UART TX payload: 141 (0x8d)
+[215550000] [SCO] Expected: 141 (0x8d), Observed: 141 (0x8d)
+[215550000] >>> DATA MATCHED <<<
+----------------------------------------
+[215550000] [GEN] Operation: UART_READ, TX payload: 179 (0xb3)
+[216350000] [DRV] RX payload driven: 190 (0xbe)
+[216430000] [MON] Observed UART RX payload: 190 (0xbe)
+[216510000] [SCO] Expected: 190 (0xbe), Observed: 190 (0xbe)
+[216510000] >>> DATA MATCHED <<<
+----------------------------------------
+[216510000] [GEN] Operation: UART_WRITE, TX payload: 104 (0x68)
+[216670000] [DRV] TX payload driven: 104 (0x68)
+[217390000] [MON] Observed UART TX payload: 104 (0x68)
+[217470000] [SCO] Expected: 104 (0x68), Observed: 104 (0x68)
+[217470000] >>> DATA MATCHED <<<
+----------------------------------------
+[217470000] [GEN] Operation: UART_READ, TX payload: 172 (0xac)
+[218270000] [DRV] RX payload driven: 202 (0xca)
+[218350000] [MON] Observed UART RX payload: 202 (0xca)
+[218430000] [SCO] Expected: 202 (0xca), Observed: 202 (0xca)
+[218430000] >>> DATA MATCHED <<<
+----------------------------------------
+[218430000] [GEN] Operation: UART_WRITE, TX payload: 46 (0x2e)
+[218590000] [DRV] TX payload driven: 46 (0x2e)
+[219310000] [MON] Observed UART TX payload: 46 (0x2e)
+[219390000] [SCO] Expected: 46 (0x2e), Observed: 46 (0x2e)
+[219390000] >>> DATA MATCHED <<<
+----------------------------------------
+[219390000] [GEN] Operation: UART_READ, TX payload: 237 (0xed)
+[220190000] [DRV] RX payload driven: 210 (0xd2)
+[220270000] [MON] Observed UART RX payload: 210 (0xd2)
+[220350000] [SCO] Expected: 210 (0xd2), Observed: 210 (0xd2)
+[220350000] >>> DATA MATCHED <<<
+----------------------------------------
+[220350000] [GEN] Operation: UART_WRITE, TX payload: 112 (0x70)
+[220510000] [DRV] TX payload driven: 112 (0x70)
+[221230000] [MON] Observed UART TX payload: 112 (0x70)
+[221310000] [SCO] Expected: 112 (0x70), Observed: 112 (0x70)
+[221310000] >>> DATA MATCHED <<<
+----------------------------------------
+[221310000] [GEN] Operation: UART_READ, TX payload: 196 (0xc4)
+[222110000] [DRV] RX payload driven: 230 (0xe6)
+[222190000] [MON] Observed UART RX payload: 230 (0xe6)
+[222270000] [SCO] Expected: 230 (0xe6), Observed: 230 (0xe6)
+[222270000] >>> DATA MATCHED <<<
+----------------------------------------
+[222270000] [GEN] Operation: UART_WRITE, TX payload: 191 (0xbf)
+[222430000] [DRV] TX payload driven: 191 (0xbf)
+[223150000] [MON] Observed UART TX payload: 191 (0xbf)
+[223230000] [SCO] Expected: 191 (0xbf), Observed: 191 (0xbf)
+[223230000] >>> DATA MATCHED <<<
+----------------------------------------
+[223230000] [GEN] Operation: UART_WRITE, TX payload: 248 (0xf8)
+[223390000] [DRV] TX payload driven: 248 (0xf8)
+[224110000] [MON] Observed UART TX payload: 248 (0xf8)
+[224190000] [SCO] Expected: 248 (0xf8), Observed: 248 (0xf8)
+[224190000] >>> DATA MATCHED <<<
+----------------------------------------
+[224190000] [GEN] Operation: UART_READ, TX payload: 47 (0x2f)
+[224990000] [DRV] RX payload driven: 242 (0xf2)
+[225070000] [MON] Observed UART RX payload: 242 (0xf2)
+[225150000] [SCO] Expected: 242 (0xf2), Observed: 242 (0xf2)
+[225150000] >>> DATA MATCHED <<<
+----------------------------------------
+[225150000] [GEN] Operation: UART_READ, TX payload: 65 (0x41)
+[225950000] [DRV] RX payload driven: 22 (0x16)
+[226030000] [MON] Observed UART RX payload: 22 (0x16)
+[226110000] [SCO] Expected: 22 (0x16), Observed: 22 (0x16)
+[226110000] >>> DATA MATCHED <<<
+----------------------------------------
+[226110000] [GEN] Operation: UART_WRITE, TX payload: 206 (0xce)
+[226270000] [DRV] TX payload driven: 206 (0xce)
+[226990000] [MON] Observed UART TX payload: 206 (0xce)
+[227070000] [SCO] Expected: 206 (0xce), Observed: 206 (0xce)
+[227070000] >>> DATA MATCHED <<<
+----------------------------------------
+[227070000] [GEN] Operation: UART_WRITE, TX payload: 22 (0x16)
+[227230000] [DRV] TX payload driven: 22 (0x16)
+[227950000] [MON] Observed UART TX payload: 22 (0x16)
+[228030000] [SCO] Expected: 22 (0x16), Observed: 22 (0x16)
+[228030000] >>> DATA MATCHED <<<
+----------------------------------------
+[228030000] [GEN] Operation: UART_READ, TX payload: 249 (0xf9)
+[228830000] [DRV] RX payload driven: 154 (0x9a)
+[228910000] [MON] Observed UART RX payload: 154 (0x9a)
+[228990000] [SCO] Expected: 154 (0x9a), Observed: 154 (0x9a)
+[228990000] >>> DATA MATCHED <<<
+----------------------------------------
+[228990000] [GEN] Operation: UART_WRITE, TX payload: 243 (0xf3)
+[229150000] [DRV] TX payload driven: 243 (0xf3)
+[229870000] [MON] Observed UART TX payload: 243 (0xf3)
+[229950000] [SCO] Expected: 243 (0xf3), Observed: 243 (0xf3)
+[229950000] >>> DATA MATCHED <<<
+----------------------------------------
+[229950000] [GEN] Operation: UART_READ, TX payload: 20 (0x14)
+[230750000] [DRV] RX payload driven: 204 (0xcc)
+[230830000] [MON] Observed UART RX payload: 204 (0xcc)
+[230910000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[230910000] >>> DATA MATCHED <<<
+----------------------------------------
+[230910000] [GEN] Operation: UART_WRITE, TX payload: 69 (0x45)
+[231070000] [DRV] TX payload driven: 69 (0x45)
+[231790000] [MON] Observed UART TX payload: 69 (0x45)
+[231870000] [SCO] Expected: 69 (0x45), Observed: 69 (0x45)
+[231870000] >>> DATA MATCHED <<<
+----------------------------------------
+[231870000] [GEN] Operation: UART_READ, TX payload: 60 (0x3c)
+[232670000] [DRV] RX payload driven: 10 (0xa)
+[232750000] [MON] Observed UART RX payload: 10 (0xa)
+[232830000] [SCO] Expected: 10 (0xa), Observed: 10 (0xa)
+[232830000] >>> DATA MATCHED <<<
+----------------------------------------
+[232830000] [GEN] Operation: UART_WRITE, TX payload: 147 (0x93)
+[232990000] [DRV] TX payload driven: 147 (0x93)
+[233710000] [MON] Observed UART TX payload: 147 (0x93)
+[233790000] [SCO] Expected: 147 (0x93), Observed: 147 (0x93)
+[233790000] >>> DATA MATCHED <<<
+----------------------------------------
+[233790000] [GEN] Operation: UART_READ, TX payload: 144 (0x90)
+[234590000] [DRV] RX payload driven: 98 (0x62)
+[234670000] [MON] Observed UART RX payload: 98 (0x62)
+[234750000] [SCO] Expected: 98 (0x62), Observed: 98 (0x62)
+[234750000] >>> DATA MATCHED <<<
+----------------------------------------
+[234750000] [GEN] Operation: UART_WRITE, TX payload: 116 (0x74)
+[234910000] [DRV] TX payload driven: 116 (0x74)
+[235630000] [MON] Observed UART TX payload: 116 (0x74)
+[235710000] [SCO] Expected: 116 (0x74), Observed: 116 (0x74)
+[235710000] >>> DATA MATCHED <<<
+----------------------------------------
+[235710000] [GEN] Operation: UART_READ, TX payload: 109 (0x6d)
+[236510000] [DRV] RX payload driven: 146 (0x92)
+[236590000] [MON] Observed UART RX payload: 146 (0x92)
+[236670000] [SCO] Expected: 146 (0x92), Observed: 146 (0x92)
+[236670000] >>> DATA MATCHED <<<
+----------------------------------------
+[236670000] [GEN] Operation: UART_WRITE, TX payload: 54 (0x36)
+[236830000] [DRV] TX payload driven: 54 (0x36)
+[237550000] [MON] Observed UART TX payload: 54 (0x36)
+[237630000] [SCO] Expected: 54 (0x36), Observed: 54 (0x36)
+[237630000] >>> DATA MATCHED <<<
+----------------------------------------
+[237630000] [GEN] Operation: UART_READ, TX payload: 34 (0x22)
+[238430000] [DRV] RX payload driven: 130 (0x82)
+[238510000] [MON] Observed UART RX payload: 130 (0x82)
+[238590000] [SCO] Expected: 130 (0x82), Observed: 130 (0x82)
+[238590000] >>> DATA MATCHED <<<
+----------------------------------------
+[238590000] [GEN] Operation: UART_WRITE, TX payload: 143 (0x8f)
+[238750000] [DRV] TX payload driven: 143 (0x8f)
+[239470000] [MON] Observed UART TX payload: 143 (0x8f)
+[239550000] [SCO] Expected: 143 (0x8f), Observed: 143 (0x8f)
+[239550000] >>> DATA MATCHED <<<
+----------------------------------------
+[239550000] [GEN] Operation: UART_READ, TX payload: 119 (0x77)
+[240350000] [DRV] RX payload driven: 228 (0xe4)
+[240430000] [MON] Observed UART RX payload: 228 (0xe4)
+[240510000] [SCO] Expected: 228 (0xe4), Observed: 228 (0xe4)
+[240510000] >>> DATA MATCHED <<<
+----------------------------------------
+[240510000] [GEN] Operation: UART_WRITE, TX payload: 219 (0xdb)
+[240670000] [DRV] TX payload driven: 219 (0xdb)
+[241390000] [MON] Observed UART TX payload: 219 (0xdb)
+[241470000] [SCO] Expected: 219 (0xdb), Observed: 219 (0xdb)
+[241470000] >>> DATA MATCHED <<<
+----------------------------------------
+[241470000] [GEN] Operation: UART_READ, TX payload: 99 (0x63)
+[242270000] [DRV] RX payload driven: 28 (0x1c)
+[242350000] [MON] Observed UART RX payload: 28 (0x1c)
+[242430000] [SCO] Expected: 28 (0x1c), Observed: 28 (0x1c)
+[242430000] >>> DATA MATCHED <<<
+----------------------------------------
+[242430000] [GEN] Operation: UART_READ, TX payload: 129 (0x81)
+[243230000] [DRV] RX payload driven: 94 (0x5e)
+[243310000] [MON] Observed UART RX payload: 94 (0x5e)
+[243390000] [SCO] Expected: 94 (0x5e), Observed: 94 (0x5e)
+[243390000] >>> DATA MATCHED <<<
+----------------------------------------
+[243390000] [GEN] Operation: UART_WRITE, TX payload: 249 (0xf9)
+[243550000] [DRV] TX payload driven: 249 (0xf9)
+[244270000] [MON] Observed UART TX payload: 249 (0xf9)
+[244350000] [SCO] Expected: 249 (0xf9), Observed: 249 (0xf9)
+[244350000] >>> DATA MATCHED <<<
+----------------------------------------
+[244350000] [GEN] Operation: UART_WRITE, TX payload: 2 (0x2)
+[244510000] [DRV] TX payload driven: 2 (0x2)
+[245230000] [MON] Observed UART TX payload: 2 (0x2)
+[245310000] [SCO] Expected: 2 (0x2), Observed: 2 (0x2)
+[245310000] >>> DATA MATCHED <<<
+----------------------------------------
+[245310000] [GEN] Operation: UART_READ, TX payload: 139 (0x8b)
+[246110000] [DRV] RX payload driven: 144 (0x90)
+[246190000] [MON] Observed UART RX payload: 144 (0x90)
+[246270000] [SCO] Expected: 144 (0x90), Observed: 144 (0x90)
+[246270000] >>> DATA MATCHED <<<
+----------------------------------------
+[246270000] [GEN] Operation: UART_READ, TX payload: 227 (0xe3)
+[247070000] [DRV] RX payload driven: 204 (0xcc)
+[247150000] [MON] Observed UART RX payload: 204 (0xcc)
+[247230000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[247230000] >>> DATA MATCHED <<<
+----------------------------------------
+[247230000] [GEN] Operation: UART_WRITE, TX payload: 234 (0xea)
+[247390000] [DRV] TX payload driven: 234 (0xea)
+[248110000] [MON] Observed UART TX payload: 234 (0xea)
+[248190000] [SCO] Expected: 234 (0xea), Observed: 234 (0xea)
+[248190000] >>> DATA MATCHED <<<
+----------------------------------------
+[248190000] [GEN] Operation: UART_WRITE, TX payload: 29 (0x1d)
+[248350000] [DRV] TX payload driven: 29 (0x1d)
+[249070000] [MON] Observed UART TX payload: 29 (0x1d)
+[249150000] [SCO] Expected: 29 (0x1d), Observed: 29 (0x1d)
+[249150000] >>> DATA MATCHED <<<
+----------------------------------------
+[249150000] [GEN] Operation: UART_READ, TX payload: 223 (0xdf)
+[249950000] [DRV] RX payload driven: 240 (0xf0)
+[250030000] [MON] Observed UART RX payload: 240 (0xf0)
+[250110000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[250110000] >>> DATA MATCHED <<<
+----------------------------------------
+[250110000] [GEN] Operation: UART_READ, TX payload: 40 (0x28)
+[250910000] [DRV] RX payload driven: 184 (0xb8)
+[250990000] [MON] Observed UART RX payload: 184 (0xb8)
+[251070000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[251070000] >>> DATA MATCHED <<<
+----------------------------------------
+[251070000] [GEN] Operation: UART_WRITE, TX payload: 114 (0x72)
+[251230000] [DRV] TX payload driven: 114 (0x72)
+[251950000] [MON] Observed UART TX payload: 114 (0x72)
+[252030000] [SCO] Expected: 114 (0x72), Observed: 114 (0x72)
+[252030000] >>> DATA MATCHED <<<
+----------------------------------------
+[252030000] [GEN] Operation: UART_READ, TX payload: 163 (0xa3)
+[252830000] [DRV] RX payload driven: 66 (0x42)
+[252910000] [MON] Observed UART RX payload: 66 (0x42)
+[252990000] [SCO] Expected: 66 (0x42), Observed: 66 (0x42)
+[252990000] >>> DATA MATCHED <<<
+----------------------------------------
+[252990000] [GEN] Operation: UART_WRITE, TX payload: 77 (0x4d)
+[253150000] [DRV] TX payload driven: 77 (0x4d)
+[253870000] [MON] Observed UART TX payload: 77 (0x4d)
+[253950000] [SCO] Expected: 77 (0x4d), Observed: 77 (0x4d)
+[253950000] >>> DATA MATCHED <<<
+----------------------------------------
+[253950000] [GEN] Operation: UART_WRITE, TX payload: 132 (0x84)
+[254110000] [DRV] TX payload driven: 132 (0x84)
+[254830000] [MON] Observed UART TX payload: 132 (0x84)
+[254910000] [SCO] Expected: 132 (0x84), Observed: 132 (0x84)
+[254910000] >>> DATA MATCHED <<<
+----------------------------------------
+[254910000] [GEN] Operation: UART_READ, TX payload: 248 (0xf8)
+[255710000] [DRV] RX payload driven: 210 (0xd2)
+[255790000] [MON] Observed UART RX payload: 210 (0xd2)
+[255870000] [SCO] Expected: 210 (0xd2), Observed: 210 (0xd2)
+[255870000] >>> DATA MATCHED <<<
+----------------------------------------
+[255870000] [GEN] Operation: UART_WRITE, TX payload: 186 (0xba)
+[256030000] [DRV] TX payload driven: 186 (0xba)
+[256750000] [MON] Observed UART TX payload: 186 (0xba)
+[256830000] [SCO] Expected: 186 (0xba), Observed: 186 (0xba)
+[256830000] >>> DATA MATCHED <<<
+----------------------------------------
+[256830000] [GEN] Operation: UART_READ, TX payload: 112 (0x70)
+[257630000] [DRV] RX payload driven: 232 (0xe8)
+[257710000] [MON] Observed UART RX payload: 232 (0xe8)
+[257790000] [SCO] Expected: 232 (0xe8), Observed: 232 (0xe8)
+[257790000] >>> DATA MATCHED <<<
+----------------------------------------
+[257790000] [GEN] Operation: UART_READ, TX payload: 109 (0x6d)
+[258590000] [DRV] RX payload driven: 12 (0xc)
+[258670000] [MON] Observed UART RX payload: 12 (0xc)
+[258750000] [SCO] Expected: 12 (0xc), Observed: 12 (0xc)
+[258750000] >>> DATA MATCHED <<<
+----------------------------------------
+[258750000] [GEN] Operation: UART_WRITE, TX payload: 133 (0x85)
+[258910000] [DRV] TX payload driven: 133 (0x85)
+[259630000] [MON] Observed UART TX payload: 133 (0x85)
+[259710000] [SCO] Expected: 133 (0x85), Observed: 133 (0x85)
+[259710000] >>> DATA MATCHED <<<
+----------------------------------------
+[259710000] [GEN] Operation: UART_READ, TX payload: 5 (0x5)
+[260510000] [DRV] RX payload driven: 220 (0xdc)
+[260590000] [MON] Observed UART RX payload: 220 (0xdc)
+[260670000] [SCO] Expected: 220 (0xdc), Observed: 220 (0xdc)
+[260670000] >>> DATA MATCHED <<<
+----------------------------------------
+[260670000] [GEN] Operation: UART_WRITE, TX payload: 227 (0xe3)
+[260830000] [DRV] TX payload driven: 227 (0xe3)
+[261550000] [MON] Observed UART TX payload: 227 (0xe3)
+[261630000] [SCO] Expected: 227 (0xe3), Observed: 227 (0xe3)
+[261630000] >>> DATA MATCHED <<<
+----------------------------------------
+[261630000] [GEN] Operation: UART_WRITE, TX payload: 14 (0xe)
+[261790000] [DRV] TX payload driven: 14 (0xe)
+[262510000] [MON] Observed UART TX payload: 14 (0xe)
+[262590000] [SCO] Expected: 14 (0xe), Observed: 14 (0xe)
+[262590000] >>> DATA MATCHED <<<
+----------------------------------------
+[262590000] [GEN] Operation: UART_READ, TX payload: 10 (0xa)
+[263390000] [DRV] RX payload driven: 84 (0x54)
+[263470000] [MON] Observed UART RX payload: 84 (0x54)
+[263550000] [SCO] Expected: 84 (0x54), Observed: 84 (0x54)
+[263550000] >>> DATA MATCHED <<<
+----------------------------------------
+[263550000] [GEN] Operation: UART_READ, TX payload: 225 (0xe1)
+[264350000] [DRV] RX payload driven: 236 (0xec)
+[264430000] [MON] Observed UART RX payload: 236 (0xec)
+[264510000] [SCO] Expected: 236 (0xec), Observed: 236 (0xec)
+[264510000] >>> DATA MATCHED <<<
+----------------------------------------
+[264510000] [GEN] Operation: UART_WRITE, TX payload: 22 (0x16)
+[264670000] [DRV] TX payload driven: 22 (0x16)
+[265390000] [MON] Observed UART TX payload: 22 (0x16)
+[265470000] [SCO] Expected: 22 (0x16), Observed: 22 (0x16)
+[265470000] >>> DATA MATCHED <<<
+----------------------------------------
+[265470000] [GEN] Operation: UART_WRITE, TX payload: 169 (0xa9)
+[265630000] [DRV] TX payload driven: 169 (0xa9)
+[266350000] [MON] Observed UART TX payload: 169 (0xa9)
+[266430000] [SCO] Expected: 169 (0xa9), Observed: 169 (0xa9)
+[266430000] >>> DATA MATCHED <<<
+----------------------------------------
+[266430000] [GEN] Operation: UART_READ, TX payload: 49 (0x31)
+[267230000] [DRV] RX payload driven: 66 (0x42)
+[267310000] [MON] Observed UART RX payload: 66 (0x42)
+[267390000] [SCO] Expected: 66 (0x42), Observed: 66 (0x42)
+[267390000] >>> DATA MATCHED <<<
+----------------------------------------
+[267390000] [GEN] Operation: UART_WRITE, TX payload: 66 (0x42)
+[267550000] [DRV] TX payload driven: 66 (0x42)
+[268270000] [MON] Observed UART TX payload: 66 (0x42)
+[268350000] [SCO] Expected: 66 (0x42), Observed: 66 (0x42)
+[268350000] >>> DATA MATCHED <<<
+----------------------------------------
+[268350000] [GEN] Operation: UART_READ, TX payload: 30 (0x1e)
+[269150000] [DRV] RX payload driven: 146 (0x92)
+[269230000] [MON] Observed UART RX payload: 146 (0x92)
+[269310000] [SCO] Expected: 146 (0x92), Observed: 146 (0x92)
+[269310000] >>> DATA MATCHED <<<
+----------------------------------------
+[269310000] [GEN] Operation: UART_WRITE, TX payload: 225 (0xe1)
+[269470000] [DRV] TX payload driven: 225 (0xe1)
+[270190000] [MON] Observed UART TX payload: 225 (0xe1)
+[270270000] [SCO] Expected: 225 (0xe1), Observed: 225 (0xe1)
+[270270000] >>> DATA MATCHED <<<
+----------------------------------------
+[270270000] [GEN] Operation: UART_READ, TX payload: 178 (0xb2)
+[271070000] [DRV] RX payload driven: 28 (0x1c)
+[271150000] [MON] Observed UART RX payload: 28 (0x1c)
+[271230000] [SCO] Expected: 28 (0x1c), Observed: 28 (0x1c)
+[271230000] >>> DATA MATCHED <<<
+----------------------------------------
+[271230000] [GEN] Operation: UART_READ, TX payload: 126 (0x7e)
+[272030000] [DRV] RX payload driven: 108 (0x6c)
+[272110000] [MON] Observed UART RX payload: 108 (0x6c)
+[272190000] [SCO] Expected: 108 (0x6c), Observed: 108 (0x6c)
+[272190000] >>> DATA MATCHED <<<
+----------------------------------------
+[272190000] [GEN] Operation: UART_WRITE, TX payload: 206 (0xce)
+[272350000] [DRV] TX payload driven: 206 (0xce)
+[273070000] [MON] Observed UART TX payload: 206 (0xce)
+[273150000] [SCO] Expected: 206 (0xce), Observed: 206 (0xce)
+[273150000] >>> DATA MATCHED <<<
+----------------------------------------
+[273150000] [GEN] Operation: UART_WRITE, TX payload: 235 (0xeb)
+[273310000] [DRV] TX payload driven: 235 (0xeb)
+[274030000] [MON] Observed UART TX payload: 235 (0xeb)
+[274110000] [SCO] Expected: 235 (0xeb), Observed: 235 (0xeb)
+[274110000] >>> DATA MATCHED <<<
+----------------------------------------
+[274110000] [GEN] Operation: UART_READ, TX payload: 88 (0x58)
+[274910000] [DRV] RX payload driven: 134 (0x86)
+[274990000] [MON] Observed UART RX payload: 134 (0x86)
+[275070000] [SCO] Expected: 134 (0x86), Observed: 134 (0x86)
+[275070000] >>> DATA MATCHED <<<
+----------------------------------------
+[275070000] [GEN] Operation: UART_WRITE, TX payload: 9 (0x9)
+[275230000] [DRV] TX payload driven: 9 (0x9)
+[275950000] [MON] Observed UART TX payload: 9 (0x9)
+[276030000] [SCO] Expected: 9 (0x9), Observed: 9 (0x9)
+[276030000] >>> DATA MATCHED <<<
+----------------------------------------
+[276030000] [GEN] Operation: UART_READ, TX payload: 59 (0x3b)
+[276830000] [DRV] RX payload driven: 58 (0x3a)
+[276910000] [MON] Observed UART RX payload: 58 (0x3a)
+[276990000] [SCO] Expected: 58 (0x3a), Observed: 58 (0x3a)
+[276990000] >>> DATA MATCHED <<<
+----------------------------------------
+[276990000] [GEN] Operation: UART_READ, TX payload: 134 (0x86)
+[277790000] [DRV] RX payload driven: 204 (0xcc)
+[277870000] [MON] Observed UART RX payload: 204 (0xcc)
+[277950000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[277950000] >>> DATA MATCHED <<<
+----------------------------------------
+[277950000] [GEN] Operation: UART_WRITE, TX payload: 133 (0x85)
+[278110000] [DRV] TX payload driven: 133 (0x85)
+[278830000] [MON] Observed UART TX payload: 133 (0x85)
+[278910000] [SCO] Expected: 133 (0x85), Observed: 133 (0x85)
+[278910000] >>> DATA MATCHED <<<
+----------------------------------------
+[278910000] [GEN] Operation: UART_WRITE, TX payload: 42 (0x2a)
+[279070000] [DRV] TX payload driven: 42 (0x2a)
+[279790000] [MON] Observed UART TX payload: 42 (0x2a)
+[279870000] [SCO] Expected: 42 (0x2a), Observed: 42 (0x2a)
+[279870000] >>> DATA MATCHED <<<
+----------------------------------------
+[279870000] [GEN] Operation: UART_READ, TX payload: 196 (0xc4)
+[280670000] [DRV] RX payload driven: 196 (0xc4)
+[280750000] [MON] Observed UART RX payload: 196 (0xc4)
+[280830000] [SCO] Expected: 196 (0xc4), Observed: 196 (0xc4)
+[280830000] >>> DATA MATCHED <<<
+----------------------------------------
+[280830000] [GEN] Operation: UART_WRITE, TX payload: 223 (0xdf)
+[280990000] [DRV] TX payload driven: 223 (0xdf)
+[281710000] [MON] Observed UART TX payload: 223 (0xdf)
+[281790000] [SCO] Expected: 223 (0xdf), Observed: 223 (0xdf)
+[281790000] >>> DATA MATCHED <<<
+----------------------------------------
+[281790000] [GEN] Operation: UART_READ, TX payload: 168 (0xa8)
+[282590000] [DRV] RX payload driven: 26 (0x1a)
+[282670000] [MON] Observed UART RX payload: 26 (0x1a)
+[282750000] [SCO] Expected: 26 (0x1a), Observed: 26 (0x1a)
+[282750000] >>> DATA MATCHED <<<
+----------------------------------------
+[282750000] [GEN] Operation: UART_WRITE, TX payload: 157 (0x9d)
+[282910000] [DRV] TX payload driven: 157 (0x9d)
+[283630000] [MON] Observed UART TX payload: 157 (0x9d)
+[283710000] [SCO] Expected: 157 (0x9d), Observed: 157 (0x9d)
+[283710000] >>> DATA MATCHED <<<
+----------------------------------------
+[283710000] [GEN] Operation: UART_READ, TX payload: 228 (0xe4)
+[284510000] [DRV] RX payload driven: 254 (0xfe)
+[284590000] [MON] Observed UART RX payload: 254 (0xfe)
+[284670000] [SCO] Expected: 254 (0xfe), Observed: 254 (0xfe)
+[284670000] >>> DATA MATCHED <<<
+----------------------------------------
+[284670000] [GEN] Operation: UART_WRITE, TX payload: 187 (0xbb)
+[284830000] [DRV] TX payload driven: 187 (0xbb)
+[285550000] [MON] Observed UART TX payload: 187 (0xbb)
+[285630000] [SCO] Expected: 187 (0xbb), Observed: 187 (0xbb)
+[285630000] >>> DATA MATCHED <<<
+----------------------------------------
+[285630000] [GEN] Operation: UART_READ, TX payload: 172 (0xac)
+[286430000] [DRV] RX payload driven: 174 (0xae)
+[286510000] [MON] Observed UART RX payload: 174 (0xae)
+[286590000] [SCO] Expected: 174 (0xae), Observed: 174 (0xae)
+[286590000] >>> DATA MATCHED <<<
+----------------------------------------
+[286590000] [GEN] Operation: UART_WRITE, TX payload: 18 (0x12)
+[286750000] [DRV] TX payload driven: 18 (0x12)
+[287470000] [MON] Observed UART TX payload: 18 (0x12)
+[287550000] [SCO] Expected: 18 (0x12), Observed: 18 (0x12)
+[287550000] >>> DATA MATCHED <<<
+----------------------------------------
+[287550000] [GEN] Operation: UART_READ, TX payload: 4 (0x4)
+[288350000] [DRV] RX payload driven: 244 (0xf4)
+[288430000] [MON] Observed UART RX payload: 244 (0xf4)
+[288510000] [SCO] Expected: 244 (0xf4), Observed: 244 (0xf4)
+[288510000] >>> DATA MATCHED <<<
+----------------------------------------
+[288510000] [GEN] Operation: UART_READ, TX payload: 3 (0x3)
+[289310000] [DRV] RX payload driven: 18 (0x12)
+[289390000] [MON] Observed UART RX payload: 18 (0x12)
+[289470000] [SCO] Expected: 18 (0x12), Observed: 18 (0x12)
+[289470000] >>> DATA MATCHED <<<
+----------------------------------------
+[289470000] [GEN] Operation: UART_WRITE, TX payload: 68 (0x44)
+[289630000] [DRV] TX payload driven: 68 (0x44)
+[290350000] [MON] Observed UART TX payload: 68 (0x44)
+[290430000] [SCO] Expected: 68 (0x44), Observed: 68 (0x44)
+[290430000] >>> DATA MATCHED <<<
+----------------------------------------
+[290430000] [GEN] Operation: UART_READ, TX payload: 213 (0xd5)
+[291230000] [DRV] RX payload driven: 58 (0x3a)
+[291310000] [MON] Observed UART RX payload: 58 (0x3a)
+[291390000] [SCO] Expected: 58 (0x3a), Observed: 58 (0x3a)
+[291390000] >>> DATA MATCHED <<<
+----------------------------------------
+[291390000] [GEN] Operation: UART_WRITE, TX payload: 217 (0xd9)
+[291550000] [DRV] TX payload driven: 217 (0xd9)
+[292270000] [MON] Observed UART TX payload: 217 (0xd9)
+[292350000] [SCO] Expected: 217 (0xd9), Observed: 217 (0xd9)
+[292350000] >>> DATA MATCHED <<<
+----------------------------------------
+[292350000] [GEN] Operation: UART_READ, TX payload: 116 (0x74)
+[293150000] [DRV] RX payload driven: 88 (0x58)
+[293230000] [MON] Observed UART RX payload: 88 (0x58)
+[293310000] [SCO] Expected: 88 (0x58), Observed: 88 (0x58)
+[293310000] >>> DATA MATCHED <<<
+----------------------------------------
+[293310000] [GEN] Operation: UART_WRITE, TX payload: 72 (0x48)
+[293470000] [DRV] TX payload driven: 72 (0x48)
+[294190000] [MON] Observed UART TX payload: 72 (0x48)
+[294270000] [SCO] Expected: 72 (0x48), Observed: 72 (0x48)
+[294270000] >>> DATA MATCHED <<<
+----------------------------------------
+[294270000] [GEN] Operation: UART_WRITE, TX payload: 78 (0x4e)
+[294430000] [DRV] TX payload driven: 78 (0x4e)
+[295150000] [MON] Observed UART TX payload: 78 (0x4e)
+[295230000] [SCO] Expected: 78 (0x4e), Observed: 78 (0x4e)
+[295230000] >>> DATA MATCHED <<<
+----------------------------------------
+[295230000] [GEN] Operation: UART_READ, TX payload: 82 (0x52)
+[296030000] [DRV] RX payload driven: 40 (0x28)
+[296110000] [MON] Observed UART RX payload: 40 (0x28)
+[296190000] [SCO] Expected: 40 (0x28), Observed: 40 (0x28)
+[296190000] >>> DATA MATCHED <<<
+----------------------------------------
+[296190000] [GEN] Operation: UART_WRITE, TX payload: 46 (0x2e)
+[296350000] [DRV] TX payload driven: 46 (0x2e)
+[297070000] [MON] Observed UART TX payload: 46 (0x2e)
+[297150000] [SCO] Expected: 46 (0x2e), Observed: 46 (0x2e)
+[297150000] >>> DATA MATCHED <<<
+----------------------------------------
+[297150000] [GEN] Operation: UART_READ, TX payload: 148 (0x94)
+[297950000] [DRV] RX payload driven: 34 (0x22)
+[298030000] [MON] Observed UART RX payload: 34 (0x22)
+[298110000] [SCO] Expected: 34 (0x22), Observed: 34 (0x22)
+[298110000] >>> DATA MATCHED <<<
+----------------------------------------
+[298110000] [GEN] Operation: UART_READ, TX payload: 49 (0x31)
+[298910000] [DRV] RX payload driven: 220 (0xdc)
+[298990000] [MON] Observed UART RX payload: 220 (0xdc)
+[299070000] [SCO] Expected: 220 (0xdc), Observed: 220 (0xdc)
+[299070000] >>> DATA MATCHED <<<
+----------------------------------------
+[299070000] [GEN] Operation: UART_WRITE, TX payload: 14 (0xe)
+[299230000] [DRV] TX payload driven: 14 (0xe)
+[299950000] [MON] Observed UART TX payload: 14 (0xe)
+[300030000] [SCO] Expected: 14 (0xe), Observed: 14 (0xe)
+[300030000] >>> DATA MATCHED <<<
+----------------------------------------
+[300030000] [GEN] Operation: UART_WRITE, TX payload: 198 (0xc6)
+[300190000] [DRV] TX payload driven: 198 (0xc6)
+[300910000] [MON] Observed UART TX payload: 198 (0xc6)
+[300990000] [SCO] Expected: 198 (0xc6), Observed: 198 (0xc6)
+[300990000] >>> DATA MATCHED <<<
+----------------------------------------
+[300990000] [GEN] Operation: UART_READ, TX payload: 112 (0x70)
+[301790000] [DRV] RX payload driven: 154 (0x9a)
+[301870000] [MON] Observed UART RX payload: 154 (0x9a)
+[301950000] [SCO] Expected: 154 (0x9a), Observed: 154 (0x9a)
+[301950000] >>> DATA MATCHED <<<
+----------------------------------------
+[301950000] [GEN] Operation: UART_READ, TX payload: 126 (0x7e)
+[302750000] [DRV] RX payload driven: 246 (0xf6)
+[302830000] [MON] Observed UART RX payload: 246 (0xf6)
+[302910000] [SCO] Expected: 246 (0xf6), Observed: 246 (0xf6)
+[302910000] >>> DATA MATCHED <<<
+----------------------------------------
+[302910000] [GEN] Operation: UART_WRITE, TX payload: 138 (0x8a)
+[303070000] [DRV] TX payload driven: 138 (0x8a)
+[303790000] [MON] Observed UART TX payload: 138 (0x8a)
+[303870000] [SCO] Expected: 138 (0x8a), Observed: 138 (0x8a)
+[303870000] >>> DATA MATCHED <<<
+----------------------------------------
+[303870000] [GEN] Operation: UART_READ, TX payload: 15 (0xf)
+[304670000] [DRV] RX payload driven: 114 (0x72)
+[304750000] [MON] Observed UART RX payload: 114 (0x72)
+[304830000] [SCO] Expected: 114 (0x72), Observed: 114 (0x72)
+[304830000] >>> DATA MATCHED <<<
+----------------------------------------
+[304830000] [GEN] Operation: UART_WRITE, TX payload: 195 (0xc3)
+[304990000] [DRV] TX payload driven: 195 (0xc3)
+[305710000] [MON] Observed UART TX payload: 195 (0xc3)
+[305790000] [SCO] Expected: 195 (0xc3), Observed: 195 (0xc3)
+[305790000] >>> DATA MATCHED <<<
+----------------------------------------
+[305790000] [GEN] Operation: UART_WRITE, TX payload: 213 (0xd5)
+[305950000] [DRV] TX payload driven: 213 (0xd5)
+[306670000] [MON] Observed UART TX payload: 213 (0xd5)
+[306750000] [SCO] Expected: 213 (0xd5), Observed: 213 (0xd5)
+[306750000] >>> DATA MATCHED <<<
+----------------------------------------
+[306750000] [GEN] Operation: UART_READ, TX payload: 77 (0x4d)
+[307550000] [DRV] RX payload driven: 192 (0xc0)
+[307630000] [MON] Observed UART RX payload: 192 (0xc0)
+[307710000] [SCO] Expected: 192 (0xc0), Observed: 192 (0xc0)
+[307710000] >>> DATA MATCHED <<<
+----------------------------------------
+[307710000] [GEN] Operation: UART_WRITE, TX payload: 65 (0x41)
+[307870000] [DRV] TX payload driven: 65 (0x41)
+[308590000] [MON] Observed UART TX payload: 65 (0x41)
+[308670000] [SCO] Expected: 65 (0x41), Observed: 65 (0x41)
+[308670000] >>> DATA MATCHED <<<
+----------------------------------------
+[308670000] [GEN] Operation: UART_READ, TX payload: 253 (0xfd)
+[309470000] [DRV] RX payload driven: 204 (0xcc)
+[309550000] [MON] Observed UART RX payload: 204 (0xcc)
+[309630000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[309630000] >>> DATA MATCHED <<<
+----------------------------------------
+[309630000] [GEN] Operation: UART_READ, TX payload: 59 (0x3b)
+[310430000] [DRV] RX payload driven: 238 (0xee)
+[310510000] [MON] Observed UART RX payload: 238 (0xee)
+[310590000] [SCO] Expected: 238 (0xee), Observed: 238 (0xee)
+[310590000] >>> DATA MATCHED <<<
+----------------------------------------
+[310590000] [GEN] Operation: UART_WRITE, TX payload: 229 (0xe5)
+[310750000] [DRV] TX payload driven: 229 (0xe5)
+[311470000] [MON] Observed UART TX payload: 229 (0xe5)
+[311550000] [SCO] Expected: 229 (0xe5), Observed: 229 (0xe5)
+[311550000] >>> DATA MATCHED <<<
+----------------------------------------
+[311550000] [GEN] Operation: UART_WRITE, TX payload: 155 (0x9b)
+[311710000] [DRV] TX payload driven: 155 (0x9b)
+[312430000] [MON] Observed UART TX payload: 155 (0x9b)
+[312510000] [SCO] Expected: 155 (0x9b), Observed: 155 (0x9b)
+[312510000] >>> DATA MATCHED <<<
+----------------------------------------
+[312510000] [GEN] Operation: UART_READ, TX payload: 118 (0x76)
+[313310000] [DRV] RX payload driven: 46 (0x2e)
+[313390000] [MON] Observed UART RX payload: 46 (0x2e)
+[313470000] [SCO] Expected: 46 (0x2e), Observed: 46 (0x2e)
+[313470000] >>> DATA MATCHED <<<
+----------------------------------------
+[313470000] [GEN] Operation: UART_READ, TX payload: 149 (0x95)
+[314270000] [DRV] RX payload driven: 54 (0x36)
+[314350000] [MON] Observed UART RX payload: 54 (0x36)
+[314430000] [SCO] Expected: 54 (0x36), Observed: 54 (0x36)
+[314430000] >>> DATA MATCHED <<<
+----------------------------------------
+[314430000] [GEN] Operation: UART_WRITE, TX payload: 218 (0xda)
+[314590000] [DRV] TX payload driven: 218 (0xda)
+[315310000] [MON] Observed UART TX payload: 218 (0xda)
+[315390000] [SCO] Expected: 218 (0xda), Observed: 218 (0xda)
+[315390000] >>> DATA MATCHED <<<
+----------------------------------------
+[315390000] [GEN] Operation: UART_READ, TX payload: 156 (0x9c)
+[316190000] [DRV] RX payload driven: 24 (0x18)
+[316270000] [MON] Observed UART RX payload: 24 (0x18)
+[316350000] [SCO] Expected: 24 (0x18), Observed: 24 (0x18)
+[316350000] >>> DATA MATCHED <<<
+----------------------------------------
+[316350000] [GEN] Operation: UART_WRITE, TX payload: 59 (0x3b)
+[316510000] [DRV] TX payload driven: 59 (0x3b)
+[317230000] [MON] Observed UART TX payload: 59 (0x3b)
+[317310000] [SCO] Expected: 59 (0x3b), Observed: 59 (0x3b)
+[317310000] >>> DATA MATCHED <<<
+----------------------------------------
+[317310000] [GEN] Operation: UART_WRITE, TX payload: 14 (0xe)
+[317470000] [DRV] TX payload driven: 14 (0xe)
+[318190000] [MON] Observed UART TX payload: 14 (0xe)
+[318270000] [SCO] Expected: 14 (0xe), Observed: 14 (0xe)
+[318270000] >>> DATA MATCHED <<<
+----------------------------------------
+[318270000] [GEN] Operation: UART_READ, TX payload: 117 (0x75)
+[319070000] [DRV] RX payload driven: 140 (0x8c)
+[319150000] [MON] Observed UART RX payload: 140 (0x8c)
+[319230000] [SCO] Expected: 140 (0x8c), Observed: 140 (0x8c)
+[319230000] >>> DATA MATCHED <<<
+----------------------------------------
+[319230000] [GEN] Operation: UART_WRITE, TX payload: 47 (0x2f)
+[319390000] [DRV] TX payload driven: 47 (0x2f)
+[320110000] [MON] Observed UART TX payload: 47 (0x2f)
+[320190000] [SCO] Expected: 47 (0x2f), Observed: 47 (0x2f)
+[320190000] >>> DATA MATCHED <<<
+----------------------------------------
+[320190000] [GEN] Operation: UART_READ, TX payload: 152 (0x98)
+[320990000] [DRV] RX payload driven: 176 (0xb0)
+[321070000] [MON] Observed UART RX payload: 176 (0xb0)
+[321150000] [SCO] Expected: 176 (0xb0), Observed: 176 (0xb0)
+[321150000] >>> DATA MATCHED <<<
+----------------------------------------
+[321150000] [GEN] Operation: UART_WRITE, TX payload: 79 (0x4f)
+[321310000] [DRV] TX payload driven: 79 (0x4f)
+[322030000] [MON] Observed UART TX payload: 79 (0x4f)
+[322110000] [SCO] Expected: 79 (0x4f), Observed: 79 (0x4f)
+[322110000] >>> DATA MATCHED <<<
+----------------------------------------
+[322110000] [GEN] Operation: UART_READ, TX payload: 64 (0x40)
+[322910000] [DRV] RX payload driven: 240 (0xf0)
+[322990000] [MON] Observed UART RX payload: 240 (0xf0)
+[323070000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[323070000] >>> DATA MATCHED <<<
+----------------------------------------
+[323070000] [GEN] Operation: UART_READ, TX payload: 167 (0xa7)
+[323870000] [DRV] RX payload driven: 6 (0x6)
+[323950000] [MON] Observed UART RX payload: 6 (0x6)
+[324030000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[324030000] >>> DATA MATCHED <<<
+----------------------------------------
+[324030000] [GEN] Operation: UART_WRITE, TX payload: 66 (0x42)
+[324190000] [DRV] TX payload driven: 66 (0x42)
+[324910000] [MON] Observed UART TX payload: 66 (0x42)
+[324990000] [SCO] Expected: 66 (0x42), Observed: 66 (0x42)
+[324990000] >>> DATA MATCHED <<<
+----------------------------------------
+[324990000] [GEN] Operation: UART_WRITE, TX payload: 214 (0xd6)
+[325150000] [DRV] TX payload driven: 214 (0xd6)
+[325870000] [MON] Observed UART TX payload: 214 (0xd6)
+[325950000] [SCO] Expected: 214 (0xd6), Observed: 214 (0xd6)
+[325950000] >>> DATA MATCHED <<<
+----------------------------------------
+[325950000] [GEN] Operation: UART_READ, TX payload: 180 (0xb4)
+[326750000] [DRV] RX payload driven: 234 (0xea)
+[326830000] [MON] Observed UART RX payload: 234 (0xea)
+[326910000] [SCO] Expected: 234 (0xea), Observed: 234 (0xea)
+[326910000] >>> DATA MATCHED <<<
+----------------------------------------
+[326910000] [GEN] Operation: UART_WRITE, TX payload: 138 (0x8a)
+[327070000] [DRV] TX payload driven: 138 (0x8a)
+[327790000] [MON] Observed UART TX payload: 138 (0x8a)
+[327870000] [SCO] Expected: 138 (0x8a), Observed: 138 (0x8a)
+[327870000] >>> DATA MATCHED <<<
+----------------------------------------
+[327870000] [GEN] Operation: UART_READ, TX payload: 101 (0x65)
+[328670000] [DRV] RX payload driven: 250 (0xfa)
+[328750000] [MON] Observed UART RX payload: 250 (0xfa)
+[328830000] [SCO] Expected: 250 (0xfa), Observed: 250 (0xfa)
+[328830000] >>> DATA MATCHED <<<
+----------------------------------------
+[328830000] [GEN] Operation: UART_READ, TX payload: 73 (0x49)
+[329630000] [DRV] RX payload driven: 210 (0xd2)
+[329710000] [MON] Observed UART RX payload: 210 (0xd2)
+[329790000] [SCO] Expected: 210 (0xd2), Observed: 210 (0xd2)
+[329790000] >>> DATA MATCHED <<<
+----------------------------------------
+[329790000] [GEN] Operation: UART_WRITE, TX payload: 231 (0xe7)
+[329950000] [DRV] TX payload driven: 231 (0xe7)
+[330670000] [MON] Observed UART TX payload: 231 (0xe7)
+[330750000] [SCO] Expected: 231 (0xe7), Observed: 231 (0xe7)
+[330750000] >>> DATA MATCHED <<<
+----------------------------------------
+[330750000] [GEN] Operation: UART_WRITE, TX payload: 164 (0xa4)
+[330910000] [DRV] TX payload driven: 164 (0xa4)
+[331630000] [MON] Observed UART TX payload: 164 (0xa4)
+[331710000] [SCO] Expected: 164 (0xa4), Observed: 164 (0xa4)
+[331710000] >>> DATA MATCHED <<<
+----------------------------------------
+[331710000] [GEN] Operation: UART_READ, TX payload: 55 (0x37)
+[332510000] [DRV] RX payload driven: 6 (0x6)
+[332590000] [MON] Observed UART RX payload: 6 (0x6)
+[332670000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[332670000] >>> DATA MATCHED <<<
+----------------------------------------
+[332670000] [GEN] Operation: UART_WRITE, TX payload: 173 (0xad)
+[332830000] [DRV] TX payload driven: 173 (0xad)
+[333550000] [MON] Observed UART TX payload: 173 (0xad)
+[333630000] [SCO] Expected: 173 (0xad), Observed: 173 (0xad)
+[333630000] >>> DATA MATCHED <<<
+----------------------------------------
+[333630000] [GEN] Operation: UART_READ, TX payload: 47 (0x2f)
+[334430000] [DRV] RX payload driven: 184 (0xb8)
+[334510000] [MON] Observed UART RX payload: 184 (0xb8)
+[334590000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[334590000] >>> DATA MATCHED <<<
+----------------------------------------
+[334590000] [GEN] Operation: UART_WRITE, TX payload: 222 (0xde)
+[334750000] [DRV] TX payload driven: 222 (0xde)
+[335470000] [MON] Observed UART TX payload: 222 (0xde)
+[335550000] [SCO] Expected: 222 (0xde), Observed: 222 (0xde)
+[335550000] >>> DATA MATCHED <<<
+----------------------------------------
+[335550000] [GEN] Operation: UART_READ, TX payload: 255 (0xff)
+[336350000] [DRV] RX payload driven: 66 (0x42)
+[336430000] [MON] Observed UART RX payload: 66 (0x42)
+[336510000] [SCO] Expected: 66 (0x42), Observed: 66 (0x42)
+[336510000] >>> DATA MATCHED <<<
+----------------------------------------
+[336510000] [GEN] Operation: UART_READ, TX payload: 32 (0x20)
+[337310000] [DRV] RX payload driven: 148 (0x94)
+[337390000] [MON] Observed UART RX payload: 148 (0x94)
+[337470000] [SCO] Expected: 148 (0x94), Observed: 148 (0x94)
+[337470000] >>> DATA MATCHED <<<
+----------------------------------------
+[337470000] [GEN] Operation: UART_WRITE, TX payload: 156 (0x9c)
+[337630000] [DRV] TX payload driven: 156 (0x9c)
+[338350000] [MON] Observed UART TX payload: 156 (0x9c)
+[338430000] [SCO] Expected: 156 (0x9c), Observed: 156 (0x9c)
+[338430000] >>> DATA MATCHED <<<
+----------------------------------------
+[338430000] [GEN] Operation: UART_READ, TX payload: 12 (0xc)
+[339230000] [DRV] RX payload driven: 206 (0xce)
+[339310000] [MON] Observed UART RX payload: 206 (0xce)
+[339390000] [SCO] Expected: 206 (0xce), Observed: 206 (0xce)
+[339390000] >>> DATA MATCHED <<<
+----------------------------------------
+[339390000] [GEN] Operation: UART_WRITE, TX payload: 96 (0x60)
+[339550000] [DRV] TX payload driven: 96 (0x60)
+[340270000] [MON] Observed UART TX payload: 96 (0x60)
+[340350000] [SCO] Expected: 96 (0x60), Observed: 96 (0x60)
+[340350000] >>> DATA MATCHED <<<
+----------------------------------------
+[340350000] [GEN] Operation: UART_READ, TX payload: 37 (0x25)
+[341150000] [DRV] RX payload driven: 136 (0x88)
+[341230000] [MON] Observed UART RX payload: 136 (0x88)
+[341310000] [SCO] Expected: 136 (0x88), Observed: 136 (0x88)
+[341310000] >>> DATA MATCHED <<<
+----------------------------------------
+[341310000] [GEN] Operation: UART_WRITE, TX payload: 31 (0x1f)
+[341470000] [DRV] TX payload driven: 31 (0x1f)
+[342190000] [MON] Observed UART TX payload: 31 (0x1f)
+[342270000] [SCO] Expected: 31 (0x1f), Observed: 31 (0x1f)
+[342270000] >>> DATA MATCHED <<<
+----------------------------------------
+[342270000] [GEN] Operation: UART_READ, TX payload: 17 (0x11)
+[343070000] [DRV] RX payload driven: 132 (0x84)
+[343150000] [MON] Observed UART RX payload: 132 (0x84)
+[343230000] [SCO] Expected: 132 (0x84), Observed: 132 (0x84)
+[343230000] >>> DATA MATCHED <<<
+----------------------------------------
+[343230000] [GEN] Operation: UART_WRITE, TX payload: 200 (0xc8)
+[343390000] [DRV] TX payload driven: 200 (0xc8)
+[344110000] [MON] Observed UART TX payload: 200 (0xc8)
+[344190000] [SCO] Expected: 200 (0xc8), Observed: 200 (0xc8)
+[344190000] >>> DATA MATCHED <<<
+----------------------------------------
+[344190000] [GEN] Operation: UART_WRITE, TX payload: 161 (0xa1)
+[344350000] [DRV] TX payload driven: 161 (0xa1)
+[345070000] [MON] Observed UART TX payload: 161 (0xa1)
+[345150000] [SCO] Expected: 161 (0xa1), Observed: 161 (0xa1)
+[345150000] >>> DATA MATCHED <<<
+----------------------------------------
+[345150000] [GEN] Operation: UART_READ, TX payload: 31 (0x1f)
+[345950000] [DRV] RX payload driven: 102 (0x66)
+[346030000] [MON] Observed UART RX payload: 102 (0x66)
+[346110000] [SCO] Expected: 102 (0x66), Observed: 102 (0x66)
+[346110000] >>> DATA MATCHED <<<
+----------------------------------------
+[346110000] [GEN] Operation: UART_WRITE, TX payload: 199 (0xc7)
+[346270000] [DRV] TX payload driven: 199 (0xc7)
+[346990000] [MON] Observed UART TX payload: 199 (0xc7)
+[347070000] [SCO] Expected: 199 (0xc7), Observed: 199 (0xc7)
+[347070000] >>> DATA MATCHED <<<
+----------------------------------------
+[347070000] [GEN] Operation: UART_READ, TX payload: 129 (0x81)
+[347870000] [DRV] RX payload driven: 192 (0xc0)
+[347950000] [MON] Observed UART RX payload: 192 (0xc0)
+[348030000] [SCO] Expected: 192 (0xc0), Observed: 192 (0xc0)
+[348030000] >>> DATA MATCHED <<<
+----------------------------------------
+[348030000] [GEN] Operation: UART_READ, TX payload: 31 (0x1f)
+[348830000] [DRV] RX payload driven: 60 (0x3c)
+[348910000] [MON] Observed UART RX payload: 60 (0x3c)
+[348990000] [SCO] Expected: 60 (0x3c), Observed: 60 (0x3c)
+[348990000] >>> DATA MATCHED <<<
+----------------------------------------
+[348990000] [GEN] Operation: UART_WRITE, TX payload: 116 (0x74)
+[349150000] [DRV] TX payload driven: 116 (0x74)
+[349870000] [MON] Observed UART TX payload: 116 (0x74)
+[349950000] [SCO] Expected: 116 (0x74), Observed: 116 (0x74)
+[349950000] >>> DATA MATCHED <<<
+----------------------------------------
+[349950000] [GEN] Operation: UART_READ, TX payload: 199 (0xc7)
+[350750000] [DRV] RX payload driven: 0 (0x0)
+[350830000] [MON] Observed UART RX payload: 0 (0x0)
+[350910000] [SCO] Expected: 0 (0x0), Observed: 0 (0x0)
+[350910000] >>> DATA MATCHED <<<
+----------------------------------------
+[350910000] [GEN] Operation: UART_WRITE, TX payload: 165 (0xa5)
+[351070000] [DRV] TX payload driven: 165 (0xa5)
+[351790000] [MON] Observed UART TX payload: 165 (0xa5)
+[351870000] [SCO] Expected: 165 (0xa5), Observed: 165 (0xa5)
+[351870000] >>> DATA MATCHED <<<
+----------------------------------------
+[351870000] [GEN] Operation: UART_WRITE, TX payload: 14 (0xe)
+[352030000] [DRV] TX payload driven: 14 (0xe)
+[352750000] [MON] Observed UART TX payload: 14 (0xe)
+[352830000] [SCO] Expected: 14 (0xe), Observed: 14 (0xe)
+[352830000] >>> DATA MATCHED <<<
+----------------------------------------
+[352830000] [GEN] Operation: UART_READ, TX payload: 239 (0xef)
+[353630000] [DRV] RX payload driven: 102 (0x66)
+[353710000] [MON] Observed UART RX payload: 102 (0x66)
+[353790000] [SCO] Expected: 102 (0x66), Observed: 102 (0x66)
+[353790000] >>> DATA MATCHED <<<
+----------------------------------------
+[353790000] [GEN] Operation: UART_READ, TX payload: 100 (0x64)
+[354590000] [DRV] RX payload driven: 42 (0x2a)
+[354670000] [MON] Observed UART RX payload: 42 (0x2a)
+[354750000] [SCO] Expected: 42 (0x2a), Observed: 42 (0x2a)
+[354750000] >>> DATA MATCHED <<<
+----------------------------------------
+[354750000] [GEN] Operation: UART_WRITE, TX payload: 212 (0xd4)
+[354910000] [DRV] TX payload driven: 212 (0xd4)
+[355630000] [MON] Observed UART TX payload: 212 (0xd4)
+[355710000] [SCO] Expected: 212 (0xd4), Observed: 212 (0xd4)
+[355710000] >>> DATA MATCHED <<<
+----------------------------------------
+[355710000] [GEN] Operation: UART_READ, TX payload: 108 (0x6c)
+[356510000] [DRV] RX payload driven: 96 (0x60)
+[356590000] [MON] Observed UART RX payload: 96 (0x60)
+[356670000] [SCO] Expected: 96 (0x60), Observed: 96 (0x60)
+[356670000] >>> DATA MATCHED <<<
+----------------------------------------
+[356670000] [GEN] Operation: UART_WRITE, TX payload: 133 (0x85)
+[356830000] [DRV] TX payload driven: 133 (0x85)
+[357550000] [MON] Observed UART TX payload: 133 (0x85)
+[357630000] [SCO] Expected: 133 (0x85), Observed: 133 (0x85)
+[357630000] >>> DATA MATCHED <<<
+----------------------------------------
+[357630000] [GEN] Operation: UART_READ, TX payload: 245 (0xf5)
+[358430000] [DRV] RX payload driven: 202 (0xca)
+[358510000] [MON] Observed UART RX payload: 202 (0xca)
+[358590000] [SCO] Expected: 202 (0xca), Observed: 202 (0xca)
+[358590000] >>> DATA MATCHED <<<
+----------------------------------------
+[358590000] [GEN] Operation: UART_WRITE, TX payload: 205 (0xcd)
+[358750000] [DRV] TX payload driven: 205 (0xcd)
+[359470000] [MON] Observed UART TX payload: 205 (0xcd)
+[359550000] [SCO] Expected: 205 (0xcd), Observed: 205 (0xcd)
+[359550000] >>> DATA MATCHED <<<
+----------------------------------------
+[359550000] [GEN] Operation: UART_WRITE, TX payload: 112 (0x70)
+[359710000] [DRV] TX payload driven: 112 (0x70)
+[360430000] [MON] Observed UART TX payload: 112 (0x70)
+[360510000] [SCO] Expected: 112 (0x70), Observed: 112 (0x70)
+[360510000] >>> DATA MATCHED <<<
+----------------------------------------
+[360510000] [GEN] Operation: UART_READ, TX payload: 171 (0xab)
+[361310000] [DRV] RX payload driven: 166 (0xa6)
+[361390000] [MON] Observed UART RX payload: 166 (0xa6)
+[361470000] [SCO] Expected: 166 (0xa6), Observed: 166 (0xa6)
+[361470000] >>> DATA MATCHED <<<
+----------------------------------------
+[361470000] [GEN] Operation: UART_WRITE, TX payload: 111 (0x6f)
+[361630000] [DRV] TX payload driven: 111 (0x6f)
+[362350000] [MON] Observed UART TX payload: 111 (0x6f)
+[362430000] [SCO] Expected: 111 (0x6f), Observed: 111 (0x6f)
+[362430000] >>> DATA MATCHED <<<
+----------------------------------------
+[362430000] [GEN] Operation: UART_READ, TX payload: 71 (0x47)
+[363230000] [DRV] RX payload driven: 6 (0x6)
+[363310000] [MON] Observed UART RX payload: 6 (0x6)
+[363390000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[363390000] >>> DATA MATCHED <<<
+----------------------------------------
+[363390000] [GEN] Operation: UART_READ, TX payload: 112 (0x70)
+[364190000] [DRV] RX payload driven: 204 (0xcc)
+[364270000] [MON] Observed UART RX payload: 204 (0xcc)
+[364350000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[364350000] >>> DATA MATCHED <<<
+----------------------------------------
+[364350000] [GEN] Operation: UART_WRITE, TX payload: 55 (0x37)
+[364510000] [DRV] TX payload driven: 55 (0x37)
+[365230000] [MON] Observed UART TX payload: 55 (0x37)
+[365310000] [SCO] Expected: 55 (0x37), Observed: 55 (0x37)
+[365310000] >>> DATA MATCHED <<<
+----------------------------------------
+[365310000] [GEN] Operation: UART_WRITE, TX payload: 167 (0xa7)
+[365470000] [DRV] TX payload driven: 167 (0xa7)
+[366190000] [MON] Observed UART TX payload: 167 (0xa7)
+[366270000] [SCO] Expected: 167 (0xa7), Observed: 167 (0xa7)
+[366270000] >>> DATA MATCHED <<<
+----------------------------------------
+[366270000] [GEN] Operation: UART_READ, TX payload: 221 (0xdd)
+[367070000] [DRV] RX payload driven: 226 (0xe2)
+[367150000] [MON] Observed UART RX payload: 226 (0xe2)
+[367230000] [SCO] Expected: 226 (0xe2), Observed: 226 (0xe2)
+[367230000] >>> DATA MATCHED <<<
+----------------------------------------
+[367230000] [GEN] Operation: UART_WRITE, TX payload: 225 (0xe1)
+[367390000] [DRV] TX payload driven: 225 (0xe1)
+[368110000] [MON] Observed UART TX payload: 225 (0xe1)
+[368190000] [SCO] Expected: 225 (0xe1), Observed: 225 (0xe1)
+[368190000] >>> DATA MATCHED <<<
+----------------------------------------
+[368190000] [GEN] Operation: UART_READ, TX payload: 107 (0x6b)
+[368990000] [DRV] RX payload driven: 68 (0x44)
+[369070000] [MON] Observed UART RX payload: 68 (0x44)
+[369150000] [SCO] Expected: 68 (0x44), Observed: 68 (0x44)
+[369150000] >>> DATA MATCHED <<<
+----------------------------------------
+[369150000] [GEN] Operation: UART_READ, TX payload: 81 (0x51)
+[369950000] [DRV] RX payload driven: 160 (0xa0)
+[370030000] [MON] Observed UART RX payload: 160 (0xa0)
+[370110000] [SCO] Expected: 160 (0xa0), Observed: 160 (0xa0)
+[370110000] >>> DATA MATCHED <<<
+----------------------------------------
+[370110000] [GEN] Operation: UART_WRITE, TX payload: 164 (0xa4)
+[370270000] [DRV] TX payload driven: 164 (0xa4)
+[370990000] [MON] Observed UART TX payload: 164 (0xa4)
+[371070000] [SCO] Expected: 164 (0xa4), Observed: 164 (0xa4)
+[371070000] >>> DATA MATCHED <<<
+----------------------------------------
+[371070000] [GEN] Operation: UART_WRITE, TX payload: 129 (0x81)
+[371230000] [DRV] TX payload driven: 129 (0x81)
+[371950000] [MON] Observed UART TX payload: 129 (0x81)
+[372030000] [SCO] Expected: 129 (0x81), Observed: 129 (0x81)
+[372030000] >>> DATA MATCHED <<<
+----------------------------------------
+[372030000] [GEN] Operation: UART_READ, TX payload: 90 (0x5a)
+[372830000] [DRV] RX payload driven: 98 (0x62)
+[372910000] [MON] Observed UART RX payload: 98 (0x62)
+[372990000] [SCO] Expected: 98 (0x62), Observed: 98 (0x62)
+[372990000] >>> DATA MATCHED <<<
+----------------------------------------
+[372990000] [GEN] Operation: UART_READ, TX payload: 88 (0x58)
+[373790000] [DRV] RX payload driven: 76 (0x4c)
+[373870000] [MON] Observed UART RX payload: 76 (0x4c)
+[373950000] [SCO] Expected: 76 (0x4c), Observed: 76 (0x4c)
+[373950000] >>> DATA MATCHED <<<
+----------------------------------------
+[373950000] [GEN] Operation: UART_WRITE, TX payload: 5 (0x5)
+[374110000] [DRV] TX payload driven: 5 (0x5)
+[374830000] [MON] Observed UART TX payload: 5 (0x5)
+[374910000] [SCO] Expected: 5 (0x5), Observed: 5 (0x5)
+[374910000] >>> DATA MATCHED <<<
+----------------------------------------
+[374910000] [GEN] Operation: UART_WRITE, TX payload: 242 (0xf2)
+[375070000] [DRV] TX payload driven: 242 (0xf2)
+[375790000] [MON] Observed UART TX payload: 242 (0xf2)
+[375870000] [SCO] Expected: 242 (0xf2), Observed: 242 (0xf2)
+[375870000] >>> DATA MATCHED <<<
+----------------------------------------
+[375870000] [GEN] Operation: UART_READ, TX payload: 10 (0xa)
+[376670000] [DRV] RX payload driven: 192 (0xc0)
+[376750000] [MON] Observed UART RX payload: 192 (0xc0)
+[376830000] [SCO] Expected: 192 (0xc0), Observed: 192 (0xc0)
+[376830000] >>> DATA MATCHED <<<
+----------------------------------------
+[376830000] [GEN] Operation: UART_WRITE, TX payload: 25 (0x19)
+[376990000] [DRV] TX payload driven: 25 (0x19)
+[377710000] [MON] Observed UART TX payload: 25 (0x19)
+[377790000] [SCO] Expected: 25 (0x19), Observed: 25 (0x19)
+[377790000] >>> DATA MATCHED <<<
+----------------------------------------
+[377790000] [GEN] Operation: UART_READ, TX payload: 90 (0x5a)
+[378590000] [DRV] RX payload driven: 236 (0xec)
+[378670000] [MON] Observed UART RX payload: 236 (0xec)
+[378750000] [SCO] Expected: 236 (0xec), Observed: 236 (0xec)
+[378750000] >>> DATA MATCHED <<<
+----------------------------------------
+[378750000] [GEN] Operation: UART_READ, TX payload: 28 (0x1c)
+[379550000] [DRV] RX payload driven: 132 (0x84)
+[379630000] [MON] Observed UART RX payload: 132 (0x84)
+[379710000] [SCO] Expected: 132 (0x84), Observed: 132 (0x84)
+[379710000] >>> DATA MATCHED <<<
+----------------------------------------
+[379710000] [GEN] Operation: UART_WRITE, TX payload: 58 (0x3a)
+[379870000] [DRV] TX payload driven: 58 (0x3a)
+[380590000] [MON] Observed UART TX payload: 58 (0x3a)
+[380670000] [SCO] Expected: 58 (0x3a), Observed: 58 (0x3a)
+[380670000] >>> DATA MATCHED <<<
+----------------------------------------
+[380670000] [GEN] Operation: UART_WRITE, TX payload: 70 (0x46)
+[380830000] [DRV] TX payload driven: 70 (0x46)
+[381550000] [MON] Observed UART TX payload: 70 (0x46)
+[381630000] [SCO] Expected: 70 (0x46), Observed: 70 (0x46)
+[381630000] >>> DATA MATCHED <<<
+----------------------------------------
+[381630000] [GEN] Operation: UART_READ, TX payload: 72 (0x48)
+[382430000] [DRV] RX payload driven: 162 (0xa2)
+[382510000] [MON] Observed UART RX payload: 162 (0xa2)
+[382590000] [SCO] Expected: 162 (0xa2), Observed: 162 (0xa2)
+[382590000] >>> DATA MATCHED <<<
+----------------------------------------
+[382590000] [GEN] Operation: UART_WRITE, TX payload: 239 (0xef)
+[382750000] [DRV] TX payload driven: 239 (0xef)
+[383470000] [MON] Observed UART TX payload: 239 (0xef)
+[383550000] [SCO] Expected: 239 (0xef), Observed: 239 (0xef)
+[383550000] >>> DATA MATCHED <<<
+----------------------------------------
+[383550000] [GEN] Operation: UART_READ, TX payload: 187 (0xbb)
+[384350000] [DRV] RX payload driven: 200 (0xc8)
+[384430000] [MON] Observed UART RX payload: 200 (0xc8)
+[384510000] [SCO] Expected: 200 (0xc8), Observed: 200 (0xc8)
+[384510000] >>> DATA MATCHED <<<
+----------------------------------------
+[384510000] [GEN] Operation: UART_READ, TX payload: 150 (0x96)
+[385310000] [DRV] RX payload driven: 200 (0xc8)
+[385390000] [MON] Observed UART RX payload: 200 (0xc8)
+[385470000] [SCO] Expected: 200 (0xc8), Observed: 200 (0xc8)
+[385470000] >>> DATA MATCHED <<<
+----------------------------------------
+[385470000] [GEN] Operation: UART_WRITE, TX payload: 94 (0x5e)
+[385630000] [DRV] TX payload driven: 94 (0x5e)
+[386350000] [MON] Observed UART TX payload: 94 (0x5e)
+[386430000] [SCO] Expected: 94 (0x5e), Observed: 94 (0x5e)
+[386430000] >>> DATA MATCHED <<<
+----------------------------------------
+[386430000] [GEN] Operation: UART_WRITE, TX payload: 90 (0x5a)
+[386590000] [DRV] TX payload driven: 90 (0x5a)
+[387310000] [MON] Observed UART TX payload: 90 (0x5a)
+[387390000] [SCO] Expected: 90 (0x5a), Observed: 90 (0x5a)
+[387390000] >>> DATA MATCHED <<<
+----------------------------------------
+[387390000] [GEN] Operation: UART_READ, TX payload: 62 (0x3e)
+[388190000] [DRV] RX payload driven: 76 (0x4c)
+[388270000] [MON] Observed UART RX payload: 76 (0x4c)
+[388350000] [SCO] Expected: 76 (0x4c), Observed: 76 (0x4c)
+[388350000] >>> DATA MATCHED <<<
+----------------------------------------
+[388350000] [GEN] Operation: UART_READ, TX payload: 17 (0x11)
+[389150000] [DRV] RX payload driven: 84 (0x54)
+[389230000] [MON] Observed UART RX payload: 84 (0x54)
+[389310000] [SCO] Expected: 84 (0x54), Observed: 84 (0x54)
+[389310000] >>> DATA MATCHED <<<
+----------------------------------------
+[389310000] [GEN] Operation: UART_WRITE, TX payload: 226 (0xe2)
+[389470000] [DRV] TX payload driven: 226 (0xe2)
+[390190000] [MON] Observed UART TX payload: 226 (0xe2)
+[390270000] [SCO] Expected: 226 (0xe2), Observed: 226 (0xe2)
+[390270000] >>> DATA MATCHED <<<
+----------------------------------------
+[390270000] [GEN] Operation: UART_WRITE, TX payload: 97 (0x61)
+[390430000] [DRV] TX payload driven: 97 (0x61)
+[391150000] [MON] Observed UART TX payload: 97 (0x61)
+[391230000] [SCO] Expected: 97 (0x61), Observed: 97 (0x61)
+[391230000] >>> DATA MATCHED <<<
+----------------------------------------
+[391230000] [GEN] Operation: UART_READ, TX payload: 106 (0x6a)
+[392030000] [DRV] RX payload driven: 6 (0x6)
+[392110000] [MON] Observed UART RX payload: 6 (0x6)
+[392190000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[392190000] >>> DATA MATCHED <<<
+----------------------------------------
+[392190000] [GEN] Operation: UART_READ, TX payload: 42 (0x2a)
+[392990000] [DRV] RX payload driven: 120 (0x78)
+[393070000] [MON] Observed UART RX payload: 120 (0x78)
+[393150000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[393150000] >>> DATA MATCHED <<<
+----------------------------------------
+[393150000] [GEN] Operation: UART_WRITE, TX payload: 203 (0xcb)
+[393310000] [DRV] TX payload driven: 203 (0xcb)
+[394030000] [MON] Observed UART TX payload: 203 (0xcb)
+[394110000] [SCO] Expected: 203 (0xcb), Observed: 203 (0xcb)
+[394110000] >>> DATA MATCHED <<<
+----------------------------------------
+[394110000] [GEN] Operation: UART_WRITE, TX payload: 117 (0x75)
+[394270000] [DRV] TX payload driven: 117 (0x75)
+[394990000] [MON] Observed UART TX payload: 117 (0x75)
+[395070000] [SCO] Expected: 117 (0x75), Observed: 117 (0x75)
+[395070000] >>> DATA MATCHED <<<
+----------------------------------------
+[395070000] [GEN] Operation: UART_READ, TX payload: 96 (0x60)
+[395870000] [DRV] RX payload driven: 140 (0x8c)
+[395950000] [MON] Observed UART RX payload: 140 (0x8c)
+[396030000] [SCO] Expected: 140 (0x8c), Observed: 140 (0x8c)
+[396030000] >>> DATA MATCHED <<<
+----------------------------------------
+[396030000] [GEN] Operation: UART_WRITE, TX payload: 230 (0xe6)
+[396190000] [DRV] TX payload driven: 230 (0xe6)
+[396910000] [MON] Observed UART TX payload: 230 (0xe6)
+[396990000] [SCO] Expected: 230 (0xe6), Observed: 230 (0xe6)
+[396990000] >>> DATA MATCHED <<<
+----------------------------------------
+[396990000] [GEN] Operation: UART_READ, TX payload: 227 (0xe3)
+[397790000] [DRV] RX payload driven: 34 (0x22)
+[397870000] [MON] Observed UART RX payload: 34 (0x22)
+[397950000] [SCO] Expected: 34 (0x22), Observed: 34 (0x22)
+[397950000] >>> DATA MATCHED <<<
+----------------------------------------
+[397950000] [GEN] Operation: UART_READ, TX payload: 170 (0xaa)
+[398750000] [DRV] RX payload driven: 114 (0x72)
+[398830000] [MON] Observed UART RX payload: 114 (0x72)
+[398910000] [SCO] Expected: 114 (0x72), Observed: 114 (0x72)
+[398910000] >>> DATA MATCHED <<<
+----------------------------------------
+[398910000] [GEN] Operation: UART_WRITE, TX payload: 21 (0x15)
+[399070000] [DRV] TX payload driven: 21 (0x15)
+[399790000] [MON] Observed UART TX payload: 21 (0x15)
+[399870000] [SCO] Expected: 21 (0x15), Observed: 21 (0x15)
+[399870000] >>> DATA MATCHED <<<
+----------------------------------------
+[399870000] [GEN] Operation: UART_READ, TX payload: 76 (0x4c)
+[400670000] [DRV] RX payload driven: 72 (0x48)
+[400750000] [MON] Observed UART RX payload: 72 (0x48)
+[400830000] [SCO] Expected: 72 (0x48), Observed: 72 (0x48)
+[400830000] >>> DATA MATCHED <<<
+----------------------------------------
+[400830000] [GEN] Operation: UART_WRITE, TX payload: 253 (0xfd)
+[400990000] [DRV] TX payload driven: 253 (0xfd)
+[401710000] [MON] Observed UART TX payload: 253 (0xfd)
+[401790000] [SCO] Expected: 253 (0xfd), Observed: 253 (0xfd)
+[401790000] >>> DATA MATCHED <<<
+----------------------------------------
+[401790000] [GEN] Operation: UART_READ, TX payload: 178 (0xb2)
+[402590000] [DRV] RX payload driven: 72 (0x48)
+[402670000] [MON] Observed UART RX payload: 72 (0x48)
+[402750000] [SCO] Expected: 72 (0x48), Observed: 72 (0x48)
+[402750000] >>> DATA MATCHED <<<
+----------------------------------------
+[402750000] [GEN] Operation: UART_WRITE, TX payload: 198 (0xc6)
+[402910000] [DRV] TX payload driven: 198 (0xc6)
+[403630000] [MON] Observed UART TX payload: 198 (0xc6)
+[403710000] [SCO] Expected: 198 (0xc6), Observed: 198 (0xc6)
+[403710000] >>> DATA MATCHED <<<
+----------------------------------------
+[403710000] [GEN] Operation: UART_WRITE, TX payload: 6 (0x6)
+[403870000] [DRV] TX payload driven: 6 (0x6)
+[404590000] [MON] Observed UART TX payload: 6 (0x6)
+[404670000] [SCO] Expected: 6 (0x6), Observed: 6 (0x6)
+[404670000] >>> DATA MATCHED <<<
+----------------------------------------
+[404670000] [GEN] Operation: UART_READ, TX payload: 197 (0xc5)
+[405470000] [DRV] RX payload driven: 30 (0x1e)
+[405550000] [MON] Observed UART RX payload: 30 (0x1e)
+[405630000] [SCO] Expected: 30 (0x1e), Observed: 30 (0x1e)
+[405630000] >>> DATA MATCHED <<<
+----------------------------------------
+[405630000] [GEN] Operation: UART_WRITE, TX payload: 16 (0x10)
+[405790000] [DRV] TX payload driven: 16 (0x10)
+[406510000] [MON] Observed UART TX payload: 16 (0x10)
+[406590000] [SCO] Expected: 16 (0x10), Observed: 16 (0x10)
+[406590000] >>> DATA MATCHED <<<
+----------------------------------------
+[406590000] [GEN] Operation: UART_READ, TX payload: 77 (0x4d)
+[407390000] [DRV] RX payload driven: 228 (0xe4)
+[407470000] [MON] Observed UART RX payload: 228 (0xe4)
+[407550000] [SCO] Expected: 228 (0xe4), Observed: 228 (0xe4)
+[407550000] >>> DATA MATCHED <<<
+----------------------------------------
+[407550000] [GEN] Operation: UART_WRITE, TX payload: 136 (0x88)
+[407710000] [DRV] TX payload driven: 136 (0x88)
+[408430000] [MON] Observed UART TX payload: 136 (0x88)
+[408510000] [SCO] Expected: 136 (0x88), Observed: 136 (0x88)
+[408510000] >>> DATA MATCHED <<<
+----------------------------------------
+[408510000] [GEN] Operation: UART_READ, TX payload: 196 (0xc4)
+[409310000] [DRV] RX payload driven: 10 (0xa)
+[409390000] [MON] Observed UART RX payload: 10 (0xa)
+[409470000] [SCO] Expected: 10 (0xa), Observed: 10 (0xa)
+[409470000] >>> DATA MATCHED <<<
+----------------------------------------
+[409470000] [GEN] Operation: UART_WRITE, TX payload: 45 (0x2d)
+[409630000] [DRV] TX payload driven: 45 (0x2d)
+[410350000] [MON] Observed UART TX payload: 45 (0x2d)
+[410430000] [SCO] Expected: 45 (0x2d), Observed: 45 (0x2d)
+[410430000] >>> DATA MATCHED <<<
+----------------------------------------
+[410430000] [GEN] Operation: UART_READ, TX payload: 151 (0x97)
+[411230000] [DRV] RX payload driven: 116 (0x74)
+[411310000] [MON] Observed UART RX payload: 116 (0x74)
+[411390000] [SCO] Expected: 116 (0x74), Observed: 116 (0x74)
+[411390000] >>> DATA MATCHED <<<
+----------------------------------------
+[411390000] [GEN] Operation: UART_READ, TX payload: 228 (0xe4)
+[412190000] [DRV] RX payload driven: 36 (0x24)
+[412270000] [MON] Observed UART RX payload: 36 (0x24)
+[412350000] [SCO] Expected: 36 (0x24), Observed: 36 (0x24)
+[412350000] >>> DATA MATCHED <<<
+----------------------------------------
+[412350000] [GEN] Operation: UART_WRITE, TX payload: 149 (0x95)
+[412510000] [DRV] TX payload driven: 149 (0x95)
+[413230000] [MON] Observed UART TX payload: 149 (0x95)
+[413310000] [SCO] Expected: 149 (0x95), Observed: 149 (0x95)
+[413310000] >>> DATA MATCHED <<<
+----------------------------------------
+[413310000] [GEN] Operation: UART_READ, TX payload: 110 (0x6e)
+[414110000] [DRV] RX payload driven: 62 (0x3e)
+[414190000] [MON] Observed UART RX payload: 62 (0x3e)
+[414270000] [SCO] Expected: 62 (0x3e), Observed: 62 (0x3e)
+[414270000] >>> DATA MATCHED <<<
+----------------------------------------
+[414270000] [GEN] Operation: UART_WRITE, TX payload: 204 (0xcc)
+[414430000] [DRV] TX payload driven: 204 (0xcc)
+[415150000] [MON] Observed UART TX payload: 204 (0xcc)
+[415230000] [SCO] Expected: 204 (0xcc), Observed: 204 (0xcc)
+[415230000] >>> DATA MATCHED <<<
+----------------------------------------
+[415230000] [GEN] Operation: UART_WRITE, TX payload: 209 (0xd1)
+[415390000] [DRV] TX payload driven: 209 (0xd1)
+[416110000] [MON] Observed UART TX payload: 209 (0xd1)
+[416190000] [SCO] Expected: 209 (0xd1), Observed: 209 (0xd1)
+[416190000] >>> DATA MATCHED <<<
+----------------------------------------
+[416190000] [GEN] Operation: UART_READ, TX payload: 120 (0x78)
+[416990000] [DRV] RX payload driven: 222 (0xde)
+[417070000] [MON] Observed UART RX payload: 222 (0xde)
+[417150000] [SCO] Expected: 222 (0xde), Observed: 222 (0xde)
+[417150000] >>> DATA MATCHED <<<
+----------------------------------------
+[417150000] [GEN] Operation: UART_WRITE, TX payload: 32 (0x20)
+[417310000] [DRV] TX payload driven: 32 (0x20)
+[418030000] [MON] Observed UART TX payload: 32 (0x20)
+[418110000] [SCO] Expected: 32 (0x20), Observed: 32 (0x20)
+[418110000] >>> DATA MATCHED <<<
+----------------------------------------
+[418110000] [GEN] Operation: UART_READ, TX payload: 235 (0xeb)
+[418910000] [DRV] RX payload driven: 106 (0x6a)
+[418990000] [MON] Observed UART RX payload: 106 (0x6a)
+[419070000] [SCO] Expected: 106 (0x6a), Observed: 106 (0x6a)
+[419070000] >>> DATA MATCHED <<<
+----------------------------------------
+[419070000] [GEN] Operation: UART_READ, TX payload: 111 (0x6f)
+[419870000] [DRV] RX payload driven: 152 (0x98)
+[419950000] [MON] Observed UART RX payload: 152 (0x98)
+[420030000] [SCO] Expected: 152 (0x98), Observed: 152 (0x98)
+[420030000] >>> DATA MATCHED <<<
+----------------------------------------
+[420030000] [GEN] Operation: UART_WRITE, TX payload: 228 (0xe4)
+[420190000] [DRV] TX payload driven: 228 (0xe4)
+[420910000] [MON] Observed UART TX payload: 228 (0xe4)
+[420990000] [SCO] Expected: 228 (0xe4), Observed: 228 (0xe4)
+[420990000] >>> DATA MATCHED <<<
+----------------------------------------
+[420990000] [GEN] Operation: UART_READ, TX payload: 146 (0x92)
+[421790000] [DRV] RX payload driven: 252 (0xfc)
+[421870000] [MON] Observed UART RX payload: 252 (0xfc)
+[421950000] [SCO] Expected: 252 (0xfc), Observed: 252 (0xfc)
+[421950000] >>> DATA MATCHED <<<
+----------------------------------------
+[421950000] [GEN] Operation: UART_WRITE, TX payload: 230 (0xe6)
+[422110000] [DRV] TX payload driven: 230 (0xe6)
+[422830000] [MON] Observed UART TX payload: 230 (0xe6)
+[422910000] [SCO] Expected: 230 (0xe6), Observed: 230 (0xe6)
+[422910000] >>> DATA MATCHED <<<
+----------------------------------------
+[422910000] [GEN] Operation: UART_READ, TX payload: 128 (0x80)
+[423710000] [DRV] RX payload driven: 200 (0xc8)
+[423790000] [MON] Observed UART RX payload: 200 (0xc8)
+[423870000] [SCO] Expected: 200 (0xc8), Observed: 200 (0xc8)
+[423870000] >>> DATA MATCHED <<<
+----------------------------------------
+[423870000] [GEN] Operation: UART_WRITE, TX payload: 1 (0x1)
+[424030000] [DRV] TX payload driven: 1 (0x1)
+[424750000] [MON] Observed UART TX payload: 1 (0x1)
+[424830000] [SCO] Expected: 1 (0x1), Observed: 1 (0x1)
+[424830000] >>> DATA MATCHED <<<
+----------------------------------------
+[424830000] [GEN] Operation: UART_WRITE, TX payload: 49 (0x31)
+[424990000] [DRV] TX payload driven: 49 (0x31)
+[425710000] [MON] Observed UART TX payload: 49 (0x31)
+[425790000] [SCO] Expected: 49 (0x31), Observed: 49 (0x31)
+[425790000] >>> DATA MATCHED <<<
+----------------------------------------
+[425790000] [GEN] Operation: UART_READ, TX payload: 159 (0x9f)
+[426590000] [DRV] RX payload driven: 172 (0xac)
+[426670000] [MON] Observed UART RX payload: 172 (0xac)
+[426750000] [SCO] Expected: 172 (0xac), Observed: 172 (0xac)
+[426750000] >>> DATA MATCHED <<<
+----------------------------------------
+[426750000] [GEN] Operation: UART_READ, TX payload: 237 (0xed)
+[427550000] [DRV] RX payload driven: 120 (0x78)
+[427630000] [MON] Observed UART RX payload: 120 (0x78)
+[427710000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[427710000] >>> DATA MATCHED <<<
+----------------------------------------
+[427710000] [GEN] Operation: UART_WRITE, TX payload: 190 (0xbe)
+[427870000] [DRV] TX payload driven: 190 (0xbe)
+[428590000] [MON] Observed UART TX payload: 190 (0xbe)
+[428670000] [SCO] Expected: 190 (0xbe), Observed: 190 (0xbe)
+[428670000] >>> DATA MATCHED <<<
+----------------------------------------
+[428670000] [GEN] Operation: UART_WRITE, TX payload: 148 (0x94)
+[428830000] [DRV] TX payload driven: 148 (0x94)
+[429550000] [MON] Observed UART TX payload: 148 (0x94)
+[429630000] [SCO] Expected: 148 (0x94), Observed: 148 (0x94)
+[429630000] >>> DATA MATCHED <<<
+----------------------------------------
+[429630000] [GEN] Operation: UART_READ, TX payload: 45 (0x2d)
+[430430000] [DRV] RX payload driven: 132 (0x84)
+[430510000] [MON] Observed UART RX payload: 132 (0x84)
+[430590000] [SCO] Expected: 132 (0x84), Observed: 132 (0x84)
+[430590000] >>> DATA MATCHED <<<
+----------------------------------------
+[430590000] [GEN] Operation: UART_READ, TX payload: 42 (0x2a)
+[431390000] [DRV] RX payload driven: 228 (0xe4)
+[431470000] [MON] Observed UART RX payload: 228 (0xe4)
+[431550000] [SCO] Expected: 228 (0xe4), Observed: 228 (0xe4)
+[431550000] >>> DATA MATCHED <<<
+----------------------------------------
+[431550000] [GEN] Operation: UART_WRITE, TX payload: 60 (0x3c)
+[431710000] [DRV] TX payload driven: 60 (0x3c)
+[432430000] [MON] Observed UART TX payload: 60 (0x3c)
+[432510000] [SCO] Expected: 60 (0x3c), Observed: 60 (0x3c)
+[432510000] >>> DATA MATCHED <<<
+----------------------------------------
+[432510000] [GEN] Operation: UART_WRITE, TX payload: 153 (0x99)
+[432670000] [DRV] TX payload driven: 153 (0x99)
+[433390000] [MON] Observed UART TX payload: 153 (0x99)
+[433470000] [SCO] Expected: 153 (0x99), Observed: 153 (0x99)
+[433470000] >>> DATA MATCHED <<<
+----------------------------------------
+[433470000] [GEN] Operation: UART_READ, TX payload: 148 (0x94)
+[434270000] [DRV] RX payload driven: 4 (0x4)
+[434350000] [MON] Observed UART RX payload: 4 (0x4)
+[434430000] [SCO] Expected: 4 (0x4), Observed: 4 (0x4)
+[434430000] >>> DATA MATCHED <<<
+----------------------------------------
+[434430000] [GEN] Operation: UART_WRITE, TX payload: 150 (0x96)
+[434590000] [DRV] TX payload driven: 150 (0x96)
+[435310000] [MON] Observed UART TX payload: 150 (0x96)
+[435390000] [SCO] Expected: 150 (0x96), Observed: 150 (0x96)
+[435390000] >>> DATA MATCHED <<<
+----------------------------------------
+[435390000] [GEN] Operation: UART_READ, TX payload: 77 (0x4d)
+[436190000] [DRV] RX payload driven: 50 (0x32)
+[436270000] [MON] Observed UART RX payload: 50 (0x32)
+[436350000] [SCO] Expected: 50 (0x32), Observed: 50 (0x32)
+[436350000] >>> DATA MATCHED <<<
+----------------------------------------
+[436350000] [GEN] Operation: UART_READ, TX payload: 184 (0xb8)
+[437150000] [DRV] RX payload driven: 166 (0xa6)
+[437230000] [MON] Observed UART RX payload: 166 (0xa6)
+[437310000] [SCO] Expected: 166 (0xa6), Observed: 166 (0xa6)
+[437310000] >>> DATA MATCHED <<<
+----------------------------------------
+[437310000] [GEN] Operation: UART_WRITE, TX payload: 146 (0x92)
+[437470000] [DRV] TX payload driven: 146 (0x92)
+[438190000] [MON] Observed UART TX payload: 146 (0x92)
+[438270000] [SCO] Expected: 146 (0x92), Observed: 146 (0x92)
+[438270000] >>> DATA MATCHED <<<
+----------------------------------------
+[438270000] [GEN] Operation: UART_READ, TX payload: 201 (0xc9)
+[439070000] [DRV] RX payload driven: 20 (0x14)
+[439150000] [MON] Observed UART RX payload: 20 (0x14)
+[439230000] [SCO] Expected: 20 (0x14), Observed: 20 (0x14)
+[439230000] >>> DATA MATCHED <<<
+----------------------------------------
+[439230000] [GEN] Operation: UART_WRITE, TX payload: 167 (0xa7)
+[439390000] [DRV] TX payload driven: 167 (0xa7)
+[440110000] [MON] Observed UART TX payload: 167 (0xa7)
+[440190000] [SCO] Expected: 167 (0xa7), Observed: 167 (0xa7)
+[440190000] >>> DATA MATCHED <<<
+----------------------------------------
+[440190000] [GEN] Operation: UART_WRITE, TX payload: 153 (0x99)
+[440350000] [DRV] TX payload driven: 153 (0x99)
+[441070000] [MON] Observed UART TX payload: 153 (0x99)
+[441150000] [SCO] Expected: 153 (0x99), Observed: 153 (0x99)
+[441150000] >>> DATA MATCHED <<<
+----------------------------------------
+[441150000] [GEN] Operation: UART_READ, TX payload: 171 (0xab)
+[441950000] [DRV] RX payload driven: 228 (0xe4)
+[442030000] [MON] Observed UART RX payload: 228 (0xe4)
+[442110000] [SCO] Expected: 228 (0xe4), Observed: 228 (0xe4)
+[442110000] >>> DATA MATCHED <<<
+----------------------------------------
+[442110000] [GEN] Operation: UART_WRITE, TX payload: 54 (0x36)
+[442270000] [DRV] TX payload driven: 54 (0x36)
+[442990000] [MON] Observed UART TX payload: 54 (0x36)
+[443070000] [SCO] Expected: 54 (0x36), Observed: 54 (0x36)
+[443070000] >>> DATA MATCHED <<<
+----------------------------------------
+[443070000] [GEN] Operation: UART_READ, TX payload: 143 (0x8f)
+[443870000] [DRV] RX payload driven: 190 (0xbe)
+[443950000] [MON] Observed UART RX payload: 190 (0xbe)
+[444030000] [SCO] Expected: 190 (0xbe), Observed: 190 (0xbe)
+[444030000] >>> DATA MATCHED <<<
+----------------------------------------
+[444030000] [GEN] Operation: UART_WRITE, TX payload: 218 (0xda)
+[444190000] [DRV] TX payload driven: 218 (0xda)
+[444910000] [MON] Observed UART TX payload: 218 (0xda)
+[444990000] [SCO] Expected: 218 (0xda), Observed: 218 (0xda)
+[444990000] >>> DATA MATCHED <<<
+----------------------------------------
+[444990000] [GEN] Operation: UART_READ, TX payload: 117 (0x75)
+[445790000] [DRV] RX payload driven: 100 (0x64)
+[445870000] [MON] Observed UART RX payload: 100 (0x64)
+[445950000] [SCO] Expected: 100 (0x64), Observed: 100 (0x64)
+[445950000] >>> DATA MATCHED <<<
+----------------------------------------
+[445950000] [GEN] Operation: UART_WRITE, TX payload: 251 (0xfb)
+[446110000] [DRV] TX payload driven: 251 (0xfb)
+[446830000] [MON] Observed UART TX payload: 251 (0xfb)
+[446910000] [SCO] Expected: 251 (0xfb), Observed: 251 (0xfb)
+[446910000] >>> DATA MATCHED <<<
+----------------------------------------
+[446910000] [GEN] Operation: UART_READ, TX payload: 102 (0x66)
+[447710000] [DRV] RX payload driven: 80 (0x50)
+[447790000] [MON] Observed UART RX payload: 80 (0x50)
+[447870000] [SCO] Expected: 80 (0x50), Observed: 80 (0x50)
+[447870000] >>> DATA MATCHED <<<
+----------------------------------------
+[447870000] [GEN] Operation: UART_READ, TX payload: 87 (0x57)
+[448670000] [DRV] RX payload driven: 86 (0x56)
+[448750000] [MON] Observed UART RX payload: 86 (0x56)
+[448830000] [SCO] Expected: 86 (0x56), Observed: 86 (0x56)
+[448830000] >>> DATA MATCHED <<<
+----------------------------------------
+[448830000] [GEN] Operation: UART_WRITE, TX payload: 120 (0x78)
+[448990000] [DRV] TX payload driven: 120 (0x78)
+[449710000] [MON] Observed UART TX payload: 120 (0x78)
+[449790000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[449790000] >>> DATA MATCHED <<<
+----------------------------------------
+[449790000] [GEN] Operation: UART_WRITE, TX payload: 174 (0xae)
+[449950000] [DRV] TX payload driven: 174 (0xae)
+[450670000] [MON] Observed UART TX payload: 174 (0xae)
+[450750000] [SCO] Expected: 174 (0xae), Observed: 174 (0xae)
+[450750000] >>> DATA MATCHED <<<
+----------------------------------------
+[450750000] [GEN] Operation: UART_READ, TX payload: 157 (0x9d)
+[451550000] [DRV] RX payload driven: 202 (0xca)
+[451630000] [MON] Observed UART RX payload: 202 (0xca)
+[451710000] [SCO] Expected: 202 (0xca), Observed: 202 (0xca)
+[451710000] >>> DATA MATCHED <<<
+----------------------------------------
+[451710000] [GEN] Operation: UART_WRITE, TX payload: 11 (0xb)
+[451870000] [DRV] TX payload driven: 11 (0xb)
+[452590000] [MON] Observed UART TX payload: 11 (0xb)
+[452670000] [SCO] Expected: 11 (0xb), Observed: 11 (0xb)
+[452670000] >>> DATA MATCHED <<<
+----------------------------------------
+[452670000] [GEN] Operation: UART_READ, TX payload: 165 (0xa5)
+[453470000] [DRV] RX payload driven: 70 (0x46)
+[453550000] [MON] Observed UART RX payload: 70 (0x46)
+[453630000] [SCO] Expected: 70 (0x46), Observed: 70 (0x46)
+[453630000] >>> DATA MATCHED <<<
+----------------------------------------
+[453630000] [GEN] Operation: UART_WRITE, TX payload: 142 (0x8e)
+[453790000] [DRV] TX payload driven: 142 (0x8e)
+[454510000] [MON] Observed UART TX payload: 142 (0x8e)
+[454590000] [SCO] Expected: 142 (0x8e), Observed: 142 (0x8e)
+[454590000] >>> DATA MATCHED <<<
+----------------------------------------
+[454590000] [GEN] Operation: UART_READ, TX payload: 22 (0x16)
+[455390000] [DRV] RX payload driven: 150 (0x96)
+[455470000] [MON] Observed UART RX payload: 150 (0x96)
+[455550000] [SCO] Expected: 150 (0x96), Observed: 150 (0x96)
+[455550000] >>> DATA MATCHED <<<
+----------------------------------------
+[455550000] [GEN] Operation: UART_READ, TX payload: 106 (0x6a)
+[456350000] [DRV] RX payload driven: 142 (0x8e)
+[456430000] [MON] Observed UART RX payload: 142 (0x8e)
+[456510000] [SCO] Expected: 142 (0x8e), Observed: 142 (0x8e)
+[456510000] >>> DATA MATCHED <<<
+----------------------------------------
+[456510000] [GEN] Operation: UART_WRITE, TX payload: 102 (0x66)
+[456670000] [DRV] TX payload driven: 102 (0x66)
+[457390000] [MON] Observed UART TX payload: 102 (0x66)
+[457470000] [SCO] Expected: 102 (0x66), Observed: 102 (0x66)
+[457470000] >>> DATA MATCHED <<<
+----------------------------------------
+[457470000] [GEN] Operation: UART_READ, TX payload: 141 (0x8d)
+[458270000] [DRV] RX payload driven: 78 (0x4e)
+[458350000] [MON] Observed UART RX payload: 78 (0x4e)
+[458430000] [SCO] Expected: 78 (0x4e), Observed: 78 (0x4e)
+[458430000] >>> DATA MATCHED <<<
+----------------------------------------
+[458430000] [GEN] Operation: UART_WRITE, TX payload: 174 (0xae)
+[458590000] [DRV] TX payload driven: 174 (0xae)
+[459310000] [MON] Observed UART TX payload: 174 (0xae)
+[459390000] [SCO] Expected: 174 (0xae), Observed: 174 (0xae)
+[459390000] >>> DATA MATCHED <<<
+----------------------------------------
+[459390000] [GEN] Operation: UART_WRITE, TX payload: 168 (0xa8)
+[459550000] [DRV] TX payload driven: 168 (0xa8)
+[460270000] [MON] Observed UART TX payload: 168 (0xa8)
+[460350000] [SCO] Expected: 168 (0xa8), Observed: 168 (0xa8)
+[460350000] >>> DATA MATCHED <<<
+----------------------------------------
+[460350000] [GEN] Operation: UART_READ, TX payload: 126 (0x7e)
+[461150000] [DRV] RX payload driven: 70 (0x46)
+[461230000] [MON] Observed UART RX payload: 70 (0x46)
+[461310000] [SCO] Expected: 70 (0x46), Observed: 70 (0x46)
+[461310000] >>> DATA MATCHED <<<
+----------------------------------------
+[461310000] [GEN] Operation: UART_WRITE, TX payload: 213 (0xd5)
+[461470000] [DRV] TX payload driven: 213 (0xd5)
+[462190000] [MON] Observed UART TX payload: 213 (0xd5)
+[462270000] [SCO] Expected: 213 (0xd5), Observed: 213 (0xd5)
+[462270000] >>> DATA MATCHED <<<
+----------------------------------------
+[462270000] [GEN] Operation: UART_READ, TX payload: 182 (0xb6)
+[463070000] [DRV] RX payload driven: 0 (0x0)
+[463150000] [MON] Observed UART RX payload: 0 (0x0)
+[463230000] [SCO] Expected: 0 (0x0), Observed: 0 (0x0)
+[463230000] >>> DATA MATCHED <<<
+----------------------------------------
+[463230000] [GEN] Operation: UART_READ, TX payload: 188 (0xbc)
+[464030000] [DRV] RX payload driven: 166 (0xa6)
+[464110000] [MON] Observed UART RX payload: 166 (0xa6)
+[464190000] [SCO] Expected: 166 (0xa6), Observed: 166 (0xa6)
+[464190000] >>> DATA MATCHED <<<
+----------------------------------------
+[464190000] [GEN] Operation: UART_WRITE, TX payload: 10 (0xa)
+[464350000] [DRV] TX payload driven: 10 (0xa)
+[465070000] [MON] Observed UART TX payload: 10 (0xa)
+[465150000] [SCO] Expected: 10 (0xa), Observed: 10 (0xa)
+[465150000] >>> DATA MATCHED <<<
+----------------------------------------
+[465150000] [GEN] Operation: UART_READ, TX payload: 155 (0x9b)
+[465950000] [DRV] RX payload driven: 224 (0xe0)
+[466030000] [MON] Observed UART RX payload: 224 (0xe0)
+[466110000] [SCO] Expected: 224 (0xe0), Observed: 224 (0xe0)
+[466110000] >>> DATA MATCHED <<<
+----------------------------------------
+[466110000] [GEN] Operation: UART_WRITE, TX payload: 42 (0x2a)
+[466270000] [DRV] TX payload driven: 42 (0x2a)
+[466990000] [MON] Observed UART TX payload: 42 (0x2a)
+[467070000] [SCO] Expected: 42 (0x2a), Observed: 42 (0x2a)
+[467070000] >>> DATA MATCHED <<<
+----------------------------------------
+[467070000] [GEN] Operation: UART_WRITE, TX payload: 37 (0x25)
+[467230000] [DRV] TX payload driven: 37 (0x25)
+[467950000] [MON] Observed UART TX payload: 37 (0x25)
+[468030000] [SCO] Expected: 37 (0x25), Observed: 37 (0x25)
+[468030000] >>> DATA MATCHED <<<
+----------------------------------------
+[468030000] [GEN] Operation: UART_READ, TX payload: 2 (0x2)
+[468830000] [DRV] RX payload driven: 240 (0xf0)
+[468910000] [MON] Observed UART RX payload: 240 (0xf0)
+[468990000] [SCO] Expected: 240 (0xf0), Observed: 240 (0xf0)
+[468990000] >>> DATA MATCHED <<<
+----------------------------------------
+[468990000] [GEN] Operation: UART_WRITE, TX payload: 119 (0x77)
+[469150000] [DRV] TX payload driven: 119 (0x77)
+[469870000] [MON] Observed UART TX payload: 119 (0x77)
+[469950000] [SCO] Expected: 119 (0x77), Observed: 119 (0x77)
+[469950000] >>> DATA MATCHED <<<
+----------------------------------------
+[469950000] [GEN] Operation: UART_READ, TX payload: 122 (0x7a)
+[470750000] [DRV] RX payload driven: 102 (0x66)
+[470830000] [MON] Observed UART RX payload: 102 (0x66)
+[470910000] [SCO] Expected: 102 (0x66), Observed: 102 (0x66)
+[470910000] >>> DATA MATCHED <<<
+----------------------------------------
+[470910000] [GEN] Operation: UART_WRITE, TX payload: 233 (0xe9)
+[471070000] [DRV] TX payload driven: 233 (0xe9)
+[471790000] [MON] Observed UART TX payload: 233 (0xe9)
+[471870000] [SCO] Expected: 233 (0xe9), Observed: 233 (0xe9)
+[471870000] >>> DATA MATCHED <<<
+----------------------------------------
+[471870000] [GEN] Operation: UART_READ, TX payload: 52 (0x34)
+[472670000] [DRV] RX payload driven: 122 (0x7a)
+[472750000] [MON] Observed UART RX payload: 122 (0x7a)
+[472830000] [SCO] Expected: 122 (0x7a), Observed: 122 (0x7a)
+[472830000] >>> DATA MATCHED <<<
+----------------------------------------
+[472830000] [GEN] Operation: UART_READ, TX payload: 14 (0xe)
+[473630000] [DRV] RX payload driven: 184 (0xb8)
+[473710000] [MON] Observed UART RX payload: 184 (0xb8)
+[473790000] [SCO] Expected: 184 (0xb8), Observed: 184 (0xb8)
+[473790000] >>> DATA MATCHED <<<
+----------------------------------------
+[473790000] [GEN] Operation: UART_WRITE, TX payload: 47 (0x2f)
+[473950000] [DRV] TX payload driven: 47 (0x2f)
+[474670000] [MON] Observed UART TX payload: 47 (0x2f)
+[474750000] [SCO] Expected: 47 (0x2f), Observed: 47 (0x2f)
+[474750000] >>> DATA MATCHED <<<
+----------------------------------------
+[474750000] [GEN] Operation: UART_READ, TX payload: 60 (0x3c)
+[475550000] [DRV] RX payload driven: 162 (0xa2)
+[475630000] [MON] Observed UART RX payload: 162 (0xa2)
+[475710000] [SCO] Expected: 162 (0xa2), Observed: 162 (0xa2)
+[475710000] >>> DATA MATCHED <<<
+----------------------------------------
+[475710000] [GEN] Operation: UART_WRITE, TX payload: 116 (0x74)
+[475870000] [DRV] TX payload driven: 116 (0x74)
+[476590000] [MON] Observed UART TX payload: 116 (0x74)
+[476670000] [SCO] Expected: 116 (0x74), Observed: 116 (0x74)
+[476670000] >>> DATA MATCHED <<<
+----------------------------------------
+[476670000] [GEN] Operation: UART_READ, TX payload: 5 (0x5)
+[477470000] [DRV] RX payload driven: 120 (0x78)
+[477550000] [MON] Observed UART RX payload: 120 (0x78)
+[477630000] [SCO] Expected: 120 (0x78), Observed: 120 (0x78)
+[477630000] >>> DATA MATCHED <<<
+----------------------------------------
+[477630000] [GEN] Operation: UART_WRITE, TX payload: 191 (0xbf)
+[477790000] [DRV] TX payload driven: 191 (0xbf)
+[478510000] [MON] Observed UART TX payload: 191 (0xbf)
+[478590000] [SCO] Expected: 191 (0xbf), Observed: 191 (0xbf)
+[478590000] >>> DATA MATCHED <<<
+----------------------------------------
+[478590000] [GEN] Operation: UART_READ, TX payload: 78 (0x4e)
+[479390000] [DRV] RX payload driven: 238 (0xee)
+[479470000] [MON] Observed UART RX payload: 238 (0xee)
+[479550000] [SCO] Expected: 238 (0xee), Observed: 238 (0xee)
+[479550000] >>> DATA MATCHED <<<
+----------------------------------------
+[479550000] [GEN] Operation: UART_WRITE, TX payload: 87 (0x57)
+[479710000] [DRV] TX payload driven: 87 (0x57)
+[480430000] [MON] Observed UART TX payload: 87 (0x57)
+[480510000] [SCO] Expected: 87 (0x57), Observed: 87 (0x57)
+[480510000] >>> DATA MATCHED <<<
+----------------------------------------
