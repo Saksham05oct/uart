@@ -5,7 +5,28 @@ class transaction extends uvm_sequence_item;
   `uvm_object_utils(transaction)
   rand logic [16:0] baud;
   logic tx_clk;
-  real period;
+  logic rx_clk;
+  real period;       // Measured tx_clk period
+  real rx_period;    // Measured rx_clk period
+
+  // Randomize to valid bauds 80% of the time, and invalid bauds 20% of the time to test default fallback
+  constraint valid_bauds_dist {
+    baud dist {
+      4800   := 15,
+      9600   := 15,
+      14400  := 15,
+      19200  := 15,
+      38400  := 15,
+      57600  := 15,
+      [1:4799]   := 2,
+      [4801:9599] := 2,
+      [9601:14399] := 2,
+      [14401:19199] := 2,
+      [19201:38399] := 2,
+      [38401:57599] := 2,
+      [57601:131071] := 2
+    };
+  }
 
   function new(string name = "transaction");
     super.new(name);
@@ -22,7 +43,7 @@ class variable_baud extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(5) begin
+    repeat(10) begin // Increased runs to hit multiple valid and fallback scenarios
       tr = transaction::type_id::create("tr");
       start_item(tr);
       assert(tr.randomize);
@@ -78,8 +99,6 @@ class mon extends uvm_monitor;
   uvm_analysis_port#(transaction) send;
   transaction tr;
   virtual clk_if vif;
-  real ton = 0;
-  real toff = 0;
 
   function new(string name = "mon", uvm_component parent = null);
     super.new(name, parent);
@@ -102,15 +121,28 @@ class mon extends uvm_monitor;
       else begin
         tr = transaction::type_id::create("tr");
         tr.baud = vif.baud;
-        ton = 0;
-        toff = 0;
-        @(posedge vif.tx_clk);
-        ton = $realtime;
-        @(posedge vif.tx_clk);
-        toff = $realtime;
-        tr.period = toff - ton;
-
-        `uvm_info("MON", $sformatf("Baud: %0d, Period: %0f", tr.baud, tr.period), UVM_NONE);
+        
+        // Measure both tx_clk and rx_clk periods concurrently
+        fork
+          begin
+            real ton_tx = 0, toff_tx = 0;
+            @(posedge vif.tx_clk);
+            ton_tx = $realtime;
+            @(posedge vif.tx_clk);
+            toff_tx = $realtime;
+            tr.period = toff_tx - ton_tx;
+          end
+          begin
+            real ton_rx = 0, toff_rx = 0;
+            @(posedge vif.rx_clk);
+            ton_rx = $realtime;
+            @(posedge vif.rx_clk);
+            toff_rx = $realtime;
+            tr.rx_period = toff_rx - ton_rx;
+          end
+        join
+        
+        `uvm_info("MON", $sformatf("Baud: %0d, TX Period: %0f, RX Period: %0f", tr.baud, tr.period, tr.rx_period), UVM_NONE);
         send.write(tr);
       end
     end
@@ -120,8 +152,8 @@ endclass
 class sco extends uvm_scoreboard;
   `uvm_component_utils(sco)
 
-  real count = 0;
-  real baudcount = 0;
+  real tx_count = 0;
+  real rx_count = 0;
   uvm_analysis_imp#(transaction,sco) recv;
 
   function new(string name = "sco", uvm_component parent = null);
@@ -134,47 +166,53 @@ class sco extends uvm_scoreboard;
   endfunction
 
   virtual function void write(transaction tr);
-    count = tr.period/20;
-    baudcount = count;
-    `uvm_info("SCO", $sformatf("BAUD:%0d count:%0f bcount:%0f", tr.baud,count, baudcount), UVM_NONE);
+    tx_count = tr.period/20;
+    rx_count = tr.rx_period/20;
+    real expected_tx_count;
+    real expected_rx_count;
+
     case(tr.baud)
       4800: begin
-        if(baudcount == 10418)
-          `uvm_info("SCO", "TEST PASSED", UVM_NONE)
-        else
-          `uvm_error("SCO" , "TEST FAILED")
+        expected_tx_count = 10418;
+        expected_rx_count = 653;
       end
       9600: begin
-        if(baudcount == 5210)
-          `uvm_info("SCO", "TEST PASSED", UVM_NONE)
-        else
-          `uvm_error("SCO" , "TEST FAILED") 
+        expected_tx_count = 5210;
+        expected_rx_count = 327;
       end
       14400: begin
-        if(baudcount == 3474)
-          `uvm_info("SCO", "TEST PASSED", UVM_NONE)
-        else
-          `uvm_error("SCO" , "TEST FAILED")
+        expected_tx_count = 3474;
+        expected_rx_count = 219;
       end
       19200: begin
-        if(baudcount == 2606)
-          `uvm_info("SCO", "TEST PASSED", UVM_NONE)
-        else
-          `uvm_error("SCO" , "TEST FAILED")
+        expected_tx_count = 2606;
+        expected_rx_count = 165;
       end
       38400: begin
-        if(baudcount == 1304)
-          `uvm_info("SCO", "TEST PASSED", UVM_NONE)
-        else
-          `uvm_error("SCO" , "TEST FAILED")
+        expected_tx_count = 1304;
+        expected_rx_count = 83;
       end
       57600: begin
-        if(baudcount == 870)
-          `uvm_info("SCO", "TEST PASSED", UVM_NONE)
-        else
-          `uvm_error("SCO" , "TEST FAILED")
+        expected_tx_count = 870;
+        expected_rx_count = 56;
+      end
+      default: begin
+        // Fallback to 9600 baud
+        expected_tx_count = 5210;
+        expected_rx_count = 327;
       end
     endcase     
+
+    `uvm_info("SCO", $sformatf("BAUD:%0d tx_count:%0f rx_count:%0f | Expected tx_count:%0f rx_count:%0f", 
+              tr.baud, tx_count, rx_count, expected_tx_count, expected_rx_count), UVM_NONE);
+
+    if (tx_count == expected_tx_count && rx_count == expected_rx_count) begin
+      `uvm_info("SCO", "TEST PASSED", UVM_NONE)
+    end
+    else begin
+      `uvm_error("SCO", $sformatf("TEST FAILED! Expected TX: %0f (Got %0f), Expected RX: %0f (Got %0f)", 
+                expected_tx_count, tx_count, expected_rx_count, rx_count))
+    end
   endfunction
 endclass
 
@@ -251,13 +289,20 @@ endclass
 module tb;
   clk_if vif();
   
-  clk_gen dut (.clk(vif.clk),.rst(vif.rst), .baud(vif.baud), .tx_clk(vif.tx_clk));
+  // Correctly bound both tx_clk and rx_clk to the virtual interface
+  clk_gen dut (
+    .clk(vif.clk),
+    .rst(vif.rst), 
+    .baud(vif.baud), 
+    .tx_clk(vif.tx_clk),
+    .rx_clk(vif.rx_clk)
+  );
   
   initial begin
     vif.clk <= 0;
   end
  
-  always #10 vif.clk <= ~vif.clk; //1/50 20nsec 10nsec
+  always #10 vif.clk <= ~vif.clk; // 50MHz Clock (20ns Period)
   
   initial begin
     uvm_config_db#(virtual clk_if)::set(null, "*", "vif", vif);
