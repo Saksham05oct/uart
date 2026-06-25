@@ -112,3 +112,26 @@ The UART RX FSM monitors the incoming serial data stream (`rx`) and reconstructs
 * **`stop2`**: Configures stop bits:
   * `0`: 1 stop bit
   * `1`: 2 stop bits
+
+---
+
+## 6. Directory Structure
+
+The project files are organized as follows:
+
+```text
+├── design/
+│   └── uart.sv                 # Combined UART design module
+├── rtl/
+│   ├── clk_gen.sv              # Baud rate clock generator
+│   ├── uart_tx.sv              # Transmitter FSM and logic
+│   ├── uart_rx.sv              # Receiver FSM and oversampling logic
+│   ├── uart_top.sv             # Top-level wrapper instantiating components
+│   └── uart_if.sv              # SystemVerilog interface definition
+├── tb/
+│   ├── clk_gen_ver.sv          # UVM testbench for standalone clock generator
+│   └── uart_ver.sv             # UVM testbench for complete UART system
+├── README.md                   # Project documentation
+├── uart_connection.png         # Physical connection diagram
+└── uart_block_diagram.png      # RTL schematic block diagram
+```
