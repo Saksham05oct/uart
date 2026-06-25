@@ -129,49 +129,8 @@ The project files are organized as follows:
 │   └── uart_if.sv              # SystemVerilog interface definition
 ├── tb/
 │   ├── clk_gen_ver.sv          # UVM testbench for standalone clock generator
-│   ├── uart_ver.sv             # UVM testbench for complete UART system
-│   └── tb_uart.sv              # Verilator-compatible directed/random testbench
+│   └── uart_ver.sv             # UVM testbench for complete UART system
 ├── README.md                   # Project documentation
-├── run_sim.sh                  # Bash automation script for Verilator + GTKWave
 ├── uart_connection.png         # Physical connection diagram
 └── uart_block_diagram.png      # RTL schematic block diagram
 ```
-
----
-
-## 7. Simulation & Waveform Visualization (Verilator + GTKWave)
-
-This project includes a dedicated testbench (`tb/tb_uart.sv`) containing **50 randomized, self-checking test cases** that verify combinations of all supported baud rates, frame word lengths, parity modes, and stop bit configurations in loopback mode.
-
-### 7.1 Running the Simulation in WSL
-To compile the design, run the simulation, and generate the VCD waveform file, follow these steps in your WSL terminal:
-
-1. **Navigate to the project root directory**:
-   ```bash
-   cd "/mnt/c/Users/Saksham Gupta/Desktop/uart"
-   ```
-2. **Execute the automation script**:
-   ```bash
-   ./run_sim.sh
-   ```
-
-*Alternatively, you can run the compiler and run the binary manually:*
-```bash
-# 1. Compile the SystemVerilog design with timing & trace enabling
-verilator --binary -j 0 --trace --timing tb/tb_uart.sv rtl/*.sv
-
-# 2. Run the generated simulation executable
-./obj_dir/Vtb_uart
-```
-
-### 7.2 Visualizing Waves in GTKWave
-The simulation automatically dumps all internal signal transitions to `waveform.vcd`. Open it in GTKWave:
-```bash
-gtkwave waveform.vcd &
-```
-
-#### Pro-Tip: Add All Signals to the Waveform with Least Clicks (3 Keystrokes/Clicks)
-To immediately view all signals in GTKWave without dragging them one-by-one:
-1. In the **SST (Structure)** panel (top-left), click on the module you want to visualize (e.g. expand `tb_uart` and click on `dut`).
-2. Move your cursor to the **Signals** panel (bottom-left) and **click on any signal** in the list.
-3. Press **`Ctrl + A`** to select all signals in that list, and then press **`Enter`** (or click the **Insert** button). All signals will instantly populate the waveform viewer!
