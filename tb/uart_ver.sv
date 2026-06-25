@@ -76,7 +76,7 @@ class rand_baud extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -106,7 +106,7 @@ class rand_baud_with_stop extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -137,7 +137,7 @@ class rand_baud_len5p extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -171,7 +171,7 @@ class rand_baud_len6p extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -203,7 +203,7 @@ class rand_baud_len7p extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -235,7 +235,7 @@ class rand_baud_len8p extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -267,7 +267,7 @@ class rand_baud_len5 extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -300,7 +300,7 @@ class rand_baud_len6 extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -332,7 +332,7 @@ class rand_baud_len7 extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
@@ -365,7 +365,7 @@ class rand_baud_len8 extends uvm_sequence#(transaction);
   endfunction
 
   virtual task body();
-    repeat(2)
+    repeat(10)
     begin
       tr = transaction::type_id::create("tr");
       start_item(tr);
