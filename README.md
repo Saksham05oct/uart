@@ -1,8 +1,7 @@
-# Configurable SystemVerilog UART IP Core
-
-A robust, fully configurable Universal Asynchronous Receiver-Transmitter (UART) IP core implemented in SystemVerilog. This design features configurable data word length, parity generation/checking (odd/even), stop bit configuration (1 or 2 stop bits), and a 16× oversampling receiver for high noise immunity.
+# UART: Universal Asynchronous Receiver-Transmitter
 
 ---
+
 
 ## 1. Hardware Connection
 
