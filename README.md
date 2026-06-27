@@ -114,14 +114,4 @@ The UART RX FSM monitors the incoming serial data stream (`rx`) and reconstructs
 
 ---
 
-## 7. Verification Methodology
 
-This project utilizes **PyUVM** and **Cocotb** for verification, replacing traditional SystemVerilog UVM. The testbench dynamically generates random baud rates, data widths, and parity configurations, driving them into the hardware using a robust Python-based sequence/driver architecture.
-
-To run the simulation and view waveforms:
-```bash
-cd build
-iverilog -o sim.vvp -s uart_top -s dump -g2012 ../rtl/clk_gen.sv ../rtl/uart_tx.sv ../rtl/uart_rx.sv ../rtl/uart_top.sv ../tb/dump.v
-PYTHONPATH=../tb PYGPI_PYTHON_BIN=$(which python3) COCOTB_TEST_MODULES=test_pyuvm TOPLEVEL=uart_top TOPLEVEL_LANG=verilog vvp -M $(cocotb-config --lib-dir) -m libcocotbvpi_icarus sim.vvp
-gtkwave dump.vcd &
-```
