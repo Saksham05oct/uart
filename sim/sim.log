@@ -1,0 +1,119 @@
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.4 interpreter at /usr/bin/python3
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1782570113
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /home/saksham_gupta/.local/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pyuvm.test (1/1)
+     0.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(198) [uvm_test_top.env.a.d]: System Reset : Start of Simulation
+     0.00ns WARNING  py.warnings                        /mnt/c/Users/Saksham Gupta/Desktop/uart/tb/test_pyuvm.py:353: DeprecationWarning: The 'units' argument has been renamed to 'unit'.
+                                                          clock = Clock(cocotb.top.clk, 20, units="ns")
+     0.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud sequence
+     0.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(267) [uvm_test_top.env.a.m]: SYSTEM RESET DETECTED
+     0.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(198) [uvm_test_top.env.a.d]: System Reset : Start of Simulation
+     0.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(310) [uvm_test_top.env.s]: System Reset
+     0.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+    20.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(267) [uvm_test_top.env.a.m]: SYSTEM RESET DETECTED
+    20.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(310) [uvm_test_top.env.s]: System Reset
+    20.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+  3320.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:19200 LEN:8 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:170
+580600.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:19200 LEN:8 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:170 RX_DATA:170 RX_ERR:0
+580600.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+580600.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+642900.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:57600 LEN:8 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:67
+836500.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:57600 LEN:8 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:67 RX_DATA:67 RX_ERR:0
+836500.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+836500.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+836500.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_with_stop sequence
+961640.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:9600 LEN:8 PAR_T:1 PAR_EN:1 STOP:1 TX_DATA:209
+2213480.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:9600 LEN:8 PAR_T:1 PAR_EN:1 STOP:1 TX_DATA:209 RX_DATA:209 RX_ERR:0
+2213480.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+2213480.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+2415600.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:9600 LEN:8 PAR_T:1 PAR_EN:1 STOP:1 TX_DATA:164
+3667440.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:9600 LEN:8 PAR_T:1 PAR_EN:1 STOP:1 TX_DATA:164 RX_DATA:164 RX_ERR:0
+3667440.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+3667440.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+3667440.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len5p sequence
+3986920.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:4800 LEN:5 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:8
+5656040.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:4800 LEN:5 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:8 RX_DATA:8 RX_ERR:0
+5656040.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+5656040.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+5877880.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:38400 LEN:5 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:29
+6087800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:38400 LEN:5 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:29 RX_DATA:29 RX_ERR:0
+6087800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+6087800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+6087800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len6p sequence
+6221600.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:9600 LEN:6 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:48
+7160480.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:9600 LEN:6 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:48 RX_DATA:48 RX_ERR:0
+7160480.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+7160480.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+7328020.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:14400 LEN:6 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:57
+7955860.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:14400 LEN:6 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:57 RX_DATA:57 RX_ERR:0
+7955860.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+7955860.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+7955860.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len7p sequence
+8077020.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:19200 LEN:7 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:6
+8601820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:19200 LEN:7 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:6 RX_DATA:6 RX_ERR:0
+8601820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+8601820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+8700220.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:19200 LEN:7 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:108
+9225020.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:19200 LEN:7 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:108 RX_DATA:108 RX_ERR:0
+9225020.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+9225020.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+9225020.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len8p sequence
+9381780.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:9600 LEN:8 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:241
+10529300.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:9600 LEN:8 PAR_T:0 PAR_EN:1 STOP:0 TX_DATA:241 RX_DATA:241 RX_ERR:0
+10529300.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+10529300.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+10679540.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:19200 LEN:8 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:249
+11256820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:19200 LEN:8 PAR_T:1 PAR_EN:1 STOP:0 TX_DATA:249 RX_DATA:249 RX_ERR:0
+11256820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+11256820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+11256820.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len5 sequence
+11330620.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:38400 LEN:5 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:8
+11514300.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:38400 LEN:5 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:8 RX_DATA:8 RX_ERR:0
+11514300.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+11514300.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+11758940.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:4800 LEN:5 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:23
+13219420.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:4800 LEN:5 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:23 RX_DATA:23 RX_ERR:0
+13219420.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+13219420.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+13219420.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len6 sequence
+13466440.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:19200 LEN:6 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:36
+13886280.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:19200 LEN:6 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:36 RX_DATA:36 RX_ERR:0
+13886280.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+13886280.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+13987960.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:19200 LEN:6 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:54
+14407800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:19200 LEN:6 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:54 RX_DATA:54 RX_ERR:0
+14407800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+14407800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+14407800.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len7 sequence
+14527840.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:14400 LEN:7 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:64
+15155680.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:14400 LEN:7 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:64 RX_DATA:64 RX_ERR:0
+15155680.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+15155680.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+15438400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:4800 LEN:7 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:53
+17316160.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:4800 LEN:7 PAR_T:1 PAR_EN:0 STOP:0 TX_DATA:53 RX_DATA:53 RX_ERR:0
+17316160.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+17316160.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+17316160.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(370) [uvm_test_top]: Starting rand_baud_len8 sequence
+17538000.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:38400 LEN:8 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:241
+17800400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:38400 LEN:8 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:241 RX_DATA:241 RX_ERR:0
+17800400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+17800400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+17934200.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(235) [uvm_test_top.env.a.d]: BAUD:9600 LEN:8 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:10
+18977400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(296) [uvm_test_top.env.a.m]: BAUD:9600 LEN:8 PAR_T:0 PAR_EN:0 STOP:0 TX_DATA:10 RX_DATA:10 RX_ERR:0
+18977400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(312) [uvm_test_top.env.s]: Test Passed
+18977400.00ns INFO     ..sktop/uart/tb/test_pyuvm.py(317) [uvm_test_top.env.s]: ----------------------------------------------------------------
+18977400.00ns WARNING  py.warnings                        /mnt/c/Users/Saksham Gupta/Desktop/uart/tb/test_pyuvm.py:374: DeprecationWarning: The 'units' argument has been renamed to 'unit'.
+                                                            await Timer(20, units="ns")
+18977420.00ns INFO     cocotb.regression                  test_pyuvm.test passed
+18977420.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                          ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                          **************************************************************************************
+                                                          ** test_pyuvm.test                PASS    18977420.00         125.09     151715.58  **
+                                                          **************************************************************************************
+                                                          ** TESTS=1 PASS=1 FAIL=0 SKIP=0           18977420.00         125.10     151697.84  **
+                                                          **************************************************************************************
+VCD info: dumpfile dump.vcd opened for output.
