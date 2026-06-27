@@ -114,28 +114,6 @@ The UART RX FSM monitors the incoming serial data stream (`rx`) and reconstructs
 
 ---
 
-## 6. Directory Structure
-
-The project files are organized as follows:
-
-```text
-├── design/
-│   └── uart.sv                 # Combined UART design module
-├── rtl/
-│   ├── clk_gen.sv              # Baud rate clock generator
-│   ├── uart_tx.sv              # Transmitter FSM and logic
-│   ├── uart_rx.sv              # Receiver FSM and oversampling logic
-│   ├── uart_top.sv             # Top-level wrapper instantiating components
-│   └── uart_if.sv              # SystemVerilog interface definition
-├── tb/
-│   ├── test_pyuvm.py           # PyUVM testbench for complete UART system
-│   └── dump.v                  # Waveform dumping configuration
-├── .gitignore                  # Git ignore rules
-├── README.md                   # Project documentation
-├── uart_connection.png         # Physical connection diagram
-└── uart_block_diagram.png      # RTL schematic block diagram
-```
-
 ## 7. Verification Methodology
 
 This project utilizes **PyUVM** and **Cocotb** for verification, replacing traditional SystemVerilog UVM. The testbench dynamically generates random baud rates, data widths, and parity configurations, driving them into the hardware using a robust Python-based sequence/driver architecture.
