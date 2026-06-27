@@ -128,10 +128,9 @@ The project files are organized as follows:
 │   ├── uart_top.sv             # Top-level wrapper instantiating components
 │   └── uart_if.sv              # SystemVerilog interface definition
 ├── tb/
-│   ├── clk_gen_ver.sv          # UVM testbench for standalone clock generator
 │   ├── test_pyuvm.py           # PyUVM testbench for complete UART system
 │   └── dump.v                  # Waveform dumping configuration
-├── build/                      # Auto-generated simulation outputs (Ignored by Git)
+├── .gitignore                  # Git ignore rules
 ├── README.md                   # Project documentation
 ├── uart_connection.png         # Physical connection diagram
 └── uart_block_diagram.png      # RTL schematic block diagram
