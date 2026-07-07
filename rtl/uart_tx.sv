@@ -15,7 +15,7 @@ module uart_tx(
   logic stop_b  = 1;
   logic parity_bit = 0;
 
-  integer count = 0;
+  logic [3:0] count = 0;
 
   typedef enum bit [2:0]
   {
@@ -25,7 +25,8 @@ module uart_tx(
   send_parity = 3,
   send_first_stop = 4,
   send_sec_stop = 5,
-  done = 6
+  done = 6,
+  error_st = 7
   } state_type;
 
   state_type state = idle, next_state = idle;
@@ -72,6 +73,7 @@ module uart_tx(
 
   always @(*)
   begin
+    tx_err = 1'b0; // Default assignment to prevent latches
     case(state)
 
       idle :
@@ -79,12 +81,14 @@ module uart_tx(
         tx_done = 1'b0;
         tx      = 1'b1;
         tx_reg  = {(8){1'b0}};
-        tx_err  = 0;
 
-        if(tx_start)
-        next_state = start_bit;
-        else
-        next_state = idle;
+        if(tx_start) begin
+          if (length < 4'd5 || length > 4'd8)
+            next_state = error_st;
+          else
+            next_state = start_bit;
+        end else
+          next_state = idle;
       end
 
       start_bit :
@@ -141,6 +145,13 @@ module uart_tx(
         next_state = idle;
       end
 
+      error_st :
+      begin
+        tx_err = 1'b1;
+        tx_done = 1'b1;
+        next_state = idle;
+      end
+
       default :
       next_state = idle;
 
@@ -188,6 +199,11 @@ module uart_tx(
         end
 
         done :
+        begin
+          count <= 0;
+        end
+
+        error_st :
         begin
           count <= 0;
         end

@@ -40,12 +40,14 @@ The UART TX FSM serializes parallel data frame-by-frame. It operates on the core
 | `send_first_stop` | `3'b100` | 4 |
 | `send_sec_stop` | `3'b101` | 5 |
 | `done` | `3'b110` | 6 |
+| `error_st` | `3'b111` | 7 |
 
 ### 3.2 State Transition Table
 | Present State | Condition / Inputs | Next State | Action / Output Behavior |
 | :--- | :--- | :--- | :--- |
 | **IDLE** | `tx_start = 0` | **IDLE** | Drives `tx` line HIGH (`1` - idle bus level), resets counter. |
-| **IDLE** | `tx_start = 1` | **START_BIT** | Prepares to load `tx_data` into internal transmit register `tx_reg`. |
+| **IDLE** | `tx_start = 1` && valid `length` (5-8) | **START_BIT** | Prepares to load `tx_data` into internal transmit register `tx_reg`. |
+| **IDLE** | `tx_start = 1` && invalid `length` (<5 or >8) | **ERROR_ST** | Invalid configuration detected, aborts transmission. |
 | **START_BIT** | *(unconditional)* | **SEND_DATA** | Drives `tx` line LOW (`0`) for one bit period to signal start of frame. |
 | **SEND_DATA** | `count < (length - 1)` | **SEND_DATA** | Shifts out the next data bit (LSB-first) on `tx` line, increments bit counter. |
 | **SEND_DATA** | `count = (length - 1)` && `parity_en = 1` | **SEND_PARITY** | Drives final data bit on `tx` and transitions to insert parity. |
@@ -55,6 +57,7 @@ The UART TX FSM serializes parallel data frame-by-frame. It operates on the core
 | **SEND_1ST_STOP** | `stop2 = 0` | **DONE** | Drives `tx` line HIGH (`1`) and transitions to frame complete. |
 | **SEND_2ND_STOP** | *(unconditional)* | **DONE** | Drives `tx` line HIGH (`1`) for the second optional stop bit period. |
 | **DONE** | *(unconditional)* | **IDLE** | Asserts `tx_done` for one clock cycle to signal transmission completion. |
+| **ERROR_ST** | *(unconditional)* | **IDLE** | Asserts `tx_err` and `tx_done` for one clock cycle to signal a configuration error. |
 
 ---
 
@@ -72,6 +75,7 @@ The UART RX FSM monitors the incoming serial data stream (`rx`) and reconstructs
 | `check_first_stop` | `3'b100` | 4 |
 | `check_sec_stop` | `3'b101` | 5 |
 | `done` | `3'b110` | 6 |
+| `error_st` | `3'b111` | 7 |
 
 ### 4.2 State Transition Table
 | Present State | Condition / Inputs | Next State | Action / Output Behavior |
@@ -85,13 +89,17 @@ The UART RX FSM monitors the incoming serial data stream (`rx`) and reconstructs
 | **RECV_DATA** | `count = 15` && `bit_count = (length - 1)` && `parity_en = 1` | **CHECK_PARITY** | All data bits received. Transitions to verify parity bit. |
 | **RECV_DATA** | `count = 15` && `bit_count = (length - 1)` && `parity_en = 0` | **CHECK_1ST_STOP** | All data bits received. Transitions to verify first stop bit. |
 | **CHECK_PARITY** | `count < 15` | **CHECK_PARITY** | Increments oversampling counter. |
-| **CHECK_PARITY** | `count = 15` | **CHECK_1ST_STOP** | Samples `rx` parity at `count = 7`. Sets `rx_error = 1` if it mismatches calculated parity. |
+| **CHECK_PARITY** | `count = 7` && `rx != parity` | **ERROR_ST** | Evaluates parity bit at mid-point. Aborts if mismatch detected. |
+| **CHECK_PARITY** | `count = 15` | **CHECK_1ST_STOP** | Transitions to verify first stop bit if parity is valid. |
 | **CHECK_1ST_STOP**| `count < 15` | **CHECK_1ST_STOP** | Increments oversampling counter. |
-| **CHECK_1ST_STOP**| `count = 15` && `stop2 = 1` | **CHECK_2ND_STOP** | Samples stop bit at `count = 7`. Sets `rx_error = 1` if framing error (`rx != 1`). |
-| **CHECK_1ST_STOP**| `count = 15` && `stop2 = 0` | **DONE** | Samples stop bit at `count = 7`. Sets `rx_error = 1` if framing error (`rx != 1`). |
+| **CHECK_1ST_STOP**| `count = 7` && `rx != 1` | **ERROR_ST** | Evaluates first stop bit at mid-point. Aborts if framing error. |
+| **CHECK_1ST_STOP**| `count = 15` && `stop2 = 1` | **CHECK_2ND_STOP** | Transitions to verify second stop bit if valid. |
+| **CHECK_1ST_STOP**| `count = 15` && `stop2 = 0` | **DONE** | Frame successfully received. Transitions to done. |
 | **CHECK_2ND_STOP**| `count < 15` | **CHECK_2ND_STOP** | Increments oversampling counter. |
-| **CHECK_2ND_STOP**| `count = 15` | **DONE** | Samples 2nd stop bit at `count = 7`. Sets `rx_error = 1` if framing error (`rx != 1`). |
+| **CHECK_2ND_STOP**| `count = 7` && `rx != 1` | **ERROR_ST** | Evaluates second stop bit at mid-point. Aborts if framing error. |
+| **CHECK_2ND_STOP**| `count = 15` | **DONE** | Frame successfully received. Transitions to done. |
 | **DONE** | *(unconditional)* | **IDLE** | Asserts `rx_done` for one clock cycle, presents reconstructed byte to `rx_out`. |
+| **ERROR_ST** | *(unconditional)* | **IDLE** | Asserts `rx_error` and `rx_done` for one clock cycle to signal transaction failure. |
 
 ---
 
