@@ -85,30 +85,6 @@ class transaction extends uvm_sequence_item;
     function new(string name = "transaction");
         super.new(name);
     endfunction
-    
-    function void post_randomize();
-        if (op == RAND_BAUD_1_STOP) begin
-            length = 8; parity_en = 1; stop2 = 0;
-        end else if (op == RAND_BAUD_2_STOP) begin
-            length = 8; parity_en = 1; stop2 = 1;
-        end else if (op == LENGTH5_WP) begin
-            tx_data = (tx_data >> 3) & 8'h1F; length = 5; parity_en = 1; stop2 = 0;
-        end else if (op == LENGTH6_WP) begin
-            tx_data = (tx_data >> 2) & 8'h3F; length = 6; parity_en = 1; stop2 = 0;
-        end else if (op == LENGTH7_WP) begin
-            tx_data = (tx_data >> 1) & 8'h7F; length = 7; parity_en = 1; stop2 = 0;
-        end else if (op == LENGTH8_WP) begin
-            length = 8; parity_en = 1; stop2 = 0;
-        end else if (op == LENGTH5_WOP) begin
-            tx_data = (tx_data >> 3) & 8'h1F; length = 5; parity_en = 0; stop2 = 0;
-        end else if (op == LENGTH6_WOP) begin
-            tx_data = (tx_data >> 2) & 8'h3F; length = 6; parity_en = 0; stop2 = 0;
-        end else if (op == LENGTH7_WOP) begin
-            tx_data = (tx_data >> 1) & 8'h7F; length = 7; parity_en = 0; stop2 = 0;
-        end else if (op == LENGTH8_WOP) begin
-            length = 8; parity_en = 0; stop2 = 0;
-        end
-    endfunction
 endclass : transaction
 
 // -------------------------------------------------------------------------
@@ -122,7 +98,11 @@ class rand_baud_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == RAND_BAUD_1_STOP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = RAND_BAUD_1_STOP;
+            tr.length = 8;
+            tr.parity_en = 1;
+            tr.stop2 = 0;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -137,7 +117,11 @@ class rand_baud_with_stop_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == RAND_BAUD_2_STOP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = RAND_BAUD_2_STOP;
+            tr.length = 8;
+            tr.parity_en = 1;
+            tr.stop2 = 1;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -152,7 +136,12 @@ class rand_baud_len5p_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH5_WP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH5_WP;
+            tr.length = 5;
+            tr.parity_en = 1;
+            tr.stop2 = 0;
+            tr.tx_data = tr.tx_data & 8'h1F;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -167,7 +156,12 @@ class rand_baud_len6p_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH6_WP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH6_WP;
+            tr.length = 6;
+            tr.parity_en = 1;
+            tr.stop2 = 0;
+            tr.tx_data = tr.tx_data & 8'h3F;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -182,7 +176,12 @@ class rand_baud_len7p_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH7_WP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH7_WP;
+            tr.length = 7;
+            tr.parity_en = 1;
+            tr.stop2 = 0;
+            tr.tx_data = tr.tx_data & 8'h7F;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -197,7 +196,11 @@ class rand_baud_len8p_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH8_WP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH8_WP;
+            tr.length = 8;
+            tr.parity_en = 1;
+            tr.stop2 = 0;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -212,7 +215,12 @@ class rand_baud_len5_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH5_WOP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH5_WOP;
+            tr.length = 5;
+            tr.parity_en = 0;
+            tr.stop2 = 0;
+            tr.tx_data = tr.tx_data & 8'h1F;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -227,7 +235,12 @@ class rand_baud_len6_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH6_WOP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH6_WOP;
+            tr.length = 6;
+            tr.parity_en = 0;
+            tr.stop2 = 0;
+            tr.tx_data = tr.tx_data & 8'h3F;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -242,7 +255,12 @@ class rand_baud_len7_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH7_WOP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH7_WOP;
+            tr.length = 7;
+            tr.parity_en = 0;
+            tr.stop2 = 0;
+            tr.tx_data = tr.tx_data & 8'h7F;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
@@ -257,7 +275,11 @@ class rand_baud_len8_seq extends uvm_sequence#(transaction);
         repeat(2) begin
             tr = transaction::type_id::create("tr");
             start_item(tr);
-            if(!tr.randomize() with {op == LENGTH8_WOP;}) `uvm_error("SEQ", "Randomization failed")
+            if(!tr.randomize()) `uvm_error("SEQ", "Randomization failed")
+            tr.op = LENGTH8_WOP;
+            tr.length = 8;
+            tr.parity_en = 0;
+            tr.stop2 = 0;
             tr.tx_start = 1; tr.rx_start = 1;
             finish_item(tr);
         end
